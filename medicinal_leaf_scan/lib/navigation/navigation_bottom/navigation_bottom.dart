@@ -24,7 +24,7 @@ class _NavigationBottomState extends State<NavigationBottom> {
     super.initState();
     // Kiểm tra vị trí ban đầu
     if (widget.selectedIndex == 1) {
-      scanYPosition = -20; // Nếu scan được chọn, nổi lên
+      scanYPosition = -25; // Nếu scan được chọn, nổi lên
     }
   }
 
@@ -35,9 +35,9 @@ class _NavigationBottomState extends State<NavigationBottom> {
     // Cập nhật vị trí khi thay đổi tab
     setState(() {
       if (widget.selectedIndex == 1) {
-        scanYPosition = -20; // Khi chọn scan, nổi lên
+        scanYPosition = -25; // Khi chọn scan, nổi lên
       } else {
-        scanYPosition = 20; // Khi chọn tab khác, trở về vị trí gốc
+        scanYPosition = 10; // Khi chọn tab khác, trở về vị trí gốc
       }
     });
   }
@@ -45,7 +45,7 @@ class _NavigationBottomState extends State<NavigationBottom> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80, // Ensure enough height for the navigation bar
+      height: 80, 
       width: 430,
       decoration: const BoxDecoration(
         color: Colors.white,
@@ -80,12 +80,12 @@ class _NavigationBottomState extends State<NavigationBottom> {
               onTap: () => widget.onItemTapped(1),
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 300),
-                width: 60,
-                height: 60,
+                width: 70,
+                height: 70,
                 decoration: BoxDecoration(
-                  color: widget.selectedIndex == 1 ? Colors.blue : Colors.white,
+                  color: widget.selectedIndex == 1 ? Colors.blue : const Color.fromARGB(255, 255, 255, 255),
                   shape: BoxShape.circle,
-                  border: Border.all(color: Colors.grey.shade200, width: 2),
+                  border: Border.all(color: const Color.fromARGB(185, 120, 230, 144), width: 2),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black.withOpacity(0.2), // Stronger shadow
@@ -97,8 +97,8 @@ class _NavigationBottomState extends State<NavigationBottom> {
                 child: Center(
                   child: Image.asset(
                     'assets/logo_navigation/scan_icon.png',
-                    width: 30,
-                    height: 30,
+                    width: 50,
+                    height: 50,
                     color: widget.selectedIndex == 1 ? Colors.white : Colors.blue,
                   ),
                 ),

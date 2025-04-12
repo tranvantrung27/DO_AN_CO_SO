@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:medicinal_leaf_scan/navigation/navigation_bottom/navigation_bottom.dart';
 import 'package:medicinal_leaf_scan/pages/scan.dart';
 import 'package:medicinal_leaf_scan/pages/setting.dart';
 import 'package:medicinal_leaf_scan/pages/history.dart';
-import 'navigation/navigation_bottom.dart';
+
 
 void main() {
   runApp(const MainApp());

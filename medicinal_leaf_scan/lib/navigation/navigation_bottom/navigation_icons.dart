@@ -34,17 +34,17 @@ class NavigationIcons extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             _buildNavItem(
-              index: 2,
+              index: 0,
               icon: 'assets/logo_navigation/history_icon.png',
               label: 'History',
-              isSelected: selectedIndex == 2,
+              isSelected: selectedIndex == 0,
             ),
             const SizedBox(width: 80),
             _buildNavItem(
-              index: 0,
+              index: 2,
               icon: 'assets/logo_navigation/setting_icon.png',
               label: 'Setting',
-              isSelected: selectedIndex == 0,
+              isSelected: selectedIndex == 2,
             ),
           ],
         ),
