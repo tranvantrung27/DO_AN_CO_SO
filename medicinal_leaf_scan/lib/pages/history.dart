@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medicinal_leaf_scan/navigation/navigation_history/top_navigation.dart';
 import 'package:medicinal_leaf_scan/utils/app_colors.dart';
-// Import TopNavigation
 
 class HistoryScreen extends StatelessWidget {
   @override
