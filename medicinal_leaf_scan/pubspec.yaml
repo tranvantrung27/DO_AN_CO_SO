@@ -19,12 +19,15 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-  #logo appapp
+  #logo app
     - assets/IconApp/logo_app.png  
   #logo navigation bottom
     - assets/logo_navigation/history_icon.png
     - assets/logo_navigation/setting_icon.png
     - assets/logo_navigation/scan_icon.png
+  #logo history
+    - assets/logo_history/history.png
+    - assets/logo_history/save.png
 
 
 flutter_icons:
