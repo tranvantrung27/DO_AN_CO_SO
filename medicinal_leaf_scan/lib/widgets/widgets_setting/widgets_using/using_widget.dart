@@ -1,0 +1,56 @@
+import 'package:flutter/material.dart';
+// Giả sử bạn sử dụng AppColors
+
+class UsingWidget extends StatelessWidget {
+  const UsingWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 380, 
+      height: 60,  
+      child: Column(
+        children: [
+          // Nội dung phần Row
+          SizedBox(height: 15),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,  // Canh trái
+            children: [
+              // Logo ở bên trái
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Image.asset(
+                  'assets/icon/book.png', 
+                  width: 38, 
+                  height: 38, 
+                ),
+              ),
+              SizedBox(width: 10), 
+              // Text "Cách sử dụng"
+              Expanded(  
+                child: Text(
+                  'Cách sử dụng', 
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              // Mũi tên ở bên phải
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Icon(
+                  Icons.arrow_forward_ios, 
+                  size: 25, 
+                  color: Colors.black, 
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+ 

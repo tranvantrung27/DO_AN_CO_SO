@@ -8,4 +8,8 @@ class AppColors {
   
   // Màu nền cho Body
   static const Color bodyColor = Color(0xFFDDD3C0); // Màu nền cho body
+
+// Màu nền cho các container (cardBackgroundColor)
+  static const Color cardBackgroundColor = Color.fromARGB(255, 255, 248, 236);  
+
 }

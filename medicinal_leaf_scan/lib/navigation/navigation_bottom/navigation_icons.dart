@@ -36,14 +36,14 @@ class NavigationIcons extends StatelessWidget {
             _buildNavItem(
               index: 0,
               icon: 'assets/logo_navigation/history_icon.png',
-              label: 'History',
+              label: 'Lịch sử',
               isSelected: selectedIndex == 0,
             ),
             const SizedBox(width: 80),
             _buildNavItem(
               index: 2,
               icon: 'assets/logo_navigation/setting_icon.png',
-              label: 'Setting',
+              label: 'Cài đặt',
               isSelected: selectedIndex == 2,
             ),
           ],

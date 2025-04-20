@@ -23,15 +23,28 @@ class HistoryScreenPage extends StatelessWidget {
               ),
               SizedBox(height: 20),
               // Hiển thị thông báo chưa có lịch sử
-              Text(
-                'Lịch sử chưa được ghi nhận\n',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 18),
-              ),
-              Text(
-                'Hãy bắt đầu khám phá\n để theo dõi các hoạt động của bạn',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 18),
+              Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: 'Lịch sử chưa được ghi nhận\n\n',
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold, 
+                        color: const Color.fromARGB(255, 2, 105, 5),
+                      ),
+                    ),
+                    TextSpan(
+                      text:
+                          'Hãy bắt đầu khám phá\n để theo dõi các hoạt động của bạn.',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: const Color.fromARGB(255, 2, 105, 5),
+                      ),
+                    ),
+                  ],
+                ),
+                textAlign: TextAlign.center, 
               ),
             ],
           ),

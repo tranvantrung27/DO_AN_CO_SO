@@ -29,6 +29,10 @@ flutter:
     - assets/logo_history/history.png
     - assets/logo_history/save.png
 
+  #icon setting
+    - assets/icon/account.png
+    - assets/icon/book.png
+    - assets/icon/Info.png
 
 flutter_icons:
   android: true
