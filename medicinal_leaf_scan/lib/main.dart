@@ -1,11 +1,21 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:medicinal_leaf_scan/firebase_options.dart';
 import 'package:medicinal_leaf_scan/navigation/navigation_bottom/navigation_bottom.dart';
 import 'package:medicinal_leaf_scan/pages/scan.dart';
 import 'package:medicinal_leaf_scan/pages/setting.dart';
 import 'package:medicinal_leaf_scan/pages/history.dart';
+import 'package:medicinal_leaf_scan/widgets/widgets_setting/widgets_account/UI_account/login_screen.dart';
+import 'package:medicinal_leaf_scan/widgets/widgets_setting/widgets_account/UI_account/register_screen.dart';
 
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Khởi tạo Firebase
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MainApp());
 }
 
@@ -16,6 +26,11 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: const MainScreen(),
+      routes: {
+    '/register': (context) => RegisterScreen(),
+    '/login': (context) => LoginScreen(), 
+    '/setting': (context) => SettingScreen(),
+  },
     );
   }
 }

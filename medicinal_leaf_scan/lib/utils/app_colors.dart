@@ -12,4 +12,8 @@ class AppColors {
 // Màu nền cho các container (cardBackgroundColor)
   static const Color cardBackgroundColor = Color.fromARGB(255, 255, 248, 236);  
 
+  // Màu nền cho các nút (buttonBackgroundColor)
+  static const Color greenColor = Color(0xFF4CAF50);
+
+
 }
