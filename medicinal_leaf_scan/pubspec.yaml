@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  camera: ^0.11.1
 
 dev_dependencies:
   flutter_test:
@@ -33,6 +34,9 @@ flutter:
     - assets/icon/account.png
     - assets/icon/book.png
     - assets/icon/Info.png
+    - assets/icon/feedback.png
+    - assets/icon/privacy_policy.png
+    - assets/icon/terms-and-conditions.png
 
 flutter_icons:
   android: true
