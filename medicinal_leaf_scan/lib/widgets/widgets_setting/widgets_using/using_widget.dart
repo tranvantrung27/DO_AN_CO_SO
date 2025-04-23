@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// Giả sử bạn sử dụng AppColors
+import 'UI/using_screen.dart';
 
 class UsingWidget extends StatelessWidget {
   const UsingWidget({super.key});
@@ -13,44 +13,52 @@ class UsingWidget extends StatelessWidget {
         children: [
           // Nội dung phần Row
           SizedBox(height: 15),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,  // Canh trái
-            children: [
-              // Logo ở bên trái
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: Image.asset(
-                  'assets/icon/book.png', 
-                  width: 38, 
-                  height: 38, 
-                ),
-              ),
-              SizedBox(width: 10), 
-              // Text "Cách sử dụng"
-              Expanded(  
-                child: Text(
-                  'Cách sử dụng', 
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
+          GestureDetector(
+            onTap: () {
+              // Điều hướng đến màn hình UsingScreen
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => UsingScreen()),
+              );
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,  // Canh trái
+              children: [
+                // Logo ở bên trái
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Image.asset(
+                    'assets/icon/book.png', 
+                    width: 38, 
+                    height: 38, 
                   ),
                 ),
-              ),
-              // Mũi tên ở bên phải
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: Icon(
-                  Icons.arrow_forward_ios, 
-                  size: 25, 
-                  color: Colors.black, 
+                SizedBox(width: 10), 
+                // Text "Cách sử dụng"
+                Expanded(  
+                  child: Text(
+                    'Cách sử dụng', 
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
                 ),
-              ),
-            ],
+                // Mũi tên ở bên phải
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Icon(
+                    Icons.arrow_forward_ios, 
+                    size: 25, 
+                    color: Colors.black, 
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
     );
   }
 }
- 

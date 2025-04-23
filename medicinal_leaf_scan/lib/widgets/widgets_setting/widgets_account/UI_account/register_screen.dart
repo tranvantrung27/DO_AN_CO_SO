@@ -182,11 +182,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 const SizedBox(height: 20),
                 GestureDetector(
                   onTap: () {
-                    // Điều hướng đến màn hình đăng nhập
+                    // Điều hướng đến màn hình đăng ký
                     Navigator.pushReplacementNamed(context, '/login');
                   },
                   child: Text(
-                    'Đã có tài khoản? Đăng nhập tại đây',
+                    'Đã có tài khoản? Đăng Nhập tại đây',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 16,
