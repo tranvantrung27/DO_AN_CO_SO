@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "427061760676",
+    "project_id": "medicinal-leaf-scan",
+    "storage_bucket": "medicinal-leaf-scan.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427061760676:android:7a258dfe902bf8c0540c31",
+        "android_client_info": {
+          "package_name": "com.example.medicinal_leaf_scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnbUMX4xonypepgwU6RqMltHr67SrcrKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
