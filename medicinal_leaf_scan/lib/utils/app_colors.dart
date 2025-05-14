@@ -15,5 +15,7 @@ class AppColors {
   // Màu nền cho các nút (buttonBackgroundColor)
   static const Color greenColor = Color(0xFF4CAF50);
 
+  static const Color blueColor = Color(0xFF2196F3);
+
 
 }

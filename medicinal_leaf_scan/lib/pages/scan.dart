@@ -1,5 +1,9 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:medicinal_leaf_scan/utils/app_colors.dart';
+import 'package:medicinal_leaf_scan/pages/nhandien/detection_screen.dart';
 
 class ScanScreen extends StatefulWidget {
   const ScanScreen({Key? key}) : super(key: key);
@@ -12,6 +16,8 @@ class _ScanScreenState extends State<ScanScreen> {
   CameraController? _controller;
   late Future<void> _initializeControllerFuture;
   String _errorMessage = '';
+  bool _isProcessing = false;
+  final ImagePicker _picker = ImagePicker();
 
   @override
   void initState() {
@@ -29,17 +35,15 @@ class _ScanScreenState extends State<ScanScreen> {
 
       _controller = CameraController(
         cameras[0],
-        ResolutionPreset.max,
+        ResolutionPreset.medium,
         imageFormatGroup: ImageFormatGroup.yuv420,
         enableAudio: false,
       );
 
       await _controller!.initialize();
       
-      // Kiểm tra nếu component vẫn mounted sau khi khởi tạo camera
       if (mounted) {
-        setState(() {
-        });
+        setState(() {});
       }
     } catch (e) {
       _setErrorState('Không thể khởi tạo camera: $e');
@@ -54,28 +58,84 @@ class _ScanScreenState extends State<ScanScreen> {
     }
   }
 
+  // Đơn giản hóa - chỉ chọn ảnh và chuyển màn hình
+  Future<void> _pickImageFromGallery() async {
+    try {
+      setState(() {
+        _isProcessing = true;
+      });
+
+      final XFile? pickedFile = await _picker.pickImage(
+        source: ImageSource.gallery,
+        imageQuality: 85,
+      );
+      
+      if (pickedFile == null) {
+        setState(() {
+          _isProcessing = false;
+        });
+        return;
+      }
+      
+      final File imageFile = File(pickedFile.path);
+      
+      // Chuyển đến màn hình detection
+      if (mounted) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => DetectionScreen(imageFile: imageFile),
+          ),
+        ).then((_) {
+          if (mounted) {
+            setState(() {
+              _isProcessing = false;
+            });
+          }
+        });
+      }
+    } catch (e) {
+      _setErrorState('Lỗi khi chọn ảnh: $e');
+      setState(() {
+        _isProcessing = false;
+      });
+    }
+  }
+
   Future<void> _takePicture() async {
     if (_controller == null || !_controller!.value.isInitialized) {
       _setErrorState('Camera chưa sẵn sàng');
       return;
     }
 
-    try {
-      // Thêm hiệu ứng flash hoặc feedback cho người dùng
-      setState(() {});
+    if (_isProcessing) return;
 
+    setState(() {
+      _isProcessing = true;
+    });
+
+    try {
       final image = await _controller!.takePicture();
+      final File imageFile = File(image.path);
       
       if (mounted) {
-        // Xử lý ảnh đã chụp - ví dụ: hiển thị trên màn hình khác
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Đã chụp ảnh: ${image.path}')),
-        );
-        
-        // Ở đây bạn có thể chuyển hướng đến màn hình xem trước ảnh
-        // Navigator.of(context).push(...);
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => DetectionScreen(imageFile: imageFile),
+          ),
+        ).then((_) {
+          if (mounted) {
+            setState(() {
+              _isProcessing = false;
+            });
+          }
+        });
       }
     } catch (e) {
+      setState(() {
+        _isProcessing = false;
+      });
       _setErrorState('Lỗi khi chụp ảnh: $e');
     }
   }
@@ -90,8 +150,8 @@ class _ScanScreenState extends State<ScanScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Quét tài liệu'),
-        backgroundColor: Colors.black.withOpacity(0.5),
+        title: const Text('Quét lá thuốc'),
+        backgroundColor: AppColors.appBarColor,
       ),
       body: FutureBuilder<void>(
         future: _initializeControllerFuture,
@@ -130,13 +190,24 @@ class _ScanScreenState extends State<ScanScreen> {
             return Stack(
               fit: StackFit.expand,
               children: [
-                // Camera Preview với các điều chỉnh cho tỷ lệ khung hình
+                // Camera Preview
                 _buildCameraPreview(),
                 
-                // Overlay frame for document scanning
+                // Overlay frame cho quét lá
                 _buildScanOverlay(),
                 
-                // Controls at the bottom
+                // Hiển thị loading nếu đang xử lý
+                if (_isProcessing)
+                  Container(
+                    color: Colors.black.withOpacity(0.5),
+                    child: Center(
+                      child: CircularProgressIndicator(
+                        color: AppColors.greenColor,
+                      ),
+                    ),
+                  ),
+                
+                // Controls ở dưới
                 _buildControlsOverlay(),
               ],
             );
@@ -196,53 +267,74 @@ class _ScanScreenState extends State<ScanScreen> {
   }
 
   Widget _buildControlsOverlay() {
-  final bottomPadding = MediaQuery.of(context).padding.bottom;
+    final bottomPadding = MediaQuery.of(context).padding.bottom;
 
-  return Positioned(
-    bottom: bottomPadding + 100, // đẩy nút lên một chút
-    left: 0,
-    right: 0,
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        // Nút chụp ảnh
-        Container(
-          height: 70,
-          width: 70,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.white.withOpacity(0.8),
+    return Positioned(
+      bottom: bottomPadding + 100, // đẩy nút lên một chút
+      left: 0,
+      right: 0,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          // Nút chọn ảnh từ thư viện
+          Container(
+            height: 60,
+            width: 60,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white.withOpacity(0.8),
+            ),
+            child: IconButton(
+              icon: const Icon(Icons.photo_library, size: 30),
+              color: Colors.black,
+              onPressed: _isProcessing ? null : _pickImageFromGallery,
+            ),
           ),
-          child: IconButton(
-            icon: const Icon(Icons.camera_alt, size: 36),
-            color: Colors.black,
-            onPressed: _takePicture,
-          ),
-        ),
 
-        // Nút flash
-        FloatingActionButton(
-          heroTag: 'toggleFlash',
-          mini: true,
-          backgroundColor: Colors.white.withOpacity(0.8),
-          child: Icon(
-            _controller?.value.flashMode == FlashMode.torch
-                ? Icons.flash_off
-                : Icons.flash_on,
-            color: Colors.amber.shade800,
+          // Nút chụp ảnh
+          Container(
+            height: 70,
+            width: 70,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white.withOpacity(0.8),
+            ),
+            child: IconButton(
+              icon: const Icon(Icons.camera_alt, size: 36),
+              color: Colors.black,
+              onPressed: _isProcessing ? null : _takePicture,
+            ),
           ),
-          onPressed: () {
-            if (_controller != null) {
-              final newFlashMode = _controller!.value.flashMode == FlashMode.off
-                  ? FlashMode.torch
-                  : FlashMode.off;
-              _controller!.setFlashMode(newFlashMode);
-              setState(() {});
-            }
-          },
-        ),
-      ],
-    ),
-  );
-}
+
+          // Nút flash
+          Container(
+            height: 60,
+            width: 60,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white.withOpacity(0.8),
+            ),
+            child: IconButton(
+              icon: Icon(
+                _controller?.value.flashMode == FlashMode.torch
+                    ? Icons.flash_off
+                    : Icons.flash_on,
+                size: 30,
+                color: Colors.amber.shade800,
+              ),
+              onPressed: () {
+                if (_controller != null) {
+                  final newFlashMode = _controller!.value.flashMode == FlashMode.off
+                      ? FlashMode.torch
+                      : FlashMode.off;
+                  _controller!.setFlashMode(newFlashMode);
+                  setState(() {});
+                }
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
