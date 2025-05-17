@@ -10,23 +10,17 @@ jobs:
     name: SonarQube
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       
-      # Replace this with your project's actual build commands
+      # Simple build step - replace with actual build if needed
       - name: Build
-        run: |
-          # For example, if it's a .NET project:
-          # dotnet restore
-          # dotnet build --no-restore
-          
-          # Or for JS/TS projects:
-          # npm install
-          # npm run build
+        run: echo "No build required"
           
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v5
+        uses: SonarSource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
