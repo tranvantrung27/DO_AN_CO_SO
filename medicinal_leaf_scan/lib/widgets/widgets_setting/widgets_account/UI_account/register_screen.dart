@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:medicinal_leaf_scan/main.dart'; // Import MainScreen
 import 'package:medicinal_leaf_scan/navigation/button/register_button_widget.dart';
-import 'package:medicinal_leaf_scan/widgets/widgets_setting/widgets_account/UI_account/login_screen.dart';
 import 'package:medicinal_leaf_scan/widgets/widgets_setting/widgets_account/UI_account/widgets/input_field_widget.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -24,6 +24,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   String? _passwordError;
   String? _confirmPasswordError;
   bool _isPasswordVisible = false;
+  bool _isLoading = false;
 
   void _register() async {
     if (!_formKey.currentState!.validate()) {
@@ -36,31 +37,47 @@ class _RegisterScreenState extends State<RegisterScreen> {
       return;
     }
 
+    setState(() {
+      _isLoading = true;
+    });
+
     try {
-      await _auth.createUserWithEmailAndPassword(
+      // Tạo tài khoản mới
+      UserCredential userCredential = await _auth.createUserWithEmailAndPassword(
         email: _emailController.text,
         password: _passwordController.text,
       );
 
+      // Gửi email xác thực
+      User? user = userCredential.user;
+      if (user != null && !user.emailVerified) {
+        await user.sendEmailVerification();
+      }
+
       // Hiển thị thông báo thành công
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Text('Đăng ký thành công!'),
+          content: const Text('Đăng ký thành công! Đang chuyển hướng...'),
           backgroundColor: Colors.green,
           duration: const Duration(seconds: 2),
         ),
       );
 
-      // Điều hướng qua trang đăng nhập
+      // Chuyển trực tiếp đến MainScreen thay vì sang LoginScreen
       Future.delayed(const Duration(seconds: 2), () {
-        Navigator.pushReplacement(
+        Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(
-            builder: (context) => LoginScreen(),
-          ), // Điều hướng sang trang đăng nhập
+            builder: (context) => MainScreen(initialIndex: 2),
+          ),
+          (route) => false,
         );
       });
     } on FirebaseAuthException catch (e) {
+      setState(() {
+        _isLoading = false;
+      });
+      
       if (e.code == 'invalid-email') {
         setState(() {
           _emailError = 'Địa chỉ email không hợp lệ';
@@ -77,6 +94,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
             duration: const Duration(seconds: 2),
           ),
         );
+      } else if (e.code == 'weak-password') {
+        setState(() {
+          _passwordError = 'Mật khẩu quá yếu. Vui lòng chọn mật khẩu mạnh hơn.';
+        });
       } else {
         // Hiển thị các lỗi khác
         ScaffoldMessenger.of(context).showSnackBar(
@@ -87,13 +108,25 @@ class _RegisterScreenState extends State<RegisterScreen> {
           ),
         );
       }
+    } catch (e) {
+      setState(() {
+        _isLoading = false;
+      });
+      
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Đã xảy ra lỗi không xác định: $e'),
+          backgroundColor: Colors.red,
+          duration: const Duration(seconds: 2),
+        ),
+      );
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Đăng ký')),
+      appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -174,15 +207,31 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   },
                   keyboardType: TextInputType.text,
                   prefixIcon: Icon(Icons.lock, color: Colors.green),
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      _isPasswordVisible
+                          ? Icons.visibility
+                          : Icons.visibility_off,
+                      color: Colors.green,
+                    ),
+                    onPressed: () {
+                      setState(() {
+                        _isPasswordVisible = !_isPasswordVisible;
+                      });
+                    },
+                  ),
                 ),
                 const SizedBox(height: 30),
 
-                RegisterButtonWidget(onPressed: _register),
+                // Nút đăng ký với loading indicator
+                _isLoading 
+                ? Center(child: CircularProgressIndicator(color: Colors.green))
+                : RegisterButtonWidget(onPressed: _register),
 
                 const SizedBox(height: 20),
                 GestureDetector(
                   onTap: () {
-                    // Điều hướng đến màn hình đăng ký
+                    // Điều hướng đến màn hình đăng nhập
                     Navigator.pushReplacementNamed(context, '/login');
                   },
                   child: Text(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:medicinal_leaf_scan/main.dart'; 
+import 'package:medicinal_leaf_scan/main.dart';
 import 'package:medicinal_leaf_scan/widgets/widgets_setting/widgets_account/UI_account/widgets/input_field_widget.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -32,44 +32,42 @@ class _LoginScreenState extends State<LoginScreen> {
     });
 
     try {
+      // Đăng nhập
       await _auth.signInWithEmailAndPassword(
         email: _emailController.text,
         password: _passwordController.text,
       );
 
-      // Hiển thị thông báo thành công với hiệu ứng mờ dần
-      _showSuccessSnackbar('Đăng nhập thành công!');
+      // Check if still mounted before proceeding
+      if (!mounted) return;
 
-      // Điều hướng sang màn hình SettingScreen sau khi đăng nhập thành công
-      Navigator.of(context).pushAndRemoveUntil(
-        PageRouteBuilder(
-          pageBuilder: (context, animation, secondaryAnimation) => 
-            MainScreen(initialIndex: 2),
-          transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            const begin = 0.0;
-            const end = 1.0;
-            var curve = Curves.easeInOut;
-            
-            var tween = Tween(begin: begin, end: end).chain(
-              CurveTween(curve: curve)
-            );
-            
-            return FadeTransition(
-              opacity: animation.drive(tween),
-              child: child,
-            );
-          },
-          transitionDuration: const Duration(milliseconds: 500),
+      // Hiển thị thông báo thành công
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Đăng nhập thành công!'),
+          backgroundColor: Colors.green,
+          duration: const Duration(seconds: 1),
         ),
-        (route) => false,
       );
 
+      // Thời gian ngắn để hiển thị thông báo
+      await Future.delayed(const Duration(milliseconds: 500));
+
+      // Kiểm tra lại mounted
+      if (!mounted) return;
+
+      // Đơn giản hóa hoàn toàn việc chuyển màn hình, không dùng PageRouteBuilder
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => MainScreen(initialIndex: 2)),
+      );
     } on FirebaseAuthException catch (e) {
       String errorMessage = '';
 
-      // Tùy chỉnh thông báo lỗi 
+      // Phần xử lý lỗi giữ nguyên như cũ
       if (e.code == 'user-not-found') {
-        errorMessage = 'Email chưa được đăng ký. Vui lòng kiểm tra lại hoặc đăng ký tài khoản mới.';
+        errorMessage =
+            'Email chưa được đăng ký. Vui lòng kiểm tra lại hoặc đăng ký tài khoản mới.';
         setState(() {
           _emailError = errorMessage;
         });
@@ -84,7 +82,8 @@ class _LoginScreenState extends State<LoginScreen> {
           _emailError = errorMessage;
         });
       } else if (e.code == 'too-many-requests') {
-        errorMessage = 'Quá nhiều lần thử đăng nhập không thành công. Vui lòng thử lại sau.';
+        errorMessage =
+            'Quá nhiều lần thử đăng nhập không thành công. Vui lòng thử lại sau.';
         setState(() {
           _emailError = errorMessage;
         });
@@ -95,38 +94,37 @@ class _LoginScreenState extends State<LoginScreen> {
         });
       }
 
-      // Hiển thị thông báo lỗi trong SnackBar
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(errorMessage),
-          backgroundColor: Colors.red,
-          duration: const Duration(seconds: 3),
-        ),
-      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(errorMessage),
+            backgroundColor: Colors.red,
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      }
 
       setState(() {
         _isLoading = false;
       });
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Đã xảy ra lỗi không xác định: $e'),
+            backgroundColor: Colors.red,
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      }
     }
   }
 
   // Hiển thị thông báo đăng nhập thành công ở vị trí giữa màn hình
-void _showSuccessSnackbar(String message) {
-  ScaffoldMessenger.of(context).showSnackBar(
-    SnackBar(
-      content: Text(message),
-      backgroundColor: Colors.green,
-      duration: const Duration(seconds: 2),
-      behavior: SnackBarBehavior.fixed, // Thay đổi thành 'fixed' để hiển thị trên cùng
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12), // Bo tròn các góc của SnackBar
-      ),
-      margin: const EdgeInsets.only(top: 20, bottom: 30, left: 50, right: 50), // Căn trên cùng
-      elevation: 10,
-    ),
-  );
-}
-
 
   @override
   Widget build(BuildContext context) {
@@ -184,7 +182,9 @@ void _showSuccessSnackbar(String message) {
                   prefixIcon: Icon(Icons.lock, color: Colors.green),
                   suffixIcon: IconButton(
                     icon: Icon(
-                      _isPasswordVisible ? Icons.visibility : Icons.visibility_off,
+                      _isPasswordVisible
+                          ? Icons.visibility
+                          : Icons.visibility_off,
                       color: Colors.green,
                     ),
                     onPressed: () {
@@ -207,29 +207,30 @@ void _showSuccessSnackbar(String message) {
                     ),
                     disabledBackgroundColor: Colors.green.withOpacity(0.6),
                   ),
-                  child: _isLoading
-                      ? SizedBox(
-                          width: 24,
-                          height: 24,
-                          child: CircularProgressIndicator(
-                            color: Colors.white,
-                            strokeWidth: 2.0,
+                  child:
+                      _isLoading
+                          ? SizedBox(
+                            width: 24,
+                            height: 24,
+                            child: CircularProgressIndicator(
+                              color: Colors.white,
+                              strokeWidth: 2.0,
+                            ),
+                          )
+                          : const Text(
+                            'Đăng nhập',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
                           ),
-                        )
-                      : const Text(
-                          'Đăng nhập',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
                 ),
 
                 const SizedBox(height: 20),
                 GestureDetector(
                   onTap: () {
-                    Navigator.pop(context);  
+                    Navigator.pop(context);
                   },
                   child: Text(
                     'Chưa có tài khoản? Đăng ký tại đây',
