@@ -12,22 +12,22 @@ class HistoryScreenPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
 
+    // Nếu người dùng chưa đăng nhập, hiển thị màn hình lịch sử trống thay vì yêu cầu đăng nhập
     if (user == null) {
-      return _buildNotLoggedInView();
+      return _buildEmptyHistoryView();
     }
 
     return StreamBuilder<QuerySnapshot>(
-      stream: FirebaseFirestore.instance
-          .collection('history')
-          .where('userId', isEqualTo: user.uid)
-          .orderBy('timestamp', descending: true)
-          .snapshots(),
+      stream:
+          FirebaseFirestore.instance
+              .collection('history')
+              .where('userId', isEqualTo: user.uid)
+              .orderBy('timestamp', descending: true)
+              .snapshots(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Center(
-            child: CircularProgressIndicator(
-              color: AppColors.greenColor,
-            ),
+            child: CircularProgressIndicator(color: AppColors.greenColor),
           );
         }
 
@@ -46,32 +46,6 @@ class HistoryScreenPage extends StatelessWidget {
 
         return _buildHistoryList(snapshot.data!.docs);
       },
-    );
-  }
-
-  Widget _buildNotLoggedInView() {
-    return Container(
-      color: AppColors.bodyColor,
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.account_circle,
-              size: 100,
-              color: AppColors.greenColor,
-            ),
-            SizedBox(height: 20),
-            Text(
-              'Vui lòng đăng nhập để xem lịch sử',
-              style: TextStyle(
-                fontSize: 20,
-                color: AppColors.greenColor,
-              ),
-            ),
-          ],
-        ),
-      ),
     );
   }
 
@@ -108,7 +82,8 @@ class HistoryScreenPage extends StatelessWidget {
                     ),
                   ),
                   TextSpan(
-                    text: 'Hãy bắt đầu khám phá\n để theo dõi các hoạt động của bạn.',
+                    text:
+                        'Hãy bắt đầu khám phá\n để theo dõi các hoạt động của bạn.',
                     style: TextStyle(
                       fontSize: 20,
                       color: const Color.fromARGB(255, 2, 105, 5),
@@ -125,32 +100,30 @@ class HistoryScreenPage extends StatelessWidget {
   }
 
   Widget _buildHistoryList(List<QueryDocumentSnapshot> docs) {
-    return Container(
-      color: AppColors.bodyColor,
+  return Container(
+    color: AppColors.bodyColor,
+    child: SafeArea(
+      bottom: true,
       child: ListView.builder(
-        padding: EdgeInsets.all(16),
+        // Thêm padding bottom thêm để có khoảng cách với navigation
+        padding: EdgeInsets.fromLTRB(16, 16, 16, 16 + 60),
         itemCount: docs.length,
         itemBuilder: (context, index) {
           final data = docs[index].data() as Map<String, dynamic>;
-          return _HistoryItem(
-            data: data,
-            documentId: docs[index].id,
-          );
+          return _HistoryItem(data: data, documentId: docs[index].id);
         },
       ),
-    );
-  }
+    ),
+  );
+}
 }
 
 class _HistoryItem extends StatefulWidget {
   final Map<String, dynamic> data;
   final String documentId;
 
-  const _HistoryItem({
-    Key? key,
-    required this.data,
-    required this.documentId,
-  }) : super(key: key);
+  const _HistoryItem({Key? key, required this.data, required this.documentId})
+    : super(key: key);
 
   @override
   _HistoryItemState createState() => _HistoryItemState();
@@ -167,26 +140,27 @@ class _HistoryItemState extends State<_HistoryItem> {
   }
 
   Future<void> _loadLeafData() async {
-    try {
-      final leafId = widget.data['leafId'];
-      if (leafId != null) {
-        final leafData = await LeafDataService.loadLeafData(leafId);
-        if (mounted) {
-          setState(() {
-            _leafData = leafData;
-            _isLoading = false;
-          });
-        }
-      } else {
-        setState(() => _isLoading = false);
-      }
-    } catch (e) {
-      debugPrint('Error loading leaf data: $e');
+  try {
+    final leafId = widget.data['leafId'];
+    if (leafId != null) {
+      // Sử dụng LeafDataCache thay vì LeafDataService trực tiếp
+      final leafData = await LeafDataCache().getLeafData(leafId);
       if (mounted) {
-        setState(() => _isLoading = false);
+        setState(() {
+          _leafData = leafData;
+          _isLoading = false;
+        });
       }
+    } else {
+      setState(() => _isLoading = false);
+    }
+  } catch (e) {
+    debugPrint('Error loading leaf data: $e');
+    if (mounted) {
+      setState(() => _isLoading = false);
     }
   }
+}
 
   @override
   Widget build(BuildContext context) {
@@ -213,9 +187,10 @@ class _HistoryItemState extends State<_HistoryItem> {
     // Lấy giá trị confidence an toàn
     double confidence = 0.0;
     if (widget.data['confidence'] != null) {
-      confidence = widget.data['confidence'] is double 
-          ? widget.data['confidence'] 
-          : (widget.data['confidence'] as num).toDouble();
+      confidence =
+          widget.data['confidence'] is double
+              ? widget.data['confidence']
+              : (widget.data['confidence'] as num).toDouble();
     }
 
     return Card(
@@ -229,7 +204,17 @@ class _HistoryItemState extends State<_HistoryItem> {
         ),
       ),
       child: InkWell(
-        onTap: () {
+        // Trong _HistoryItemState và _CollectionItemState,
+        // điều chỉnh hàm onTap trong InkWell:
+        // Trong _HistoryItemState và _CollectionItemState
+        onTap: () async {
+          // Kiểm tra nếu dữ liệu chưa tải xong thì đợi
+          if (_isLoading) {
+            // Hiển thị tiến trình loading nếu cần
+            await _loadLeafData();
+          }
+
+          // Sau đó mới điều hướng với dữ liệu đã tải
           Navigator.pushNamed(
             context,
             '/detail',
@@ -274,10 +259,7 @@ class _HistoryItemState extends State<_HistoryItem> {
                     if (description.isNotEmpty)
                       Text(
                         'Mô tả: $description',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.grey[600],
-                        ),
+                        style: TextStyle(fontSize: 14, color: Colors.grey[600]),
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                       ),
@@ -298,18 +280,9 @@ class _HistoryItemState extends State<_HistoryItem> {
                         ),
                         SizedBox(width: 8),
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          decoration: BoxDecoration(
-                            color: AppColors.greenColor.withOpacity(0.1),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Text(
-                            '${(confidence * 100).toStringAsFixed(1)}%',
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: AppColors.greenColor,
-                              fontWeight: FontWeight.bold,
-                            ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
                           ),
                         ),
                       ],
@@ -319,10 +292,7 @@ class _HistoryItemState extends State<_HistoryItem> {
               ),
               SizedBox(width: 8),
               // Arrow icon
-              Icon(
-                Icons.chevron_right,
-                color: Colors.grey[400],
-              ),
+              Icon(Icons.chevron_right, color: Colors.grey[400]),
             ],
           ),
         ),
@@ -332,17 +302,13 @@ class _HistoryItemState extends State<_HistoryItem> {
 
   Widget _buildImageWidget() {
     final imageUrl = widget.data['imageUrl'];
-    
+
     if (imageUrl == null || imageUrl.toString().isEmpty) {
       return Container(
         width: 80,
         height: 80,
         color: Colors.grey[200],
-        child: Icon(
-          Icons.eco,
-          size: 40,
-          color: AppColors.greenColor,
-        ),
+        child: Icon(Icons.eco, size: 40, color: AppColors.greenColor),
       );
     }
 
@@ -351,23 +317,21 @@ class _HistoryItemState extends State<_HistoryItem> {
       width: 80,
       height: 80,
       fit: BoxFit.cover,
-      placeholder: (context, url) => Container(
-        color: Colors.grey[200],
-        child: Center(
-          child: CircularProgressIndicator(
-            strokeWidth: 2,
-            color: AppColors.greenColor,
+      placeholder:
+          (context, url) => Container(
+            color: Colors.grey[200],
+            child: Center(
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                color: AppColors.greenColor,
+              ),
+            ),
           ),
-        ),
-      ),
-      errorWidget: (context, url, error) => Container(
-        color: Colors.grey[200],
-        child: Icon(
-          Icons.eco,
-          size: 40,
-          color: Colors.grey,
-        ),
-      ),
+      errorWidget:
+          (context, url, error) => Container(
+            color: Colors.grey[200],
+            child: Icon(Icons.eco, size: 40, color: Colors.grey),
+          ),
     );
   }
 }

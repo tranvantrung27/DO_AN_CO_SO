@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart'; // Để lấy thông tin người dùng
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:medicinal_leaf_scan/utils/app_colors.dart'; 
 import 'package:medicinal_leaf_scan/widgets/widgets_setting/widgets_account/UI_account/register_screen.dart'; 
 
 class AccountSettingsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Kiểm tra xem người dùng đã đăng nhập hay chưa
     User? user = FirebaseAuth.instance.currentUser;
 
     return GestureDetector(
       onTap: () {
         if (user == null) {
-          // Nếu chưa đăng nhập, chuyển tới màn hình đăng ký
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => RegisterScreen()),
@@ -20,7 +18,7 @@ class AccountSettingsWidget extends StatelessWidget {
         }
       },
       child: Container(
-        width: 380,  
+        width: double.infinity, // THAY ĐỔI: từ 380 thành double.infinity
         height: 60, 
         decoration: BoxDecoration(
           color: AppColors.cardBackgroundColor, 
@@ -46,20 +44,21 @@ class AccountSettingsWidget extends StatelessWidget {
                 height: 38, 
               ),
             ),
-            // Khoảng cách giữa logo và chữ "Tài khoản"
+            // Khoảng cách giữa logo và chữ
             SizedBox(width: 10), 
-            // Text "Tài khoản" hoặc email người dùng nếu đã đăng nhập
+            // Text responsive
             Expanded(  
               child: Text(
-                user == null ? 'Tài khoản' : user.email!, // Hiển thị email nếu đăng nhập
+                user == null ? 'Tài khoản' : user.email!,
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
+                overflow: TextOverflow.ellipsis, // THÊM: tránh text overflow
               ),
             ),
-            // Ẩn mũi tên khi người dùng đã đăng nhập
+            // Mũi tên
             if (user == null) 
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),

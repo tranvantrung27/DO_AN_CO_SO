@@ -1,53 +1,49 @@
 import 'package:flutter/material.dart';
-import 'UI/using_screen.dart';
+import 'UI/about_screen.dart';
 
-class UsingWidget extends StatelessWidget {
-  const UsingWidget({super.key});
+class InfoWidget extends StatelessWidget {
+  const InfoWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 380, 
+    return Container(
+      width: double.infinity, // THAY ĐỔI: từ 380 thành double.infinity
       height: 60,  
       child: Column(
         children: [
-          // Nội dung phần Row
-          SizedBox(height: 15),
+          const SizedBox(height: 10),
           GestureDetector(
             onTap: () {
-              // Điều hướng đến màn hình UsingScreen
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => UsingScreen()),
+                MaterialPageRoute(builder: (context) => const AboutScreen()),
               );
             },
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,  // Canh trái
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                // Logo ở bên trái
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Image.asset(
-                    'assets/icon/book.png', 
+                    'assets/icon/Info.png', 
                     width: 38, 
                     height: 38, 
                   ),
                 ),
-                SizedBox(width: 10), 
-                // Text "Cách sử dụng"
+                const SizedBox(width: 10), 
                 Expanded(  
                   child: Text(
-                    'Cách sử dụng', 
+                    'Thông tin giới thiệu', 
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
                     ),
+                    overflow: TextOverflow.ellipsis, // THÊM: tránh text overflow
                   ),
                 ),
-                // Mũi tên ở bên phải
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 15),
                   child: Icon(
                     Icons.arrow_forward_ios, 
                     size: 25, 

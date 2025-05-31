@@ -191,6 +191,9 @@ class _DetectionScreenState extends State<DetectionScreen> with TickerProviderSt
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    final frameSize = screenSize.width * 0.8;
+
     return Scaffold(
       backgroundColor: const Color(0xFF4A4A4A),
       body: SafeArea(
@@ -199,12 +202,30 @@ class _DetectionScreenState extends State<DetectionScreen> with TickerProviderSt
           children: [
             const Spacer(flex: 1),
 
-            // Sử dụng ScannerFrame thay vì Container cũ
-            ScannerFrame(
-              scanAnimation: _scanAnimation,
-              child: Image.file(widget.imageFile, fit: BoxFit.cover),
-            ),
 
+// Thay thế phần build ScannerFrame trong DetectionScreen
+
+// Sử dụng ScannerFrame với Container để đảm bảo fit nguyên ảnh
+ScannerFrame(
+  scanAnimation: _scanAnimation,
+  child: Container(
+    width: frameSize,
+    height: frameSize,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(4),
+      color: Colors.black, // Màu nền cho vùng trống
+    ),
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(4),
+      child: Image.file(
+        widget.imageFile,
+        fit: BoxFit.contain, // Thay đổi từ cover thành contain
+        width: frameSize,
+        height: frameSize,
+      ),
+    ),
+  ),
+),
             const SizedBox(height: 20),
             const SizedBox(height: 15),
 

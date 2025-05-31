@@ -8,7 +8,13 @@
       "description": "Cây thân gỗ cao 40-50 feet, vỏ thô màu nâu sẫm. Lá kép hình lông chim, mọc so le, mỗi lá có 5-15 lá chét hình mác, dài 6-8cm, rộng 2-3cm, mép khía răng. Hoa màu trắng có mùi thơm ngọt. Quả hình elip màu vàng khi chín, có mùi như tỏi. Nhập về Việt Nam năm 1981, phát triển tốt ở vùng khô cằn Ninh Thuận.",
       "distribution": "Ninh Thuận, các vùng khô hạn miền Nam",
       "natureProperties": "Đắng, lạnh (hàn)",
-      "usedParts": ["lá", "vỏ cây", "hạt", "hoa", "quả"],
+      "usedParts": [
+        "lá",
+        "vỏ cây",
+        "hạt",
+        "hoa",
+        "quả"
+      ],
       "mainBenefits": [
         "Hạ đường huyết hiệu quả (giảm 18% glucose)",
         "Kháng khuẩn mạnh (Bacillus subtilis, E.coli...)",
@@ -64,7 +70,7 @@
       "updatedAt": "2025-05-12T14:56:04.617Z"
     },
     {
-      "id": "Amaranth",
+      "id": "amaranth",
       "vietnameseName": "DỀN CƠM ",
       "englishName": "Amaranth",
       "scientificName": "Amaranthus viridis L.",
@@ -72,7 +78,12 @@
       "description": "Cỏ nhỏ cao đến 80cm, đứng hoặc nằm ở gốc thường có một nhánh to cong, thân to đến 5mm, không lông không gai. Phiến lá xoan tròn dài hoặc hình bánh bò, dài 3-6cm, rộng 1,5-3cm, đầu tù có khi lõm, không lông. Cuống dài đến 10cm. Chùy hoa ở ngọn hoặc nách lá, hoa có 3 lá đài, 3 nhị, 2-3 đầu nhụy. Quả bế nhăn chứa 1 hạt nâu đen bóng, to 1mm.",
       "distribution": "Mọc hoang khắp nơi, dọc đường đi, được trồng làm rau",
       "natureProperties": "Ngọt nhạt, mát hơi hàn",
-      "usedParts": ["toàn cây", "rễ", "lá", "hạt"],
+      "usedParts": [
+        "toàn cây",
+        "rễ",
+        "lá",
+        "hạt"
+      ],
       "mainBenefits": [
         "Thanh nhiệt lợi thấp, lương huyết",
         "Chữa táo bón do nhiệt",
@@ -121,1243 +132,2718 @@
         ]
       },
       "notes": [
-      "Thu hái quanh năm, rửa sạch, cắt đoạn phơi khô",
-      "Bộ phận dùng: Toàn cây và rễ (chính), hạt (riêng)",
-      "Hạt có tác dụng riêng: mát gan, bổ mắt",
-      "Có thể dùng làm rau ăn hàng ngày",
-      "Người lạnh bụng không nên ăn nhiều",
-      "Kết hợp với rau đay, cua, tôm để tăng hiệu quả"
-    ],
-    "createdAt": "2025-05-12T15:09:30.159Z",
-    "updatedAt": "2025-05-12T15:09:30.159Z"
-  },
-  {
-    "id": "betel",
-    "vietnameseName": "TRẦU KHÔNG",
-    "englishName": "Betel Pepper",
-    "scientificName": "Piper betle L.",
-    "otherNames": "",
-    "description": "Cây dây leo được trồng rộng rãi trong nhân dân. Là loài cây thuốc có đầy đủ tính chất dược học. Lá hình tim, màu xanh đậm, bóng, có mùi thơm đặc trưng.",
-    "distribution": "Trồng khắp cả nước Việt Nam",
-    "natureProperties": "Cay nồng, mùi thơm hắc, tính ấm",
-    "usedParts": ["lá", "rễ", "thân"],
-    "mainBenefits": [
-      "Trừ phong, tiêu viêm, sát trùng, kháng khuẩn",
-      "Chữa đái dắt, suy nhược thần kinh",
-      "Giảm đau đầu, đau lưng",
-      "Trị bệnh về phổi, ho, đau họng",
-      "Chữa táo bón (đặc biệt ở trẻ em)",
-      "Chống viêm nhiễm, thấp khớp",
-      "Làm lành vết thương, vết bỏng",
-      "Giải quyết tắc sữa ở phụ nữ cho con bú",
-      "Tăng sinh lực, làm sạch răng miệng"
-    ],
-    "warnings": {
-      "toxicity": "CÓ THỂ GÂY HẠI nếu dùng quá nhiều",
-      "sideEffects": [
-        "Nguy cơ ung thư lưỡi, miệng, môi ở trẻ em",
-        "Gây khó tiêu",
-        "Viêm lợi"
+        "Thu hái quanh năm, rửa sạch, cắt đoạn phơi khô",
+        "Bộ phận dùng: Toàn cây và rễ (chính), hạt (riêng)",
+        "Hạt có tác dụng riêng: mát gan, bổ mắt",
+        "Có thể dùng làm rau ăn hàng ngày",
+        "Người lạnh bụng không nên ăn nhiều",
+        "Kết hợp với rau đay, cua, tôm để tăng hiệu quả"
       ],
-      "contraindications": [
-        "Trẻ nhỏ không nên dùng nhiều",
-        "Phụ nữ cho con bú cẩn thận khi dùng"
+      "createdAt": "2025-05-12T15:09:30.159Z",
+      "updatedAt": "2025-05-12T15:09:30.159Z"
+    },
+    {
+      "id": "betel",
+      "vietnameseName": "TRẦU KHÔNG",
+      "englishName": "Betel Pepper",
+      "scientificName": "Piper betle L.",
+      "otherNames": "",
+      "description": "Cây dây leo được trồng rộng rãi trong nhân dân. Là loài cây thuốc có đầy đủ tính chất dược học. Lá hình tim, màu xanh đậm, bóng, có mùi thơm đặc trưng.",
+      "distribution": "Trồng khắp cả nước Việt Nam",
+      "natureProperties": "Cay nồng, mùi thơm hắc, tính ấm",
+      "usedParts": [
+        "lá",
+        "rễ",
+        "thân"
       ],
-      "doctorAdvice": "Nên tham khảo ý kiến thầy thuốc"
-    },
-    "usage": {
-      "standardDose": "Tùy theo từng bệnh lý",
-      "specificUsage": [
-        {
-          "purpose": "Đái dắt",
-          "recipe": "Nước cốt lá + sữa loãng + ít đường"
-        },
-        {
-          "purpose": "Suy nhược thần kinh",
-          "recipe": "Nước cốt lá + mật ong, uống 2 lần/ngày"
-        },
-        {
-          "purpose": "Đau đầu",
-          "recipe": "Lá giã dập xoa thái dương"
-        },
-        {
-          "purpose": "Bệnh phổi",
-          "recipe": "Lá tẩm dầu mù tạt hơ ấm đắp ngực"
-        },
-        {
-          "purpose": "Táo bón trẻ em",
-          "recipe": "Viên đạn từ lá + thầu dầu đút hậu môn"
-        },
-        {
-          "purpose": "Đau họng",
-          "recipe": "Lá + hoa quả xay + mật ong ngậm/uống"
-        },
-        {
-          "purpose": "Vết thương",
-          "recipe": "Nước cốt rửa + lá tươi phủ lên"
-        },
-        {
-          "purpose": "Bỏng",
-          "recipe": "Lá hơ mềm + thầu dầu đắp, thay mỗi vài giờ"
-        },
-        {
-          "purpose": "Đau lưng",
-          "recipe": "Lá hơ nóng hoặc nước cốt + dầu dừa đắp"
-        },
-        {
-          "purpose": "Tắc sữa",
-          "recipe": "Lá tẩm dầu gió ủ ấm vào ngực"
-        }
-      ]
-    },
-    "notes": [
-      "Bộ phận dùng: Chủ yếu là lá, đôi khi dùng rễ",
-      "Không lạm dụng, đặc biệt với trẻ em",
-      "Có tác dụng phụ nếu dùng liều cao",
-      "Bảo quản lá ở nơi khô ráo",
-      "Nên dùng lá tươi để hiệu quả tốt nhất",
-      "Kết hợp với các dược liệu khác để tăng hiệu quả",
-      "Phân biệt với các loại cây dây leo khác"
-    ],
-    "createdAt": "2025-05-12T15:20:00.000Z",
-    "updatedAt": "2025-05-12T15:20:00.000Z"
-  },
-  {
-    "id": "crape_Jasmine",
-    "vietnameseName": "LÀI TRÂU",
-    "englishName": "Jasmine",
-    "scientificName": "Tabernaemontana divaricata",
-    "otherNames": "Ervatamia coronaria, Ervatamia divaricata",
-    "description": "Cây tiểu mộc hay cây nhỏ cao 1-15m, nhánh mọc ngang gần song song với mặt đất. Lá lớn, đơn, mọc đối, hình ellip mũi mác, nhọn cả 2 đầu, màu xanh lá cây đậm, 3-15cm dài và 5cm rộng. Hoa màu trắng, thơm, 5 cánh, mọc ở nách lá hay đỉnh ngọn, đường kính 5cm. Quả nang màu cam hay đỏ tươi. Có nhựa trắng (latex) chảy ra khi bị tổn thương.",
-    "distribution": "Phân bố rộng khắp vùng nhiệt đới Châu Á, Châu Phi, Châu Mỹ",
-    "natureProperties": "Tính mát, đắng",
-    "usedParts": ["lá", "hoa", "rễ", "vỏ rễ", "nhựa mủ"],
-    "mainBenefits": [
-      "Chống oxy hóa, chống viêm",
-      "Giảm đau (đau răng, đau đầu, đau mắt)",
-      "Trừ giun sán",
-      "Chống huyết áp cao, lợi tiểu",
-      "Chữa sốt, kiết lỵ",
-      "Chống co giật, động kinh",
-      "Chữa bệnh về mắt",
-      "Trị ho",
-      "Bảo vệ dạ dày",
-      "Hỗ trợ điều trị tiểu đường"
-    ],
-    "warnings": {
-      "toxicity": "CÓ ĐỘC NHẸ (nhựa mủ)",
-      "sideEffects": [
-        "Nhựa mủ có thể gây kích ứng da",
-        "Cẩn thận khi dùng cho mắt"
+      "mainBenefits": [
+        "Trừ phong, tiêu viêm, sát trùng, kháng khuẩn",
+        "Chữa đái dắt, suy nhược thần kinh",
+        "Giảm đau đầu, đau lưng",
+        "Trị bệnh về phổi, ho, đau họng",
+        "Chữa táo bón (đặc biệt ở trẻ em)",
+        "Chống viêm nhiễm, thấp khớp",
+        "Làm lành vết thương, vết bỏng",
+        "Giải quyết tắc sữa ở phụ nữ cho con bú",
+        "Tăng sinh lực, làm sạch răng miệng"
       ],
-      "contraindications": [
-        "Không tự ý dùng thuốc cho mắt",
-        "Không dùng bên trong cơ thể tùy tiện"
+      "warnings": {
+        "toxicity": "CÓ THỂ GÂY HẠI nếu dùng quá nhiều",
+        "sideEffects": [
+          "Nguy cơ ung thư lưỡi, miệng, môi ở trẻ em",
+          "Gây khó tiêu",
+          "Viêm lợi"
+        ],
+        "contraindications": [
+          "Trẻ nhỏ không nên dùng nhiều",
+          "Phụ nữ cho con bú cẩn thận khi dùng"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến thầy thuốc"
+      },
+      "usage": {
+        "standardDose": "Tùy theo từng bệnh lý",
+        "specificUsage": [
+          {
+            "purpose": "Đái dắt",
+            "recipe": "Nước cốt lá + sữa loãng + ít đường"
+          },
+          {
+            "purpose": "Suy nhược thần kinh",
+            "recipe": "Nước cốt lá + mật ong, uống 2 lần/ngày"
+          },
+          {
+            "purpose": "Đau đầu",
+            "recipe": "Lá giã dập xoa thái dương"
+          },
+          {
+            "purpose": "Bệnh phổi",
+            "recipe": "Lá tẩm dầu mù tạt hơ ấm đắp ngực"
+          },
+          {
+            "purpose": "Táo bón trẻ em",
+            "recipe": "Viên đạn từ lá + thầu dầu đút hậu môn"
+          },
+          {
+            "purpose": "Đau họng",
+            "recipe": "Lá + hoa quả xay + mật ong ngậm/uống"
+          },
+          {
+            "purpose": "Vết thương",
+            "recipe": "Nước cốt rửa + lá tươi phủ lên"
+          },
+          {
+            "purpose": "Bỏng",
+            "recipe": "Lá hơ mềm + thầu dầu đắp, thay mỗi vài giờ"
+          },
+          {
+            "purpose": "Đau lưng",
+            "recipe": "Lá hơ nóng hoặc nước cốt + dầu dừa đắp"
+          },
+          {
+            "purpose": "Tắc sữa",
+            "recipe": "Lá tẩm dầu gió ủ ấm vào ngực"
+          }
+        ]
+      },
+      "notes": [
+        "Bộ phận dùng: Chủ yếu là lá, đôi khi dùng rễ",
+        "Không lạm dụng, đặc biệt với trẻ em",
+        "Có tác dụng phụ nếu dùng liều cao",
+        "Bảo quản lá ở nơi khô ráo",
+        "Nên dùng lá tươi để hiệu quả tốt nhất",
+        "Kết hợp với các dược liệu khác để tăng hiệu quả",
+        "Phân biệt với các loại cây dây leo khác"
       ],
-      "doctorAdvice": "BẮT BUỘC hỏi ý kiến chuyên gia y tế trước khi dùng"
+      "createdAt": "2025-05-12T15:20:00.000Z",
+      "updatedAt": "2025-05-12T15:20:00.000Z"
     },
-    "usage": {
-      "standardDose": "Tùy theo bộ phận và bệnh lý",
-      "specificUsage": [
-        {
-          "purpose": "Đau răng",
-          "recipe": "Lấy 1-2 miếng rễ tươi hoặc vỏ rễ, nhai kỹ 3-5 phút tại vị trí đau"
-        },
-        {
-          "purpose": "Trừ giun sán",
-          "recipe": "10g rễ tươi nghiền nát với 200ml nước, lọc lấy nước uống sáng lúc đói. Hoặc trộn với 1 thìa nước cốt chanh"
-        },
-        {
-          "purpose": "Đau mắt",
-          "recipe": "3-5 giọt nhựa mủ + 10ml dầu dừa sạch, nhỏ 1-2 giọt/lần, 2 lần/ngày (CẨN THẬN - phải bào chế tinh khiết)"
-        },
-        {
-          "purpose": "Bệnh ngoài da",
-          "recipe": "10-15 bông hoa tươi ép lấy nước + 5ml dầu dừa, bôi 2-3 lần/ngày"
-        },
-        {
-          "purpose": "Huyết áp cao",
-          "recipe": "15-20g lá tươi sắc với 500ml nước còn 200ml, uống 2 lần/ngày"
-        },
-        {
-          "purpose": "Ho",
-          "recipe": "10g lá khô sắc với 300ml nước còn 100ml, chia 3 lần uống trong ngày"
-        },
-        {
-          "purpose": "Vết thương",
-          "recipe": "Lấy 5-10 giọt nhựa mủ tươi, bôi trực tiếp lên vết thương sạch, ngày 2 lần"
-        }
-      ]
-    },
-    "notes": [
-      "Bộ phận dùng: Lá, hoa, rễ, vỏ rễ, nhựa mủ (cẩn thận khi dùng)",
-      "Cây thuộc họ Trước đào (Apocynaceae)",
-      "Nhựa mủ trắng (latex) cần sử dụng cẩn thận",
-      "Có nhiều alcaloide có hoạt tính sinh học",
-      "Được dùng trong y học truyền thống Trung Hoa, Ayurveda và Thái Lan",
-      "Nghiên cứu hiện đại cho thấy tiềm năng điều trị Alzheimer",
-      "Không tự ý sử dụng, đặc biệt là cho mắt và uống trong"
-    ],
-    "createdAt": "2025-05-12T15:30:00.000Z",
-    "updatedAt": "2025-05-12T15:30:00.000Z"
-  },
-  {
-    "id": "curry",
-    "vietnameseName": "LÁ CÀ RI",
-    "englishName": "Curry Leaves",
-    "scientificName": "Murraya koenigii",
-    "otherNames": "Curry, Lá curry",
-    "description": "Cây cà ri có nguồn gốc từ Ấn Độ. Lá có hương thơm đặc trưng, được sử dụng làm gia vị trong nhiều món ăn như cà ri gà, cà ri dê, mực chiên cà ri. Lá cà ri giàu alkaloid carbazole, có tính chất chống oxy hóa.",
-    "distribution": "Có nguồn gốc từ Ấn Độ, hiện được trồng nhiều nơi ở Đông Nam Á",
-    "natureProperties": "Hương thơm đặc trưng, tính ấm",
-    "usedParts": ["lá", "tinh dầu từ lá"],
-    "mainBenefits": [
-      "Giảm cholesterol xấu (LDL), tăng cholesterol tốt (HDL)",
-      "Tốt cho hệ tiêu hóa, điều trị tiêu chảy, táo bón, đầy hơi",
-      "Chống oxy hóa mạnh, bảo vệ tế bào khỏi gốc tự do",
-      "Hỗ trợ giảm cân, đốt cháy chất béo",
-      "Kiểm soát bệnh tiểu đường, giảm đường huyết",
-      "Ngăn rụng tóc và phục hồi tóc hư tổn",
-      "Chữa lành vết thương, vết cắt, vết bỏng",
-      "Giảm stress, hạn chế trầm cảm",
-      "Giảm nghén ở phụ nữ mang thai"
-    ],
-    "warnings": {
-      "toxicity": "KHÔNG ĐỘC (an toàn sử dụng)",
-      "sideEffects": [],
-      "contraindications": [],
-      "doctorAdvice": "An toàn cho hầu hết mọi người"
-    },
-    "usage": {
-      "standardDose": "10-15 lá tươi/ngày hoặc 5-8g lá khô",
-      "specificUsage": [
-        {
-          "purpose": "Giảm cholesterol",
-          "recipe": "8-10 lá tươi ăn sống buổi sáng lúc đói, hoặc sắc 5g lá khô với 200ml nước, uống 2 lần/ngày"
-        },
-        {
-          "purpose": "Hỗ trợ tiêu hóa",
-          "recipe": "5-7 lá tươi nhai sau bữa ăn, hoặc thêm 3-5 lá vào món canh"
-        },
-        {
-          "purpose": "Giảm cân",
-          "recipe": "10 lá tươi + 200ml nước ấm, xay nhuyễn uống buổi sáng trước ăn 30 phút"
-        },
-        {
-          "purpose": "Kiểm soát tiểu đường",
-          "recipe": "15 lá tươi ăn sống chia 3 lần/ngày, hoặc 8g lá khô sắc nước uống"
-        },
-        {
-          "purpose": "Chăm sóc tóc",
-          "recipe": "20 lá tươi + 200ml nước, đun sôi, để nguội gội đầu, hoặc trộn 10 giọt tinh dầu lá cà ri với dầu dừa xoa da đầu"
-        },
-        {
-          "purpose": "Giảm stress, trầm cảm",
-          "recipe": "Nhỏ 5-7 giọt tinh dầu lá cà ri vào đèn xông, xông hít 15-20 phút"
-        },
-        {
-          "purpose": "Chữa nghén",
-          "recipe": "3-5 lá tươi nhai chậm hoặc ngửi hương lá tươi khi buồn nôn"
-        }
-      ]
-    },
-    "notes": [
-      "Bộ phận dùng: Chủ yếu là lá, có thể chiết xuất tinh dầu",
-      "Là một loại gia vị phổ biến trong ẩm thực Ấn Độ và Đông Nam Á",
-      "Giàu vitamin B6 và chất chống oxy hóa",
-      "Có thể sử dụng lá tươi hoặc khô",
-      "Tinh dầu lá cà ri được dùng trong hương liệu",
-      "An toàn cho phụ nữ mang thai",
-      "Không gây tác dụng phụ khi sử dụng liều thông thường"
-    ],
-    "createdAt": "2025-05-12T15:40:00.000Z",
-    "updatedAt": "2025-05-12T15:40:00.000Z"
-  },
-  {
-    "id": "drumstick",
-    "vietnameseName": "CHÙM NGÂY",
-    "englishName": "Moringa",
-    "scientificName": "Moringa oleifera Lam.",
-    "otherNames": "",
-    "description": "Cây mọc hoang dại trên các đồi núi. Tất cả các bộ phận của cây đều có công dụng trong chăm sóc sức khỏe. Lá, hoa, quả, hạt, rễ đều được sử dụng làm thuốc và thực phẩm bổ dưỡng.",
-    "distribution": "Mọc hoang ở Tịnh Biên, Tri Tôn (An Giang), được trồng ở một số tỉnh Nam bộ",
-    "natureProperties": "Không rõ",
-    "usedParts": ["lá", "hoa", "quả", "hạt", "rễ", "vỏ cây"],
-    "mainBenefits": [
-      "Điều trị cổ trướng, thấp khớp, vết cắn có nọc độc",
-      "Kích thích tim và hệ tuần hoàn",
-      "Diệt khuẩn đường tiêu hóa, làm sạch nước ô nhiễm (hạt)",
-      "Chữa sốt, viêm phế quản, viêm da, mắt, tai",
-      "Diệt giun sán",
-      "Giảm cholesterol, ổn định huyết áp",
-      "Bảo vệ gan, giảm cân, điều hòa đường huyết",
-      "Chống xơ vữa động mạch, kháng viêm, kháng ung thư",
-      "Tăng tiết sữa ở phụ nữ cho con bú",
-      "Phòng và điều trị thiếu máu",
-      "Cung cấp dinh dưỡng cho trẻ suy dinh dưỡng"
-    ],
-    "warnings": {
-      "toxicity": "KHÔNG ĐỘC (được WHO và FAO khuyến nghị)",
-      "sideEffects": [],
-      "contraindications": [],
-      "doctorAdvice": "An toàn cho phụ nữ mang thai, cho con bú và trẻ em"
-    },
-    "usage": {
-      "standardDose": "Tùy theo đối tượng và mục đích sử dụng",
-      "specificUsage": [
-        {
-          "purpose": "Bổ sung dinh dưỡng cho trẻ 1-3 tuổi",
-          "recipe": "20g lá tươi mỗi ngày, cung cấp 90% calcium, 100% vitamin C, vitamin A cần thiết"
-        },
-        {
-          "purpose": "Bổ sung cho bà mẹ mang thai và cho con bú",
-          "recipe": "100g lá tươi mỗi ngày, cung cấp đủ calcium, vitamin C, A, E, sắt cần thiết"
-        },
-        {
-          "purpose": "Chữa sốt, viêm phế quản",
-          "recipe": "10-15g lá khô sắc với 300ml nước, uống 2-3 lần/ngày"
-        },
-        {
-          "purpose": "Giảm cholesterol, huyết áp",
-          "recipe": "5-10g bột lá với nước ấm, uống 2 lần/ngày trước bữa ăn"
-        },
-        {
-          "purpose": "Tăng tiết sữa",
-          "recipe": "50g lá tươi nấu canh ăn hàng ngày"
-        },
-        {
-          "purpose": "Làm sạch nước",
-          "recipe": "Hạt nghiền nhỏ cho vào nước, lắng 30 phút rồi lọc"
-        },
-        {
-          "purpose": "Điều trị thiếu máu",
-          "recipe": "30-50g lá tươi ăn sống hoặc nấu canh mỗi ngày"
-        },
-        {
-          "purpose": "Diệt giun sán",
-          "recipe": "10g lá khô sắc nước uống sáng lúc đói"
-        }
-      ]
-    },
-    "notes": [
-      "Bộ phận dùng: Tất cả bộ phận (lá, hoa, quả, hạt, rễ)",
-      "Được WHO và FAO xem là giải pháp ưu việt cho bà mẹ thiếu sữa và trẻ suy dinh dưỡng",
-      "Tất cả bộ phận của cây đều có công dụng dược lý",
-      "Giàu vitamin A, C, E, calcium, sắt, protein",
-      "Hạt có khả năng lọc nước độc đáo",
-      "Lá có thể dùng làm rau ăn hàng ngày",
-      "Chứa nhiều hợp chất có hoạt tính sinh học như flavonoid, alkaloid, tannin"
-    ],
-    "createdAt": "2025-05-12T15:50:00.000Z",
-    "updatedAt": "2025-05-12T15:50:00.000Z"
-  },
-  {
-    "id": "fenugreek_seed",
-    "vietnameseName": "CỎ CÀ RI",
-    "englishName": "Fenugreek Seed",
-    "scientificName": "Trigonella foenum-graecum",
-    "otherNames": "Khổ đậu, hồ lô ba",
-    "description": "Thảo mộc có nguồn gốc từ khu vực Địa Trung Hải, Nam Âu và Tây Á. Thuộc họ đậu nên có rễ chùm, thân phân nhánh, lá màu xanh với cấu trúc gồm 3 lá nhỏ. Quả dài và thon, bên trong chứa hạt màu vàng hình thoi. Thường sử dụng phần lá, cành, hạt và rễ như dược liệu và gia vị. Trong ẩm thực Ấn Độ, hạt được nghiền thành bột để chế biến món nướng hoặc thêm vào sốt cà ri.",
-    "distribution": "Có nguồn gốc từ Địa Trung Hải, Nam Âu và Tây Á, được trồng ở Việt Nam",
-    "natureProperties": "Không rõ",
-    "usedParts": ["hạt", "lá", "cành", "rễ"],
-    "mainBenefits": [
-      "Giảm đường huyết ở người tiểu đường",
-      "Cải thiện độ nhạy insulin",
-      "Tăng cường khả năng tình dục, đặc biệt ở nam giới lớn tuổi",
-      "Cải thiện triệu chứng sau mãn kinh ở phụ nữ",
-      "Tăng lượng sữa mẹ sau sinh",
-      "Hỗ trợ giảm cân nhờ tạo cảm giác no",
-      "Giảm viêm nhờ chứa flavonoid chống oxy hóa",
-      "Giảm cholesterol và cải thiện huyết áp",
-      "Giảm nguy cơ mắc bệnh tim mạch",
-      "Kích thích sự thèm ăn"
-    ],
-    "warnings": {
-      "toxicity": "CÓ TÁC DỤNG PHỤ",
-      "sideEffects": [
-        "Tiêu chảy, đầy hơi",
-        "Chóng mặt, nhức đầu",
-        "Nghẹt mũi, ho, sưng mặt",
-        "Phản ứng dị ứng (phát ban, ngứa, khó thở)",
-        "Mất ý thức ở trẻ em"
+    {
+      "id": "crape_jasmine",
+      "vietnameseName": "LÀI TRÂU",
+      "englishName": "Crape Jasmine",
+      "scientificName": "Tabernaemontana divaricata",
+      "otherNames": "Ervatamia coronaria, Ervatamia divaricata",
+      "description": "Cây tiểu mộc hay cây nhỏ cao 1-15m, nhánh mọc ngang gần song song với mặt đất. Lá lớn, đơn, mọc đối, hình ellip mũi mác, nhọn cả 2 đầu, màu xanh lá cây đậm, 3-15cm dài và 5cm rộng. Hoa màu trắng, thơm, 5 cánh, mọc ở nách lá hay đỉnh ngọn, đường kính 5cm. Quả nang màu cam hay đỏ tươi. Có nhựa trắng (latex) chảy ra khi bị tổn thương.",
+      "distribution": "Phân bố rộng khắp vùng nhiệt đới Châu Á, Châu Phi, Châu Mỹ",
+      "natureProperties": "Tính mát, đắng",
+      "usedParts": [
+        "lá",
+        "hoa",
+        "rễ",
+        "vỏ rễ",
+        "nhựa mủ"
       ],
-      "contraindications": [
-        "Phụ nữ mang thai (có thể gây dị tật và co thắt sớm)",
-        "Trẻ em (tuyệt đối không dùng)",
-        "Người có tiền sử dị ứng với đậu phộng"
+      "mainBenefits": [
+        "Chống oxy hóa, chống viêm",
+        "Giảm đau (đau răng, đau đầu, đau mắt)",
+        "Trừ giun sán",
+        "Chống huyết áp cao, lợi tiểu",
+        "Chữa sốt, kiết lỵ",
+        "Chống co giật, động kinh",
+        "Chữa bệnh về mắt",
+        "Trị ho",
+        "Bảo vệ dạ dày",
+        "Hỗ trợ điều trị tiểu đường"
       ],
-      "doctorAdvice": "Nên tham khảo ý kiến bác sĩ trước khi sử dụng"
+      "warnings": {
+        "toxicity": "CÓ ĐỘC NHẸ (nhựa mủ)",
+        "sideEffects": [
+          "Nhựa mủ có thể gây kích ứng da",
+          "Cẩn thận khi dùng cho mắt"
+        ],
+        "contraindications": [
+          "Không tự ý dùng thuốc cho mắt",
+          "Không dùng bên trong cơ thể tùy tiện"
+        ],
+        "doctorAdvice": "BẮT BUỘC hỏi ý kiến chuyên gia y tế trước khi dùng"
+      },
+      "usage": {
+        "standardDose": "Tùy theo bộ phận và bệnh lý",
+        "specificUsage": [
+          {
+            "purpose": "Đau răng",
+            "recipe": "Lấy 1-2 miếng rễ tươi hoặc vỏ rễ, nhai kỹ 3-5 phút tại vị trí đau"
+          },
+          {
+            "purpose": "Trừ giun sán",
+            "recipe": "10g rễ tươi nghiền nát với 200ml nước, lọc lấy nước uống sáng lúc đói. Hoặc trộn với 1 thìa nước cốt chanh"
+          },
+          {
+            "purpose": "Đau mắt",
+            "recipe": "3-5 giọt nhựa mủ + 10ml dầu dừa sạch, nhỏ 1-2 giọt/lần, 2 lần/ngày (CẨN THẬN - phải bào chế tinh khiết)"
+          },
+          {
+            "purpose": "Bệnh ngoài da",
+            "recipe": "10-15 bông hoa tươi ép lấy nước + 5ml dầu dừa, bôi 2-3 lần/ngày"
+          },
+          {
+            "purpose": "Huyết áp cao",
+            "recipe": "15-20g lá tươi sắc với 500ml nước còn 200ml, uống 2 lần/ngày"
+          },
+          {
+            "purpose": "Ho",
+            "recipe": "10g lá khô sắc với 300ml nước còn 100ml, chia 3 lần uống trong ngày"
+          },
+          {
+            "purpose": "Vết thương",
+            "recipe": "Lấy 5-10 giọt nhựa mủ tươi, bôi trực tiếp lên vết thương sạch, ngày 2 lần"
+          }
+        ]
+      },
+      "notes": [
+        "Bộ phận dùng: Lá, hoa, rễ, vỏ rễ, nhựa mủ (cẩn thận khi dùng)",
+        "Cây thuộc họ Trước đào (Apocynaceae)",
+        "Nhựa mủ trắng (latex) cần sử dụng cẩn thận",
+        "Có nhiều alcaloide có hoạt tính sinh học",
+        "Được dùng trong y học truyền thống Trung Hoa, Ayurveda và Thái Lan",
+        "Nghiên cứu hiện đại cho thấy tiềm năng điều trị Alzheimer",
+        "Không tự ý sử dụng, đặc biệt là cho mắt và uống trong"
+      ],
+      "createdAt": "2025-05-12T15:30:00.000Z",
+      "updatedAt": "2025-05-12T15:30:00.000Z"
     },
-    "usage": {
-      "standardDose": "Không quá 50g/ngày",
-      "specificUsage": [
-        {
-          "purpose": "Điều trị tiểu đường",
-          "recipe": "5-10g bột hạt cỏ cà ri thêm vào 1-2 bữa ăn hàng ngày"
-        },
-        {
-          "purpose": "Giảm đau bụng kinh",
-          "recipe": "1800-2700mg bột hạt cỏ cà ri mỗi ngày trong 3 ngày đầu kinh nguyệt, sau đó 900mg x 3 lần/ngày trong 2 chu kỳ còn lại"
-        },
-        {
-          "purpose": "Cải thiện suy giảm tình dục",
-          "recipe": "600mg chiết xuất hạt mỗi ngày trong 2 chu kỳ kinh nguyệt"
-        },
-        {
-          "purpose": "Tăng đáp ứng kích thích tình dục",
-          "recipe": "600mg chiết xuất hạt mỗi ngày trong 6-12 tuần"
-        },
-        {
-          "purpose": "Thêm vào thức ăn",
-          "recipe": "15g hạt thêm vào bánh, nước sốt, sữa chua, sinh tố hoặc rắc lên thức ăn"
-        },
-        {
-          "purpose": "Pha trà",
-          "recipe": "1 thìa cafe bột hạt pha với 250ml nước sôi, khuấy đều và uống"
-        },
-        {
-          "purpose": "Tăng lượng sữa mẹ",
-          "recipe": "Uống viên nang hoặc trà Fenugreek sau khi sinh"
-        },
-        {
-          "purpose": "Giảm cân",
-          "recipe": "Uống trà cỏ cà ri trước bữa ăn để tạo cảm giác no"
-        }
-      ]
+    {
+      "id": "curry",
+      "vietnameseName": "LÁ CÀ RI",
+      "englishName": "Curry Leaves",
+      "scientificName": "Murraya koenigii",
+      "otherNames": "Curry, Lá curry",
+      "description": "Cây cà ri có nguồn gốc từ Ấn Độ. Lá có hương thơm đặc trưng, được sử dụng làm gia vị trong nhiều món ăn như cà ri gà, cà ri dê, mực chiên cà ri. Lá cà ri giàu alkaloid carbazole, có tính chất chống oxy hóa.",
+      "distribution": "Có nguồn gốc từ Ấn Độ, hiện được trồng nhiều nơi ở Đông Nam Á",
+      "natureProperties": "Hương thơm đặc trưng, tính ấm",
+      "usedParts": [
+        "lá",
+        "tinh dầu từ lá"
+      ],
+      "mainBenefits": [
+        "Giảm cholesterol xấu (LDL), tăng cholesterol tốt (HDL)",
+        "Tốt cho hệ tiêu hóa, điều trị tiêu chảy, táo bón, đầy hơi",
+        "Chống oxy hóa mạnh, bảo vệ tế bào khỏi gốc tự do",
+        "Hỗ trợ giảm cân, đốt cháy chất béo",
+        "Kiểm soát bệnh tiểu đường, giảm đường huyết",
+        "Ngăn rụng tóc và phục hồi tóc hư tổn",
+        "Chữa lành vết thương, vết cắt, vết bỏng",
+        "Giảm stress, hạn chế trầm cảm",
+        "Giảm nghén ở phụ nữ mang thai"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC (an toàn sử dụng)",
+        "sideEffects": [],
+        "contraindications": [],
+        "doctorAdvice": "An toàn cho hầu hết mọi người"
+      },
+      "usage": {
+        "standardDose": "10-15 lá tươi/ngày hoặc 5-8g lá khô",
+        "specificUsage": [
+          {
+            "purpose": "Giảm cholesterol",
+            "recipe": "8-10 lá tươi ăn sống buổi sáng lúc đói, hoặc sắc 5g lá khô với 200ml nước, uống 2 lần/ngày"
+          },
+          {
+            "purpose": "Hỗ trợ tiêu hóa",
+            "recipe": "5-7 lá tươi nhai sau bữa ăn, hoặc thêm 3-5 lá vào món canh"
+          },
+          {
+            "purpose": "Giảm cân",
+            "recipe": "10 lá tươi + 200ml nước ấm, xay nhuyễn uống buổi sáng trước ăn 30 phút"
+          },
+          {
+            "purpose": "Kiểm soát tiểu đường",
+            "recipe": "15 lá tươi ăn sống chia 3 lần/ngày, hoặc 8g lá khô sắc nước uống"
+          },
+          {
+            "purpose": "Chăm sóc tóc",
+            "recipe": "20 lá tươi + 200ml nước, đun sôi, để nguội gội đầu, hoặc trộn 10 giọt tinh dầu lá cà ri với dầu dừa xoa da đầu"
+          },
+          {
+            "purpose": "Giảm stress, trầm cảm",
+            "recipe": "Nhỏ 5-7 giọt tinh dầu lá cà ri vào đèn xông, xông hít 15-20 phút"
+          },
+          {
+            "purpose": "Chữa nghén",
+            "recipe": "3-5 lá tươi nhai chậm hoặc ngửi hương lá tươi khi buồn nôn"
+          }
+        ]
+      },
+      "notes": [
+        "Bộ phận dùng: Chủ yếu là lá, có thể chiết xuất tinh dầu",
+        "Là một loại gia vị phổ biến trong ẩm thực Ấn Độ và Đông Nam Á",
+        "Giàu vitamin B6 và chất chống oxy hóa",
+        "Có thể sử dụng lá tươi hoặc khô",
+        "Tinh dầu lá cà ri được dùng trong hương liệu",
+        "An toàn cho phụ nữ mang thai",
+        "Không gây tác dụng phụ khi sử dụng liều thông thường"
+      ],
+      "createdAt": "2025-05-12T15:40:00.000Z",
+      "updatedAt": "2025-05-12T15:40:00.000Z"
     },
-    "notes": [
-      "Bộ phận dùng: Chủ yếu là hạt, cũng dùng lá, cành, rễ",
-      "Thực phẩm bổ sung Fenugreek có thể ở dạng viên thuốc, bột hoặc pha đồ uống",
-      "Hạt là phần quan trọng nhất, chứa nhiều hoạt chất có lợi",
-      "Chứa khoảng 48% chất xơ giúp điều hòa cholesterol",
-      "Khi sử dụng cần 'lắng nghe' cơ thể để điều chỉnh liều lượng phù hợp",
-      "Có mối liên quan với đậu phộng về mặt dị ứng",
-      "Hiệu quả tốt nhất trong kiểm soát glucose và cải thiện khả năng tình dục",
-      "Liên hệ bác sĩ ngay khi có triệu chứng nghiêm trọng"
-    ],
-    "createdAt": "2025-05-12T16:00:00.000Z",
-    "updatedAt": "2025-05-12T16:00:00.000Z"
-  },
-  {
-  "id": "guava",
-  "vietnameseName": "ỔI",
-  "englishName": "Guava",
-  "scientificName": "Psidium guajava",
-  "otherNames": "Hoàng đỗ tử (Trung Quốc), Guayabo (Tây Ban Nha), Goyave (Pháp), Goiaba (Bồ Đào Nha), Pichi, Posh, Enandi (Mexico, Mỹ)",
-  "description": "Cây thân gỗ nhỏ cao tới 13m, vỏ thân nhẵn màu xám, dễ bong thành mảng nhỏ. Lá hình bầu dục hoặc trứng thuôn dài, kích thước 6-12cm x 3.5-6cm, mặt trên hơi ráp, mặt dưới có lông mịn. Hoa trắng mọc đơn lẻ hoặc cụm 2-3 bông. Quả có nhiều hình dạng (tròn, bầu dục, hình lê), dài 3-8cm, thịt quả trắng, vàng nhạt hoặc hồng nhạt, chứa nhiều hạt nhỏ cứng. Cây có nguồn gốc từ châu Mỹ, được phát hiện hơn 2000 năm trước ở Peru.",
-  "distribution": "Có nguồn gốc từ châu Mỹ, hiện phân bố ở 86 quốc gia vùng nhiệt đới và cận nhiệt đới. Tại Việt Nam trồng rộng rãi khắp cả nước",
-  "natureProperties": "Lá: Vị đắng, chát, tính bình. Quả chín: Vị ngọt, chát, tính bình. Rễ và vỏ rễ: Vị chát, hơi đắng, tính bình",
-  "usedParts": ["quả tươi", "quả khô", "hạt", "lá", "búp non", "rễ", "vỏ rễ", "vỏ thân"],
-  "mainBenefits": [
-    "Tăng cường hệ miễn dịch nhờ vitamin C cao",
-    "Hỗ trợ tiêu hóa, ngăn ngừa táo bón",
-    "Kiểm soát đường huyết ở người tiểu đường",
-    "Tốt cho tim mạch, giảm cholesterol xấu",
-    "Cải thiện làn da, kích thích sản xuất collagen",
-    "Hỗ trợ giảm cân",
-    "Tăng cường trí não, cải thiện trí nhớ",
-    "Giảm căng thẳng",
-    "Cầm tiêu chảy, cầm máu",
-    "Giải độc, chữa viêm",
-    "Làm lành vết thương"
-  ],
-  "warnings": {
-    "toxicity": "KHÔNG ĐỘC (an toàn sử dụng)",
-    "sideEffects": [
-      "Ổi xanh ăn nhiều có thể gây táo bón",
-      "Người có vấn đề dạ dày nên hạn chế ăn ổi chưa chín"
-    ],
-    "contraindications": [],
-    "doctorAdvice": "An toàn cho hầu hết mọi người, kể cả phụ nữ mang thai"
-  },
-  "usage": {
-    "standardDose": "Quả tươi: 200-250g/ngày. Lá khô: 6-20g/ngày",
-    "specificUsage": [
-      {
-        "purpose": "Tiêu chảy do lạnh",
-        "recipe": "12g búp ổi sao vàng + 8g gừng tươi nướng cháy vỏ, sắc với 500ml nước còn 200ml, uống 2 lần/ngày x 3-5 ngày"
-      },
-      {
-        "purpose": "Viêm dạ dày cấp và mãn tính",
-        "recipe": "Lá ổi non sấy khô tán bột, uống 6g/lần với nước ấm, 2 lần/ngày"
-      },
-      {
-        "purpose": "Rối loạn tiêu hóa ở trẻ em (từ 1 tuổi)",
-        "recipe": "30g lá ổi + 30g tây thảo + 15-30g gạo tẻ sao + 1-12g hồng trà, sắc 1 lít nước còn 500ml, chia 2 lần uống/ngày"
-      },
-      {
-        "purpose": "Đau răng sâu răng",
-        "recipe": "Vỏ rễ cây ổi + dấm chua, sắc lấy nước ngậm nhiều lần/ngày"
-      },
-      {
-        "purpose": "Thổ tả",
-        "recipe": "Lá ổi + lá vối + lá sim + hoắc hương (lượng bằng nhau), hãm 500ml nước sôi, uống như trà trong ngày"
-      },
-      {
-        "purpose": "Tiểu đường",
-        "recipe": "250g quả ổi tươi rửa sạch, thái miếng, ép lấy nước, chia 2 lần uống/ngày"
-      },
-      {
-        "purpose": "Băng huyết",
-        "recipe": "Ép 250g quả ổi lấy nước, chia 2 lần uống/ngày. Hoặc ăn 200g quả ổi mỗi ngày"
-      },
-      {
-        "purpose": "Mụn nhọt mới phát",
-        "recipe": "Lá ổi non + lá đào rửa sạch, giã nát đắp lên vùng mụn nhọt, làm nhiều lần/ngày"
-      },
-      {
-        "purpose": "Rôm sảy, mẩn ngứa",
-        "recipe": "Một nắm lá ổi nấu nước, để nguội rồi tắm hàng ngày"
-      },
-      {
-        "purpose": "Vết thương xây xát nhẹ",
-        "recipe": "100g búp ổi sắc đặc, dùng nước thuốc còn ấm ngâm tay chân, 2-3 lần/ngày"
-      },
-      {
-        "purpose": "Giải ngộ độc ba đậu",
-        "recipe": "10g quả ổi khô + 10g bạch truật sao + 10g vỏ cây ổi, sắc với 1/2 bát nước còn 1 bát, chia vài lần uống/ngày"
-      }
-    ]
-  },
-  "notes": [
-    "Bộ phận dùng: Búp non và lá non dùng tươi hay phơi/sấy khô là phổ biến nhất",
-    "Thành phần: Quả chứa pectin và vitamin C cao; lá chứa 7-10% tanin pyrogalic, 3% nhựa, 0.36% tinh dầu",
-    "Cây sinh trưởng tốt ở nhiệt độ 23-28°C, lượng mưa 1000-2000mm/năm",
-    "Kém chịu lạnh: cây non chết ở -1°C, cây trưởng thành chết ở -4°C",
-    "Thu hoạch: Quả mùa hè chín sau 60-70 ngày, quả cuối thu chín sau 80-120 ngày",
-    "Nguồn vitamin C cao hơn cả cam",
-    "Có chỉ số đường huyết thấp, phù hợp cho người tiểu đường",
-    "Chứa axit folic tốt cho phụ nữ mang thai"
-  ],
-  "createdAt": "2025-05-12T16:10:00.000Z",
-  "updatedAt": "2025-05-12T16:10:00.000Z"
-},
-{
-  "id": "hibiscus",
-  "vietnameseName": "DÂM BỤT",
-  "englishName": "Chinese Hibiscus",
-  "scientificName": "Hibiscus rosa-sinensis L.",
-  "otherNames": "Xuyên can bì, chu cận, phù tang, phật tang, bông bụp, hoa dâng Bụt, hồng bụt, bông lồng đèn",
-  "description": "Cây bụi thường xanh, cao 1-5m tùy loài. Lá đơn, mọc cách, phiến lá có răng cưa. Hoa lớn, nhiều màu (đỏ, hồng, vàng, cam) với cánh đơn hoặc kép. Cây có nguồn gốc từ Đông Á, nay có mặt tại nhiều quốc gia. Xưa mọc hoang hoặc trồng làm hàng rào, nay chủ yếu trồng làm cảnh và có nhiều giống lai tạo khác nhau.",
-  "distribution": "Có nguồn gốc từ Đông Á, nay phân bố rộng khắp thế giới, phổ biến ở Việt Nam",
-  "natureProperties": "Tính bình, vị ngọt hơi đắng, cả hoa lẫn lá đều nhớt",
-  "usedParts": ["lá tươi", "hoa tươi", "hoa khô", "vỏ rễ"],
-  "mainBenefits": [
-    "Giảm cholesterol xấu và hạ huyết áp",
-    "Chữa cảm sốt, cảm cúm",
-    "Làm đẹp da, tẩy da chết, loại bỏ mụn đầu đen",
-    "Chữa rụng tóc, kích thích mọc tóc",
-    "Lợi tiểu, giải độc",
-    "Chống oxy hóa, phòng bệnh mãn tính",
-    "Hỗ trợ giảm cân, giữ dáng",
-    "Cải thiện sức khỏe tinh thần, giảm stress",
-    "Ổn định đường huyết",
-    "Tăng cường miễn dịch, chống viêm",
-    "Giúp vết thương mau lành",
-    "Chữa mất ngủ, hồi hộp"
-  ],
-  "warnings": {
-    "toxicity": "KHÔNG ĐỘC",
-    "sideEffects": [
-      "Không nên thay thế hoàn toàn nước lọc bằng trà dâm bụt",
-      "Không nên dùng quá nhiều"
-    ],
-    "contraindications": [],
-    "doctorAdvice": "Nên tham khảo ý kiến thầy thuốc khi có vấn đề sức khỏe"
-  },
-  "usage": {
-    "standardDose": "Hoa khô: 10-20g/ngày; Lá tươi: tùy bệnh; Vỏ rễ khô: 8-12g/ngày",
-    "specificUsage": [
-      {
-        "purpose": "Hồi hộp, khó ngủ",
-        "recipe": "15-20g hoa dâm bụt khô hãm uống thay trà hàng ngày. Hoặc 15g lá + 12g hoa nhài sắc uống chiều tối x 7-10 ngày"
-      },
-      {
-        "purpose": "Mụn nhọt có mủ",
-        "recipe": "Hoa tươi + lá trầu không + lá thồm lồm mỗi thứ 50g + vài hạt muối giã nát đắp lên mụn nhọt"
-      },
-      {
-        "purpose": "Tê mỏi chân tay",
-        "recipe": "Lá đào + lá dâm bụt + lá thài lài tía + lá mận + lá si mỗi loại 30g phơi khô, sao vàng, ngâm rượu 15 ngày rồi xoa bóp"
-      },
-      {
-        "purpose": "Rong kinh",
-        "recipe": "40g rễ dâm bụt + 30g huyết dụ sắc uống liền 7 ngày"
-      },
-      {
-        "purpose": "Kiết lị",
-        "recipe": "10 bông dâm bụt bỏ cuống, hấp cách thủy với 1 thìa đường đen, ăn cả nước lẫn xác"
-      },
-      {
-        "purpose": "Quai bị",
-        "recipe": "Lá tươi 50g + 5-6 củ hành giã nhỏ, thêm 100ml nước sôi nguội, vắt lấy nước uống. Bã đắp chỗ sưng x 3-5 ngày"
-      },
-      {
-        "purpose": "Sỏi thận canxi",
-        "recipe": "Hoa tươi 30g + vài hạt muối giã nát vắt nước (thêm 100ml nước để vắt kiệt), uống 2 lần/ngày x 1 tháng"
-      },
-      {
-        "purpose": "Tiểu đường type 2",
-        "recipe": "Ăn 1 hoa chưa nở mỗi sáng trước bữa ăn, liên tục 45 ngày"
-      },
-      {
-        "purpose": "Mất ngủ",
-        "recipe": "Hoa khô 10g hãm nước uống thay trà buổi chiều và tối"
-      },
-      {
-        "purpose": "Giảm cân",
-        "recipe": "Uống trà hoa dâm bụt thường xuyên sau bữa ăn"
-      },
-      {
-        "purpose": "Viêm dạ dày ruột, đại tiện ra máu",
-        "recipe": "Vỏ rễ khô 8-12g sắc uống 3 lần/ngày"
-      }
-    ]
-  },
-  "notes": [
-    "Thành phần lá: chất nhầy tự nhiên, caroten, beta-sitosterol",
-    "Thành phần hoa: flavonoid, alcaloid, vitamin C, B1, B2, beta carotene, sterol",
-    "Chiết xuất hoa có thể giảm 22% cholesterol toàn phần",
-    "Giảm 40-46% đường huyết sau 21 ngày sử dụng",
-    "Thu hái lá và rễ quanh năm",
-    "Hoa phơi trong râm (âm can) cho khô",
-    "Trà hoa dâm bụt tăng cường miễn dịch, chống lão hóa, kích thích mọc tóc",
-    "Polyphenol trong cây có tác dụng chống viêm và bảo vệ thần kinh"
-  ],
-  "createdAt": "2025-05-12T16:20:00.000Z",
-  "updatedAt": "2025-05-12T16:20:00.000Z"
-},
-{
-  "id": "indian_beech",
-  "vietnameseName": "DÂY LIM",
-  "englishName": "Indian Beech",
-  "scientificName": "Pongamia pinnata",
-  "otherNames": "Dây mấu, cây bánh dày, cây nim, khổ sâm hoa, Cytisus pinnatus, Pongamia glabra, pongam oil tree, lionge tree",
-  "description": "Cây gỗ lớn cao 15-20m, đường kính thân 70-80cm. Cành mọc tỏa rộng, vỏ trơn nhẵn màu lục xám, gỗ màu vàng nâu nhạt. Lá kép dài 20-25cm, lá chét 5-9, hình thuôn hoặc trái xoan, dài 7-15cm. Hoa mọc thành chùm dài 10-15cm, màu trắng, tím hoặc hồng. Quả nhẵn dài 3.5-5cm, chứa 1-2 hạt. Cây có bộ rễ ăn sâu, ưa sáng, thường mọc ven rừng kín thường xanh.",
-  "distribution": "Phân bố rộng khắp vùng nhiệt đới châu Á (Ấn Độ, Myanmar, Trung Quốc, Đông Nam Á) đến Australia. Ở Việt Nam phân bố từ Quảng Ninh đến các tỉnh phía Nam",
-  "natureProperties": "Tính đại hàn, có độc (theo TQ). Ở Ấn Độ: rễ và vỏ vị đắng cay, tính nóng; lá tính nóng; quả và hạt vị đắng cay, tính nóng",
-  "usedParts": ["hạt", "rễ", "vỏ rễ", "vỏ thân", "lá", "hoa", "dầu hạt"],
-  "mainBenefits": [
-    "Chống đái tháo đường (giảm glucose huyết)",
-    "Chống loét dạ dày tá tràng",
-    "Hạ sốt, giảm đau, chống viêm",
-    "Kháng vi khuẩn, kháng virus (đặc biệt virus Herpes)",
-    "Chống oxy hóa mạnh",
-    "Bảo vệ thận khỏi tổn thương",
-    "Diệt chấy và trứng chấy",
-    "Chữa các bệnh ngoài da (ghẻ, eczema, vẩy nến)",
-    "Chữa thấp khớp",
-    "Sát trùng vết thương",
-    "Trừ giun sán",
-    "Lợi tiểu, giải độc"
-  ],
-  "warnings": {
-    "toxicity": "CÓ ĐỘC",
-    "sideEffects": [
-      "Ở Việt Nam thường chỉ dùng ngoài vì có độc",
-      "Dùng trong có thể gây ngộ độc"
-    ],
-    "contraindications": [
-      "Phụ nữ mang thai (có thể gây sẩy thai)",
-      "Không dùng trong với liều cao"
-    ],
-    "doctorAdvice": "Cần thận trọng khi dùng, tránh dùng trong, nên tham khảo ý kiến thầy thuốc"
-  },
-  "usage": {
-    "standardDose": "Chủ yếu dùng ngoài. Vỏ rễ khô (nếu dùng trong): 8-12g/ngày",
-    "specificUsage": [
-      {
-        "purpose": "Chữa eczema",
-        "recipe": "Dầu hạt dây lim trộn với kẽm oxyd rồi bôi lên"
-      },
-      {
-        "purpose": "Đau cơ, đau khớp, vẩy nến",
-        "recipe": "Dầu hạt dây lim trộn với dịch chanh vắt, bôi xoa lên"
-      },
-      {
-        "purpose": "Bệnh lậu",
-        "recipe": "Dầu hạt dây lim + sữa dừa + nước vôi trong (đồng thể tích), lắc kỹ rồi bôi"
-      },
-      {
-        "purpose": "Bệnh ở da đầu, vẩy nến",
-        "recipe": "Dầu hạt dây lim + nước vôi trong + dịch chanh vắt (đồng thể tích), trộn đều bôi lên"
-      },
-      {
-        "purpose": "Ghẻ, ngứa, mụn nhọt",
-        "recipe": "Hạt giã nát đắp ngoài hoặc dùng dầu hạt bôi"
-      },
-      {
-        "purpose": "Vết thương, loét da",
-        "recipe": "Dịch rễ dùng rửa vết hoại tử. Lá tươi giã nát đắp vết loét"
-      },
-      {
-        "purpose": "Đái tháo đường",
-        "recipe": "Hoa sắc uống hoặc tán bột uống (ở Ấn Độ)"
-      },
-      {
-        "purpose": "Sâu răng",
-        "recipe": "Dịch rễ ngậm rồi nhổ đi (ở Sri Lanka)"
-      },
-      {
-        "purpose": "Rắn cắn",
-        "recipe": "Hạt và rễ tươi nghiền với nước hoặc nước tiểu người đắp lên"
-      },
-      {
-        "purpose": "Thấp khớp",
-        "recipe": "Dầu hạt xoa ngoài. Lá tươi giã nát đắp (ở Indonesia)"
-      }
-    ]
-  },
-  "notes": [
-    "Ở Việt Nam chủ yếu dùng ngoài do có độc",
-    "Cây có hiện tượng rụng lá vào mùa khô (miền Nam) và mùa đông (miền Bắc)",
-    "Gỗ có độ bền tốt, không bị mối mọt, có vân đẹp",
-    "Hạt dùng để duốc cá ở Philippines",
-    "Dầu hạt có tính sát trùng mạnh",
-    "Cây còn được trồng làm cảnh ở công viên và đường phố",
-    "Mùa hoa: tháng 5-7; mùa quả: tháng 8-10",
-    "Thu hái quanh năm tùy bộ phận cần dùng"
-  ],
-  "createdAt": "2025-05-12T16:30:00.000Z",
-  "updatedAt": "2025-05-12T16:30:00.000Z"
-},
-{
-  "id": "indian_mustard",
-  "vietnameseName": "CẢI ẤN ĐỘ",
-  "englishName": "Indian Mustard",
-  "scientificName": "Brassica juncea",
-  "otherNames": "",
-  "description": "Cây thuộc họ cải (Brassicaceae), được trồng phổ biến ở Ấn Độ, Trung Quốc và nhiều vùng khác để lấy hạt, lá và dầu. Cây có hạt chứa glucosinolates, allyl isothiocyanate có mùi hăng đặc trưng. Được sử dụng từ lâu trong y học Ayurveda, Unani và y học cổ truyền Trung Hoa.",
-  "distribution": "Phổ biến ở Ấn Độ, Trung Quốc và nhiều vùng khác trên thế giới",
-  "natureProperties": "Tính ấm, vị cay nồng (theo y học Ayurveda và TCM)",
-  "usedParts": ["hạt", "lá", "dầu từ hạt", "tinh dầu"],
-  "mainBenefits": [
-    "Làm ấm cơ thể, giảm đau nhức cơ khớp",
-    "Trị cảm lạnh, ho đờm",
-    "Kích thích tiêu hóa, tăng dịch tiêu hóa",
-    "Kháng khuẩn (E.coli, Salmonella), kháng viêm",
-    "Chống ung thư (ruột kết, vú, tiền liệt tuyến)",
-    "Bảo vệ tim mạch, giảm cholesterol xấu",
-    "Kích hoạt enzyme giải độc phase II",
-    "Lợi tiểu, hạ khí",
-    "Chống nấm da",
-    "Kích thích lưu thông máu",
-    "Giảm đau thấp khớp, viêm cơ"
-  ],
-  "warnings": {
-    "toxicity": "CÓ THỂ GÂY HẠI nếu dùng quá liều",
-    "sideEffects": [
-      "Kích ứng dạ dày, viêm niêm mạc nếu dùng quá liều",
-      "Dầu chứa erucic acid có thể ảnh hưởng tim ở động vật",
-      "Gây bỏng rát nếu tiếp xúc với mắt, niêm mạc"
-    ],
-    "contraindications": [
-      "Phụ nữ mang thai không nên dùng nếu không có chỉ định",
-      "Người mẫn cảm với cây họ cải"
-    ],
-    "doctorAdvice": "Nên tham khảo ý kiến bác sĩ trước khi dùng với liều cao"
-  },
-  "usage": {
-    "standardDose": "Theo chỉ định của thầy thuốc hoặc nhà sản xuất",
-    "specificUsage": [
-      {
-        "purpose": "Giảm đau cơ khớp, thấp khớp",
-        "recipe": "Dầu mù tạt nguyên chất xoa bóp vào vùng đau 2-3 lần/ngày"
-      },
-      {
-        "purpose": "Trị cảm lạnh",
-        "recipe": "Dầu mù tạt + tỏi giã nhỏ, bôi vào ngực và cổ họng trước khi ngủ"
-      },
-      {
-        "purpose": "Cải thiện tiêu hóa",
-        "recipe": "1 thìa cafe hạt mù tạt ngâm nước ấm, uống trước bữa ăn"
-      },
-      {
-        "purpose": "Trị ho đờm",
-        "recipe": "Hạt mù tạt nghiền nhỏ + mật ong, uống 2 lần/ngày"
-      },
-      {
-        "purpose": "Kháng khuẩn da",
-        "recipe": "Dầu mù tạt pha loãng bôi lên vùng nhiễm trùng nhẹ"
-      },
-      {
-        "purpose": "Bổ sung dinh dưỡng",
-        "recipe": "Lá mù tạt nấu canh hoặc xào ăn hàng ngày"
-      },
-      {
-        "purpose": "Viêm khớp gối",
-        "recipe": "Xoa bóp dầu mù tạt hàng ngày trong 6 tuần theo hướng dẫn"
-      }
-    ]
-  },
-  "notes": [
-    "Thành phần chính: glucosinolates (sinigrin, sinalbin), allyl isothiocyanate",
-    "Giàu vitamin A, C, K, folate, canxi, sắt, magie",
-    "Dầu chứa acid béo omega-3 và omega-6",
-    "Nghiên cứu tại ĐH Illinois: AITC ức chế tế bào ung thư ruột kết",
-    "Nghiên cứu ĐH Kyoto: tinh dầu diệt hiệu quả E.coli, Salmonella",
-    "Được sử dụng rộng rãi trong y học Ayurveda và TCM",
-    "Tránh tiếp xúc trực tiếp với mắt và niêm mạc",
-    "Bảo quản dầu ở nơi khô ráo, tránh ánh sáng"
-  ],
-  "createdAt": "2025-05-12T16:40:00.000Z",
-  "updatedAt": "2025-05-12T16:40:00.000Z"
-},
-{
-  "id": "jackfruit",
-  "vietnameseName": "MÍT",
-  "englishName": "Jackfruit",
-  "scientificName": "Artocarpus heterophyllus",
-  "otherNames": "",
-  "description": "Cây thuộc họ Dâu tằm (Moraceae), có quả lớn nhất trong các loại cây ăn quả. Là cây gỗ lớn, cao 10-20m, có nhựa trắng. Lá đơn, mọc cách, phiến lá có răng cưa. Quả giả lớn, khi chín có múi vàng và hạt to. Tất cả các bộ phận của cây từ trái, hạt, lá, vỏ đến nhựa đều có giá trị dược lý.",
-  "distribution": "Phổ biến ở Đông Nam Á, Nam Á, được trồng rộng rãi ở Việt Nam",
-  "natureProperties": "Quả: ngọt, bổ. Lá: mát, chát nhẹ. Nhựa: nóng, dính",
-  "usedParts": ["quả chín", "hạt", "lá", "vỏ cây", "nhựa"],
-  "mainBenefits": [
-    "Chống oxy hóa mạnh, bảo vệ tế bào",
-    "Hạ đường huyết (đặc biệt là lá)",
-    "Chống ung thư nhờ lignan và isoflavone",
-    "Tốt cho tiêu hóa, ngăn táo bón",
-    "Bảo vệ tim mạch, ổn định huyết áp",
-    "Kháng khuẩn, chống viêm", 
-    "Tăng cường miễn dịch",
-    "Bổ thận, nhuận tràng (hạt)",
-    "Thanh nhiệt, giải độc (lá)",
-    "Trị tiêu chảy, ghẻ lở (nhựa)"
-  ],
-  "warnings": {
-    "toxicity": "KHÔNG ĐỘC (nói chung an toàn)",
-    "sideEffects": [
-      "Quả chín nhiều đường, người tiểu đường nên ăn ít",
-      "Hạt chứa tanin, có thể gây khó tiêu nếu không nấu kỹ",
-      "Lá mít liều cao có thể gây tụt đường huyết quá mức",
-      "Nhựa mít có thể gây kích ứng da nhạy cảm"
-    ],
-    "contraindications": [
-      "Phụ nữ mang thai nên cẩn thận khi dùng lá mít",
-      "Người tiểu đường đang dùng thuốc hạ đường huyết"
-    ],
-    "doctorAdvice": "Nên tham khảo ý kiến bác sĩ khi dùng lâu dài hoặc kết hợp với thuốc tây"
-  },
-  "usage": {
-    "standardDose": "Lá: 10-15g sắc uống/ngày. Quả: vừa phải. Hạt: 5-10 quả/ngày",
-    "specificUsage": [
-      {
-        "purpose": "Hạ đường huyết",
-        "recipe": "Lá mít non 10-15g sắc với 500ml nước, uống chia 2 lần/ngày"
-      },
-      {
-        "purpose": "Bồi bổ cơ thể",
-        "recipe": "Ăn trái mít chín vừa phải hoặc nấu canh gà với hạt mít"
-      },
-      {
-        "purpose": "Bổ thận, nhuận tràng",
-        "recipe": "Hạt mít 5-10 quả luộc hoặc nướng ăn hàng ngày"
-      },
-      {
-        "purpose": "Thanh nhiệt, mát gan",
-        "recipe": "Lá mít khô 10g hãm như trà uống hàng ngày"
-      },
-      {
-        "purpose": "Tiêu viêm, giảm sưng",
-        "recipe": "Lá mít tươi giã nát đắp vào vùng bị đau nhức, sưng tấy"
-      },
-      {
-        "purpose": "Trị mụn nhọt, viêm da",
-        "recipe": "Lá mít tươi giã nát đắp lên vùng da bị viêm"
-      },
-      {
-        "purpose": "Trị cảm cúm, ho",
-        "recipe": "Lá mít + gừng + lá sả nấu nước xông hoặc uống"
-      },
-      {
-        "purpose": "Trị tiêu chảy",
-        "recipe": "Vỏ cây hoặc nhựa mít nấu nước uống (ít dùng, cần thận trọng)"
-      },
-      {
-        "purpose": "Hỗ trợ tiêu hóa",
-        "recipe": "Ăn trái mít chín vừa phải sau bữa ăn"
-      }
-    ]
-  },
-  "notes": [
-    "Thành phần quả: vitamin C, A, B6, kali, flavonoid, carotenoid",
-    "Thành phần hạt: protein, tinh bột, saponin, lectin",
-    "Thành phần lá: flavonoid, tanin, saponin, phenol",
-    "Nghiên cứu ĐH Mahidol: Lá mít giảm đường huyết rõ rệt",
-    "Tạp chí Journal of Food Biochemistry: Quả có hoạt tính chống oxy hóa mạnh",
-    "Quả mít là nguồn chất xơ hòa tan tốt cho tiêu hóa",
-    "Ức chế enzyme alpha-glucosidase giúp kiểm soát tiểu đường",
-    "Lignan và isoflavone trong mít có tính chống ung thư",
-    "Kali trong mít giúp ổn định huyết áp",
-    "Nhựa và hạt có hoạt tính kháng khuẩn cao"
-  ],
-  "createdAt": "2025-05-12T16:50:00.000Z",
-  "updatedAt": "2025-05-12T16:50:00.000Z"
-},
-{
-  "id": "jamaica_cherry",
-  "vietnameseName": "CÂY TRỨNG CÁ",
-  "englishName": "Jamaica Cherry-Gasagase",
-  "scientificName": "Muntingia calabura",
-  "otherNames": "Cotton Candy Berry, Singapore Cherry, Strawberry Tree (tiếng Anh); Aratiles (Philippines); Kersen (Indonesia); Takhop Farang (Thái); Ceri Kampung (Malaysia); Capulin (Tây Ban Nha)",
-  "description": "Cây gỗ nhỏ có quả hình cầu màu đỏ khi chín, được sử dụng rộng rãi trong y học dân gian ở nhiều quốc gia. Tất cả các bộ phận của cây từ lá, vỏ, hoa, quả đến rễ đều có giá trị dược liệu với nhiều hoạt chất sinh học có lợi cho sức khỏe.",
-  "distribution": "Phân bố rộng rãi ở vùng nhiệt đới, phổ biến ở Đông Nam Á",
-  "natureProperties": "Tính mát, vị ngọt nhạt (quả), lá có vị chát nhẹ",
-  "usedParts": ["lá tươi", "lá khô", "vỏ cây", "hoa", "quả chín", "rễ"],
-  "mainBenefits": [
-    "Hạ sốt, giảm đau",
-    "Chống viêm, kháng khuẩn",
-    "Điều trị tiêu chảy, kiết lỵ",
-    "Giảm đau dạ dày, loét dạ dày",
-    "Hạ đường huyết cho người tiểu đường",
-    "Chữa vết thương, vết loét ngoài da",
-    "Giảm huyết áp",
-    "Bổ sung vitamin C",
-    "Chống oxy hóa mạnh",
-    "Cải thiện tiêu hóa",
-    "Giảm ho, đau họng",
-    "An thần, giúp ngủ ngon",
-    "Giảm căng thẳng, lo âu",
-    "Bảo vệ gan"
-  ],
-  "warnings": {
-    "toxicity": "KHÔNG ĐỘC (an toàn khi dùng đúng liều)",
-    "sideEffects": [
-      "Một số người có thể bị dị ứng với nhựa cây",
-      "Không nên dùng liều lượng quá cao"
-    ],
-    "contraindications": [
-      "Phụ nữ có thai nên tham khảo ý kiến bác sĩ"
-    ],
-    "doctorAdvice": "Cần kết hợp với điều trị y tế chính thống cho các bệnh mãn tính"
-  },
-  "usage": {
-    "standardDose": "Lá khô: 10-15g/ngày. Quả tươi: 20-30 quả/ngày",
-    "specificUsage": [
-      {
-        "purpose": "Hạ sốt, giảm đau",
-        "recipe": "Lá tươi hoặc khô 10-15g sắc với 500ml nước, uống 2-3 lần/ngày"
-      },
-      {
-        "purpose": "Tiêu chảy, kiết lỵ",
-        "recipe": "Lá khô 10g sắc nước uống, chia 3 lần trong ngày"
-      },
-      {
-        "purpose": "Hạ đường huyết",
-        "recipe": "Lá tươi 15g sắc nước uống buổi sáng và chiều"
-      },
-      {
-        "purpose": "Vết thương ngoài da",
-        "recipe": "Lá tươi giã nát đắp trực tiếp lên vết thương"
-      },
-      {
-        "purpose": "Giảm huyết áp",
-        "recipe": "Lá khô 10g hãm như trà, uống hàng ngày"
-      },
-      {
-        "purpose": "Bổ sung vitamin C, cải thiện tiêu hóa",
-        "recipe": "Ăn 20-30 quả chín mỗi ngày"
-      },
-      {
-        "purpose": "An thần, ngủ ngon",
-        "recipe": "Hoa tươi 5-10g hãm nước uống trước khi ngủ"
-      },
-      {
-        "purpose": "Sát trùng vết thương",
-        "recipe": "Vỏ cây nấu nước rửa vết thương"
-      },
-      {
-        "purpose": "Giảm ho, đau họng",
-        "recipe": "Quả chín ăn tươi hoặc ngâm đường uống"
-      },
-      {
-        "purpose": "Ngâm rượu thuốc",
-        "recipe": "Lá và vỏ cây ngâm rượu 40 độ trong 1 tháng"
-      }
-    ]
-  },
-  "notes": [
-    "Hoạt chất: Flavonoid, Tannin, Saponin, Alkaloid, Phenolic compounds",
-    "Nghiên cứu khoa học đã chứng minh hoạt tính kháng khuẩn mạnh",
-    "Có tác dụng hạ đường huyết trên động vật thí nghiệm",
-    "Khả năng chống oxy hóa mạnh nhờ các hợp chất phenolic",
-    "Có hoạt tính bảo vệ gan",
-    "Nước sắc thường uống 2-3 lần/ngày",
-    "Việc sử dụng nên được tư vấn bởi người có chuyên môn",
-    "Không thay thế hoàn toàn điều trị y tế hiện đại",
-    "Tất cả các bộ phận của cây đều có giá trị dược liệu"
-  ],
-  "createdAt": "2025-05-12T17:00:00.000Z",
-  "updatedAt": "2025-05-12T17:00:00.000Z"
-},
-{
-  "id": "syzygium_cumini",
-  "vietnameseName": "TRÂM MỐC",
-  "englishName": "Jamun, Java Plum",
-  "scientificName": "Syzygium cumini",
-  "otherNames": "Trâm vối, vối rừng, trâm vỏ đen, mận Malabar, mận Java, mận đen, jamun, jambolan, Jambu, Indian blackberry, Black plum, durobbi (tiếng Úc bản địa)",
-  "description": "Cây thường xanh nhiệt đới thuộc chi Trâm, có thể cao 30m và sống hơn 100 năm. Tán lá dày đặc, vỏ gốc màu xám đen sần sùi, lên cao mịn và nhạt màu hơn. Lá thơm như nhựa thông, non màu hồng, già màu xanh đậm. Hoa nhỏ 5mm, thơm. Quả hình trứng thuôn dài, chuyển từ xanh → hồng → đỏ → đen khi chín. Có nguồn gốc từ Ấn Độ và Đông Nam Á.",
-  "distribution": "Có nguồn gốc từ Tiểu lục địa Ấn Độ, Myanmar, Sri Lanka và quần đảo Andaman. Hiện phổ biến ở các vùng nhiệt đới toàn thế giới",
-  "natureProperties": "Tính mát, vị ngọt hơi chua, chát, se lưỡi",
-  "usedParts": ["lá tươi", "lá khô", "quả", "hạt", "vỏ cây", "gỗ"],
-  "mainBenefits": [
-    "Hỗ trợ điều trị tiểu đường (giảm đường huyết)",
-    "Kháng khuẩn và chống viêm",
-    "Hỗ trợ tiêu hóa, trị tiêu chảy, kiết lỵ",
-    "Giảm loét dạ dày, bảo vệ niêm mạc dạ dày",
-    "Kháng oxy hóa và bảo vệ gan",
-    "Chữa mụn nhọt, loét da, vết thương",
-    "Giảm đau bụng, đầy hơi",
-    "Thanh lọc độc tố trong gan",
-    "Hỗ trợ điều trị gan nhiễm mỡ, viêm gan nhẹ",
-    "Ngăn chuyển hóa tinh bột thành đường"
-  ],
-  "warnings": {
-    "toxicity": "KHÔNG ĐỘC (an toàn khi dùng đúng liều)",
-    "sideEffects": [
-      "Có thể gây hạ đường huyết quá mức ở người đang điều trị tiểu đường",
-      "Không dùng lá bị mốc, thối rữa"
-    ],
-    "contraindications": [
-      "Phụ nữ mang thai nên tham khảo bác sĩ",
-      "Người dùng thuốc tiểu đường cần theo dõi đường huyết"
-    ],
-    "doctorAdvice": "Người bệnh tiểu đường nên tham khảo bác sĩ trước khi dùng"
-  },
-  "usage": {
-    "standardDose": "Lá khô: 5-10g/ngày. Quả: 100-200g/ngày",
-    "specificUsage": [
-      {
-        "purpose": "Hỗ trợ điều trị tiểu đường",
-        "recipe": "Lá khô 5-10g nghiền thành bột, pha với nước ấm uống 2 lần/ngày"
-      },
-      {
-        "purpose": "Tiêu hóa, tiêu chảy, kiết lỵ",
-        "recipe": "Lá non giã nát lấy nước uống hoặc sắc 10g lá khô"
-      },
-      {
-        "purpose": "Mụn nhọt, loét da",
-        "recipe": "Lá tươi giã nát đắp ngoài da hoặc rửa bằng nước sắc lá"
-      },
-      {
-        "purpose": "Loét dạ dày",
-        "recipe": "Lá khô sắc nước uống trước bữa ăn 30 phút"
-      },
-      {
-        "purpose": "Bảo vệ gan",
-        "recipe": "Chiết xuất lá dùng theo hướng dẫn hoặc sắc 10g lá/ngày"
-      },
-      {
-        "purpose": "Ăn quả tươi",
-        "recipe": "Ăn 100-200g quả chín/ngày, có thể làm nước ép hoặc mứt"
-      },
-      {
-        "purpose": "Làm rượu thuốc",
-        "recipe": "Quả chín ngâm rượu làm rượu duhat/lomboy (Philippines)"
-      }
-    ]
-  },
-  "notes": [
-    "Thành phần: jamboline, alkaloid giúp ức chế chuyển hóa tinh bột",
-    "Lá chứa 9.1% protein thô, 4.3% chất béo, 17% xơ thô",
-    "Quả chứa vitamin C (14.3mg/100g), vitamin A, B complex",
-    "Gỗ chịu nước tốt, dùng làm tà vẹt đường sắt, giếng nước",
-    "Ra hoa tháng 3-4, kết quả tháng 5-6",
-    "Cây phát triển nhanh, được xem là loài xâm lấn ở một số nơi",
-    "Quả làm tím lưỡi khi ăn",
-    "Lá dùng làm thức ăn gia súc có giá trị dinh dưỡng tốt",
-    "Rất phổ biến trong y học Ayurveda và y học dân gian châu Á"
-  ],
-  "createdAt": "2025-05-12T17:10:00.000Z",
-  "updatedAt": "2025-05-12T17:10:00.000Z"
-},
-{
-  "id": "jasmine",
-  "vietnameseName": "NHÀI",
-  "englishName": "Arabian Jasmine",
-  "scientificName": "Jasminum sambac (L.) Aiton",
-  "otherNames": "Lài, Mạt lị, Mạt lợi, Nhài kép, Nhài đơn, Nyctanthes sambac, Mogra (Ấn Độ), Sampaguita (Philippines), Melati putih (Indonesia)",
-  "description": "Cây nhỡ, nửa bò, cao 0.5-3m với nhiều cành mọc xòe. Lá hình trái xoan-bầu dục, dài 30-70mm, rộng 20-35mm, bóng cả hai mặt. Hoa màu trắng, đường kính 2-3cm, mọc thành cụm 3-12 bông ở cuối cành, mùi thơm ngát. Quả hình cầu đường kính 6mm, màu đen khi chín.",
-  "distribution": "Có nguồn gốc từ Tây Nam và Nam Á (Philippines, Ấn Độ, Myanmar, Sri Lanka). Hiện trồng khắp vùng nhiệt đới. Tại Việt Nam trồng ở Hà Nội, Ninh Bình, Thanh Hóa, Quảng Trị, Thừa Thiên-Huế, Đồng Nai, TP.HCM",
-  "natureProperties": "Hoa và lá: vị cay ngọt, tính mát. Rễ: vị cay ngọt, tính mát, hơi có độc",
-  "usedParts": ["hoa", "lá", "rễ"],
-  "mainBenefits": [
-    "Trấn thống, an thần",
-    "Thanh nhiệt giải biểu",
-    "Lợi thấp",
-    "Chữa ngoại cảm phát sốt",
-    "Trị đau bụng, tiêu chảy, lỵ",
-    "Chữa viêm màng khóe mắt, viêm kết mạc",
-    "Trị mụn nhọt độc",
-    "Trị mất ngủ (rễ)",
-    "Chữa bạch đới (lá)",
-    "Trị viêm mũi, viêm giác mạc",
-    "Điều kinh",
-    "Trị rôm sảy, sởi ở trẻ em",
-    "Trị loét ngoan cố (dùng ngoài)"
-  ],
-  "warnings": {
-    "toxicity": "RỄ HƠI CÓ ĐỘC",
-    "sideEffects": [
-      "Rễ nhài có tác dụng ma túy, ngâm rượu uống sẽ hôn mê bất tỉnh",
-      "Theo cổ thư: 3cm rễ ngâm rượu làm mê 1 ngày, 6cm mê 2 ngày"
-    ],
-    "contraindications": [
-      "Phụ nữ có thai không nên dùng",
-      "Người cơ thể suy nhược không nên dùng"
-    ],
-    "doctorAdvice": "Cần thận trọng với liều dùng rễ, tránh dùng quá liều"
-  },
-  "usage": {
-    "standardDose": "Hoa, lá: 3-5g/ngày. Rễ: 1-1.5g/ngày (nghiền trong nước)",
-    "specificUsage": [
-      {
-        "purpose": "Ngoại cảm phát sốt, ỉa chảy",
-        "recipe": "Hoa nhài 6g + chè xanh 10g + thảo quả 3g sắc nước uống"
-      },
-      {
-        "purpose": "Đau mắt, viêm kết mạc",
-        "recipe": "Hoa nhài 6g (có thể kết hợp kim ngân hoa 9g + hoa cúc trắng 9g) sắc nước xông và uống, hoặc giã vắt nước trộn lòng trắng trứng gà đắp"
-      },
-      {
-        "purpose": "Mất ngủ",
-        "recipe": "Rễ nhài 1-1.5g nghiền trong nước uống"
-      },
-      {
-        "purpose": "Rôm sảy",
-        "recipe": "Lá nhài vò vào nước tắm, có thể phối hợp với lá ngải cứu"
-      },
-      {
-        "purpose": "Loét ngoan cố",
-        "recipe": "Lá khô ngâm nước làm thành dạng đắp"
-      },
-      {
-        "purpose": "Pha trà uống",
-        "recipe": "Hoa tươi hoặc khô pha như trà uống hàng ngày"
-      },
-      {
-        "purpose": "Ướp trà",
-        "recipe": "Hoa nhài tươi dùng để ướp trà xanh làm tăng hương vị"
-      }
-    ]
-  },
-  "notes": [
-    "Mùa hoa: tháng 5-7, mùa quả: tháng 7-9",
-    "Thành phần hóa học: parafin, ester formic acetic-benzoic, indol, flavonoid (rutin, quercetin)",
-    "Rễ chứa axit dotriacontanoic, hesperidin, jasminoids A,B,C,D",
-    "Lá chứa flavonoid rhamnoglycosides, α-amyrin, β-sitosterol",
-    "Quốc hoa của Philippines và một trong ba quốc hoa của Indonesia",
-    "Cây ưa sáng, nhân giống chủ yếu bằng giâm cành",
-    "Hoa dùng làm nước hoa, pha trà, làm thơm thức ăn",
-    "Thu hoạch: rễ vào mùa thu đông, lá quanh năm, hoa vào hè thu khi mới nở"
-  ],
-  "createdAt": "2025-05-12T17:20:00.000Z",
-  "updatedAt": "2025-05-12T17:20:00.000Z"
-},
-{
-  "id": "karanda",
-  "vietnameseName": "KARANDA",
-  "englishName": "Karanda, Karonda",
-  "scientificName": "Carissa carandas",
-  "otherNames": "Christ's Thorn, Bengal Currant, Karonda Berry (tiếng Anh); Karaunda (Hindi); Nam phrom (Thái); Loại cây họ Trúc đào",
-  "description": "Cây bụi hoặc cây nhỏ cao 2-4m, có gai, thuộc họ Trúc đào (Apocynaceae). Lá mọc đối, hình trứng, dày và bóng. Hoa màu trắng, thơm, mọc thành chùm. Quả hình cầu hoặc bầu dục, khi sống màu xanh, chín chuyển sang đỏ đến tím đen, vị chua chát. Cây có nhựa trắng dính. Thân và cành có gai đôi ở nách lá.",
-  "distribution": "Có nguồn gốc từ Ấn Độ, hiện phân bố ở Nam và Đông Nam Á, bao gồm Bangladesh, Sri Lanka, Indonesia, Malaysia, Myanmar, Philippines và Thái Lan. Được trồng ở một số vùng ở Việt Nam",
-  "natureProperties": "Quả sống: chua, chát. Quả chín: chua ngọt. Lá và rễ: đắng, tính mát",
-  "usedParts": ["quả chín", "quả sống", "lá", "rễ", "vỏ rễ", "hạt", "nhựa cây"],
-  "mainBenefits": [
-    "Tăng cường tiêu hóa, chữa khó tiêu",
-    "Điều trị scurvy (bổ sung vitamin C)",
-    "Giảm sốt, hạ nhiệt",
-    "Chống thiếu máu",
-    "Bảo vệ và tăng cường chức năng gan",
-    "Điều trị bệnh về da",
-    "Chữa tiêu chảy, kiết lỵ",
-    "Điều trị viêm khớp",
-    "Chữa vết loét miệng",
-    "Giảm đau tai",
-    "Hạ đường huyết (tiểu đường)",
-    "Cải thiện chức năng thận",
-    "Chữa vết thương",
-    "Nhuận tràng",
-    "Kích thích tim mạch",
-    "Điều trị sâu răng",
-    "Tăng cường miễn dịch"
-  ],
-  "warnings": {
-    "toxicity": "HẠT CÓ ĐỘC TÍNH NHẤT ĐỊNH",
-    "sideEffects": [
-      "Nhựa cây có thể gây kích ứng da",
-      "Dùng liều cao có thể gây rối loạn tiêu hóa",
-      "Có thể gây dị ứng ở một số người"
-    ],
-    "contraindications": [
-      "Phụ nữ có thai không nên dùng (có thể gây sẩy thai)",
-      "Người huyết áp thấp cẩn thận khi dùng",
-      "Người đang dùng thuốc tiểu đường"
-    ],
-    "doctorAdvice": "Cần tư vấn bác sĩ khi điều trị bệnh mãn tính như tiểu đường"
-  },
-  "usage": {
-    "standardDose": "Quả: 10-15 quả/ngày. Lá khô: 5-10g/ngày. Bột rễ: 1-3g/ngày",
-    "specificUsage": [
-      {
-        "purpose": "Tiêu hóa kém, khó tiêu",
-        "recipe": "Ăn 10-15 quả chín/ngày hoặc làm mứt quả"
-      },
-      {
-        "purpose": "Tiêu chảy, kiết lỵ",
-        "recipe": "Lá khô 5-10g sắc nước uống 2-3 lần/ngày"
-      },
-      {
-        "purpose": "Tiểu đường",
-        "recipe": "Bột vỏ rễ 1-3g/ngày chia 2-3 lần, uống với nước ấm"
-      },
-      {
-        "purpose": "Vết loét miệng",
-        "recipe": "Nhai lá tươi hoặc súc miệng bằng nước sắc lá"
-      },
-      {
-        "purpose": "Đau tai",
-        "recipe": "Dịch lá tươi giã lọc lấy nước, nhỏ 2-3 giọt vào tai"
-      },
-      {
-        "purpose": "Ghẻ, ngứa, bệnh ngoài da",
-        "recipe": "Nước sắc rễ hoặc vỏ rễ rửa vùng da bị bệnh"
-      },
-      {
-        "purpose": "Thiếu máu",
-        "recipe": "Ăn quả chín thường xuyên hoặc làm mứt ăn hàng ngày"
-      },
-      {
-        "purpose": "Sâu răng",
-        "recipe": "Bột hạt khô trộn với ít dầu dừa, chấm vào răng sâu"
-      },
-      {
-        "purpose": "Vết thương ngoài da",
-        "recipe": "Lá tươi giã nát đắp hoặc rửa bằng nước sắc rễ"
-      },
-      {
-        "purpose": "Bổ sung vitamin C",
-        "recipe": "Ăn quả tươi hàng ngày hoặc làm nước ép"
-      }
-    ]
-  },
-  "notes": [
-    "Thành phần: alkaloid, flavonoid, tannin, saponin, vitamin C, pectin, acid hữu cơ",
-    "Quả giàu vitamin C, iron, calcium, phosphorus",
-    "Tác dụng dược lý: kháng khuẩn, kháng nấm, chống oxy hóa, hạ đường huyết",
-    "Karanda murabba là mứt quả truyền thống trong Ayurveda",
-    "Cây dễ trồng, chịu hạn tốt, thích hợp làm hàng rào",
-    "Quả có thể ướp muối, làm dưa chua, chutney",
-    "Nghiên cứu hiện đại tập trung vào tác dụng chống tiểu đường",
-    "Gỗ cứng, dùng làm đồ thủ công mỹ nghệ",
-    "Hoa thơm, thu hút ong bướm",
-    "Chiết xuất lá đang được nghiên cứu làm thuốc tiểu đường"
-  ],
-  "createdAt": "2025-05-12T17:30:00.000Z",
-  "updatedAt": "2025-05-12T17:30:00.000Z"
-}
-
-]
+    {
+      "id": "drumstick",
+      "vietnameseName": "CHÙM NGÂY",
+      "englishName": "Moringa",
+      "scientificName": "Moringa oleifera Lam.",
+      "otherNames": "Bèn, Rau ngải, Cốc tần ngải (Việt Nam); Drumstick tree,(tiếng Anh); La mu/辣木 (Trung Quốc); Malunggay (Philippines)...",
+      "description": "Cây mọc hoang dại trên các đồi núi. Tất cả các bộ phận của cây đều có công dụng trong chăm sóc sức khỏe. Lá, hoa, quả, hạt, rễ đều được sử dụng làm thuốc và thực phẩm bổ dưỡng.",
+      "distribution": "Mọc hoang ở Tịnh Biên, Tri Tôn (An Giang), được trồng ở một số tỉnh Nam bộ",
+      "natureProperties": "Không rõ",
+      "usedParts": [
+        "lá",
+        "hoa",
+        "quả",
+        "hạt",
+        "rễ",
+        "vỏ cây"
+      ],
+      "mainBenefits": [
+        "Điều trị cổ trướng, thấp khớp, vết cắn có nọc độc",
+        "Kích thích tim và hệ tuần hoàn",
+        "Diệt khuẩn đường tiêu hóa, làm sạch nước ô nhiễm (hạt)",
+        "Chữa sốt, viêm phế quản, viêm da, mắt, tai",
+        "Diệt giun sán",
+        "Giảm cholesterol, ổn định huyết áp",
+        "Bảo vệ gan, giảm cân, điều hòa đường huyết",
+        "Chống xơ vữa động mạch, kháng viêm, kháng ung thư",
+        "Tăng tiết sữa ở phụ nữ cho con bú",
+        "Phòng và điều trị thiếu máu",
+        "Cung cấp dinh dưỡng cho trẻ suy dinh dưỡng"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC (được WHO và FAO khuyến nghị)",
+        "sideEffects": [],
+        "contraindications": [],
+        "doctorAdvice": "An toàn cho phụ nữ mang thai, cho con bú và trẻ em"
+      },
+      "usage": {
+        "standardDose": "Tùy theo đối tượng và mục đích sử dụng",
+        "specificUsage": [
+          {
+            "purpose": "Bổ sung dinh dưỡng cho trẻ 1-3 tuổi",
+            "recipe": "20g lá tươi mỗi ngày, cung cấp 90% calcium, 100% vitamin C, vitamin A cần thiết"
+          },
+          {
+            "purpose": "Bổ sung cho bà mẹ mang thai và cho con bú",
+            "recipe": "100g lá tươi mỗi ngày, cung cấp đủ calcium, vitamin C, A, E, sắt cần thiết"
+          },
+          {
+            "purpose": "Chữa sốt, viêm phế quản",
+            "recipe": "10-15g lá khô sắc với 300ml nước, uống 2-3 lần/ngày"
+          },
+          {
+            "purpose": "Giảm cholesterol, huyết áp",
+            "recipe": "5-10g bột lá với nước ấm, uống 2 lần/ngày trước bữa ăn"
+          },
+          {
+            "purpose": "Tăng tiết sữa",
+            "recipe": "50g lá tươi nấu canh ăn hàng ngày"
+          },
+          {
+            "purpose": "Làm sạch nước",
+            "recipe": "Hạt nghiền nhỏ cho vào nước, lắng 30 phút rồi lọc"
+          },
+          {
+            "purpose": "Điều trị thiếu máu",
+            "recipe": "30-50g lá tươi ăn sống hoặc nấu canh mỗi ngày"
+          },
+          {
+            "purpose": "Diệt giun sán",
+            "recipe": "10g lá khô sắc nước uống sáng lúc đói"
+          }
+        ]
+      },
+      "notes": [
+        "Bộ phận dùng: Tất cả bộ phận (lá, hoa, quả, hạt, rễ)",
+        "Được WHO và FAO xem là giải pháp ưu việt cho bà mẹ thiếu sữa và trẻ suy dinh dưỡng",
+        "Tất cả bộ phận của cây đều có công dụng dược lý",
+        "Giàu vitamin A, C, E, calcium, sắt, protein",
+        "Hạt có khả năng lọc nước độc đáo",
+        "Lá có thể dùng làm rau ăn hàng ngày",
+        "Chứa nhiều hợp chất có hoạt tính sinh học như flavonoid, alkaloid, tannin"
+      ],
+      "createdAt": "2025-05-12T15:50:00.000Z",
+      "updatedAt": "2025-05-12T15:50:00.000Z"
+    },
+    {
+      "id": "fenugreek_seed",
+      "vietnameseName": "CỎ CÀ RI",
+      "englishName": "Fenugreek Seed",
+      "scientificName": "Trigonella foenum-graecum",
+      "otherNames": "Khổ đậu, hồ lô ba",
+      "description": "Thảo mộc có nguồn gốc từ khu vực Địa Trung Hải, Nam Âu và Tây Á. Thuộc họ đậu nên có rễ chùm, thân phân nhánh, lá màu xanh với cấu trúc gồm 3 lá nhỏ. Quả dài và thon, bên trong chứa hạt màu vàng hình thoi. Thường sử dụng phần lá, cành, hạt và rễ như dược liệu và gia vị. Trong ẩm thực Ấn Độ, hạt được nghiền thành bột để chế biến món nướng hoặc thêm vào sốt cà ri.",
+      "distribution": "Có nguồn gốc từ Địa Trung Hải, Nam Âu và Tây Á, được trồng ở Việt Nam",
+      "natureProperties": "Không rõ",
+      "usedParts": [
+        "hạt",
+        "lá",
+        "cành",
+        "rễ"
+      ],
+      "mainBenefits": [
+        "Giảm đường huyết ở người tiểu đường",
+        "Cải thiện độ nhạy insulin",
+        "Tăng cường khả năng tình dục, đặc biệt ở nam giới lớn tuổi",
+        "Cải thiện triệu chứng sau mãn kinh ở phụ nữ",
+        "Tăng lượng sữa mẹ sau sinh",
+        "Hỗ trợ giảm cân nhờ tạo cảm giác no",
+        "Giảm viêm nhờ chứa flavonoid chống oxy hóa",
+        "Giảm cholesterol và cải thiện huyết áp",
+        "Giảm nguy cơ mắc bệnh tim mạch",
+        "Kích thích sự thèm ăn"
+      ],
+      "warnings": {
+        "toxicity": "CÓ TÁC DỤNG PHỤ",
+        "sideEffects": [
+          "Tiêu chảy, đầy hơi",
+          "Chóng mặt, nhức đầu",
+          "Nghẹt mũi, ho, sưng mặt",
+          "Phản ứng dị ứng (phát ban, ngứa, khó thở)",
+          "Mất ý thức ở trẻ em"
+        ],
+        "contraindications": [
+          "Phụ nữ mang thai (có thể gây dị tật và co thắt sớm)",
+          "Trẻ em (tuyệt đối không dùng)",
+          "Người có tiền sử dị ứng với đậu phộng"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến bác sĩ trước khi sử dụng"
+      },
+      "usage": {
+        "standardDose": "Không quá 50g/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Điều trị tiểu đường",
+            "recipe": "5-10g bột hạt cỏ cà ri thêm vào 1-2 bữa ăn hàng ngày"
+          },
+          {
+            "purpose": "Giảm đau bụng kinh",
+            "recipe": "1800-2700mg bột hạt cỏ cà ri mỗi ngày trong 3 ngày đầu kinh nguyệt, sau đó 900mg x 3 lần/ngày trong 2 chu kỳ còn lại"
+          },
+          {
+            "purpose": "Cải thiện suy giảm tình dục",
+            "recipe": "600mg chiết xuất hạt mỗi ngày trong 2 chu kỳ kinh nguyệt"
+          },
+          {
+            "purpose": "Tăng đáp ứng kích thích tình dục",
+            "recipe": "600mg chiết xuất hạt mỗi ngày trong 6-12 tuần"
+          },
+          {
+            "purpose": "Thêm vào thức ăn",
+            "recipe": "15g hạt thêm vào bánh, nước sốt, sữa chua, sinh tố hoặc rắc lên thức ăn"
+          },
+          {
+            "purpose": "Pha trà",
+            "recipe": "1 thìa cafe bột hạt pha với 250ml nước sôi, khuấy đều và uống"
+          },
+          {
+            "purpose": "Tăng lượng sữa mẹ",
+            "recipe": "Uống viên nang hoặc trà Fenugreek sau khi sinh"
+          },
+          {
+            "purpose": "Giảm cân",
+            "recipe": "Uống trà cỏ cà ri trước bữa ăn để tạo cảm giác no"
+          }
+        ]
+      },
+      "notes": [
+        "Bộ phận dùng: Chủ yếu là hạt, cũng dùng lá, cành, rễ",
+        "Thực phẩm bổ sung Fenugreek có thể ở dạng viên thuốc, bột hoặc pha đồ uống",
+        "Hạt là phần quan trọng nhất, chứa nhiều hoạt chất có lợi",
+        "Chứa khoảng 48% chất xơ giúp điều hòa cholesterol",
+        "Khi sử dụng cần 'lắng nghe' cơ thể để điều chỉnh liều lượng phù hợp",
+        "Có mối liên quan với đậu phộng về mặt dị ứng",
+        "Hiệu quả tốt nhất trong kiểm soát glucose và cải thiện khả năng tình dục",
+        "Liên hệ bác sĩ ngay khi có triệu chứng nghiêm trọng"
+      ],
+      "createdAt": "2025-05-12T16:00:00.000Z",
+      "updatedAt": "2025-05-12T16:00:00.000Z"
+    },
+    {
+      "id": "guava",
+      "vietnameseName": "ỔI",
+      "englishName": "Guava",
+      "scientificName": "Psidium guajava",
+      "otherNames": "Hoàng đỗ tử (Trung Quốc), Guayabo (Tây Ban Nha), Goyave (Pháp), Goiaba (Bồ Đào Nha), Pichi, Posh, Enandi (Mexico, Mỹ)",
+      "description": "Cây thân gỗ nhỏ cao tới 13m, vỏ thân nhẵn màu xám, dễ bong thành mảng nhỏ. Lá hình bầu dục hoặc trứng thuôn dài, kích thước 6-12cm x 3.5-6cm, mặt trên hơi ráp, mặt dưới có lông mịn. Hoa trắng mọc đơn lẻ hoặc cụm 2-3 bông. Quả có nhiều hình dạng (tròn, bầu dục, hình lê), dài 3-8cm, thịt quả trắng, vàng nhạt hoặc hồng nhạt, chứa nhiều hạt nhỏ cứng. Cây có nguồn gốc từ châu Mỹ, được phát hiện hơn 2000 năm trước ở Peru.",
+      "distribution": "Có nguồn gốc từ châu Mỹ, hiện phân bố ở 86 quốc gia vùng nhiệt đới và cận nhiệt đới. Tại Việt Nam trồng rộng rãi khắp cả nước",
+      "natureProperties": "Lá: Vị đắng, chát, tính bình. Quả chín: Vị ngọt, chát, tính bình. Rễ và vỏ rễ: Vị chát, hơi đắng, tính bình",
+      "usedParts": [
+        "quả tươi",
+        "quả khô",
+        "hạt",
+        "lá",
+        "búp non",
+        "rễ",
+        "vỏ rễ",
+        "vỏ thân"
+      ],
+      "mainBenefits": [
+        "Tăng cường hệ miễn dịch nhờ vitamin C cao",
+        "Hỗ trợ tiêu hóa, ngăn ngừa táo bón",
+        "Kiểm soát đường huyết ở người tiểu đường",
+        "Tốt cho tim mạch, giảm cholesterol xấu",
+        "Cải thiện làn da, kích thích sản xuất collagen",
+        "Hỗ trợ giảm cân",
+        "Tăng cường trí não, cải thiện trí nhớ",
+        "Giảm căng thẳng",
+        "Cầm tiêu chảy, cầm máu",
+        "Giải độc, chữa viêm",
+        "Làm lành vết thương"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC (an toàn sử dụng)",
+        "sideEffects": [
+          "Ổi xanh ăn nhiều có thể gây táo bón",
+          "Người có vấn đề dạ dày nên hạn chế ăn ổi chưa chín"
+        ],
+        "contraindications": [],
+        "doctorAdvice": "An toàn cho hầu hết mọi người, kể cả phụ nữ mang thai"
+      },
+      "usage": {
+        "standardDose": "Quả tươi: 200-250g/ngày. Lá khô: 6-20g/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Tiêu chảy do lạnh",
+            "recipe": "12g búp ổi sao vàng + 8g gừng tươi nướng cháy vỏ, sắc với 500ml nước còn 200ml, uống 2 lần/ngày x 3-5 ngày"
+          },
+          {
+            "purpose": "Viêm dạ dày cấp và mãn tính",
+            "recipe": "Lá ổi non sấy khô tán bột, uống 6g/lần với nước ấm, 2 lần/ngày"
+          },
+          {
+            "purpose": "Rối loạn tiêu hóa ở trẻ em (từ 1 tuổi)",
+            "recipe": "30g lá ổi + 30g tây thảo + 15-30g gạo tẻ sao + 1-12g hồng trà, sắc 1 lít nước còn 500ml, chia 2 lần uống/ngày"
+          },
+          {
+            "purpose": "Đau răng sâu răng",
+            "recipe": "Vỏ rễ cây ổi + dấm chua, sắc lấy nước ngậm nhiều lần/ngày"
+          },
+          {
+            "purpose": "Thổ tả",
+            "recipe": "Lá ổi + lá vối + lá sim + hoắc hương (lượng bằng nhau), hãm 500ml nước sôi, uống như trà trong ngày"
+          },
+          {
+            "purpose": "Tiểu đường",
+            "recipe": "250g quả ổi tươi rửa sạch, thái miếng, ép lấy nước, chia 2 lần uống/ngày"
+          },
+          {
+            "purpose": "Băng huyết",
+            "recipe": "Ép 250g quả ổi lấy nước, chia 2 lần uống/ngày. Hoặc ăn 200g quả ổi mỗi ngày"
+          },
+          {
+            "purpose": "Mụn nhọt mới phát",
+            "recipe": "Lá ổi non + lá đào rửa sạch, giã nát đắp lên vùng mụn nhọt, làm nhiều lần/ngày"
+          },
+          {
+            "purpose": "Rôm sảy, mẩn ngứa",
+            "recipe": "Một nắm lá ổi nấu nước, để nguội rồi tắm hàng ngày"
+          },
+          {
+            "purpose": "Vết thương xây xát nhẹ",
+            "recipe": "100g búp ổi sắc đặc, dùng nước thuốc còn ấm ngâm tay chân, 2-3 lần/ngày"
+          },
+          {
+            "purpose": "Giải ngộ độc ba đậu",
+            "recipe": "10g quả ổi khô + 10g bạch truật sao + 10g vỏ cây ổi, sắc với 1/2 bát nước còn 1 bát, chia vài lần uống/ngày"
+          }
+        ]
+      },
+      "notes": [
+        "Bộ phận dùng: Búp non và lá non dùng tươi hay phơi/sấy khô là phổ biến nhất",
+        "Thành phần: Quả chứa pectin và vitamin C cao; lá chứa 7-10% tanin pyrogalic, 3% nhựa, 0.36% tinh dầu",
+        "Cây sinh trưởng tốt ở nhiệt độ 23-28°C, lượng mưa 1000-2000mm/năm",
+        "Kém chịu lạnh: cây non chết ở -1°C, cây trưởng thành chết ở -4°C",
+        "Thu hoạch: Quả mùa hè chín sau 60-70 ngày, quả cuối thu chín sau 80-120 ngày",
+        "Nguồn vitamin C cao hơn cả cam",
+        "Có chỉ số đường huyết thấp, phù hợp cho người tiểu đường",
+        "Chứa axit folic tốt cho phụ nữ mang thai"
+      ],
+      "createdAt": "2025-05-12T16:10:00.000Z",
+      "updatedAt": "2025-05-12T16:10:00.000Z"
+    },
+    {
+      "id": "hibiscus",
+      "vietnameseName": "DÂM BỤT",
+      "englishName": "Chinese Hibiscus",
+      "scientificName": "Hibiscus rosa-sinensis L.",
+      "otherNames": "Xuyên can bì, chu cận, phù tang, phật tang, bông bụp, hoa dâng Bụt, hồng bụt, bông lồng đèn",
+      "description": "Cây bụi thường xanh, cao 1-5m tùy loài. Lá đơn, mọc cách, phiến lá có răng cưa. Hoa lớn, nhiều màu (đỏ, hồng, vàng, cam) với cánh đơn hoặc kép. Cây có nguồn gốc từ Đông Á, nay có mặt tại nhiều quốc gia. Xưa mọc hoang hoặc trồng làm hàng rào, nay chủ yếu trồng làm cảnh và có nhiều giống lai tạo khác nhau.",
+      "distribution": "Có nguồn gốc từ Đông Á, nay phân bố rộng khắp thế giới, phổ biến ở Việt Nam",
+      "natureProperties": "Tính bình, vị ngọt hơi đắng, cả hoa lẫn lá đều nhớt",
+      "usedParts": [
+        "lá tươi",
+        "hoa tươi",
+        "hoa khô",
+        "vỏ rễ"
+      ],
+      "mainBenefits": [
+        "Giảm cholesterol xấu và hạ huyết áp",
+        "Chữa cảm sốt, cảm cúm",
+        "Làm đẹp da, tẩy da chết, loại bỏ mụn đầu đen",
+        "Chữa rụng tóc, kích thích mọc tóc",
+        "Lợi tiểu, giải độc",
+        "Chống oxy hóa, phòng bệnh mãn tính",
+        "Hỗ trợ giảm cân, giữ dáng",
+        "Cải thiện sức khỏe tinh thần, giảm stress",
+        "Ổn định đường huyết",
+        "Tăng cường miễn dịch, chống viêm",
+        "Giúp vết thương mau lành",
+        "Chữa mất ngủ, hồi hộp"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC",
+        "sideEffects": [
+          "Không nên thay thế hoàn toàn nước lọc bằng trà dâm bụt",
+          "Không nên dùng quá nhiều"
+        ],
+        "contraindications": [],
+        "doctorAdvice": "Nên tham khảo ý kiến thầy thuốc khi có vấn đề sức khỏe"
+      },
+      "usage": {
+        "standardDose": "Hoa khô: 10-20g/ngày; Lá tươi: tùy bệnh; Vỏ rễ khô: 8-12g/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Hồi hộp, khó ngủ",
+            "recipe": "15-20g hoa dâm bụt khô hãm uống thay trà hàng ngày. Hoặc 15g lá + 12g hoa nhài sắc uống chiều tối x 7-10 ngày"
+          },
+          {
+            "purpose": "Mụn nhọt có mủ",
+            "recipe": "Hoa tươi + lá trầu không + lá thồm lồm mỗi thứ 50g + vài hạt muối giã nát đắp lên mụn nhọt"
+          },
+          {
+            "purpose": "Tê mỏi chân tay",
+            "recipe": "Lá đào + lá dâm bụt + lá thài lài tía + lá mận + lá si mỗi loại 30g phơi khô, sao vàng, ngâm rượu 15 ngày rồi xoa bóp"
+          },
+          {
+            "purpose": "Rong kinh",
+            "recipe": "40g rễ dâm bụt + 30g huyết dụ sắc uống liền 7 ngày"
+          },
+          {
+            "purpose": "Kiết lị",
+            "recipe": "10 bông dâm bụt bỏ cuống, hấp cách thủy với 1 thìa đường đen, ăn cả nước lẫn xác"
+          },
+          {
+            "purpose": "Quai bị",
+            "recipe": "Lá tươi 50g + 5-6 củ hành giã nhỏ, thêm 100ml nước sôi nguội, vắt lấy nước uống. Bã đắp chỗ sưng x 3-5 ngày"
+          },
+          {
+            "purpose": "Sỏi thận canxi",
+            "recipe": "Hoa tươi 30g + vài hạt muối giã nát vắt nước (thêm 100ml nước để vắt kiệt), uống 2 lần/ngày x 1 tháng"
+          },
+          {
+            "purpose": "Tiểu đường type 2",
+            "recipe": "Ăn 1 hoa chưa nở mỗi sáng trước bữa ăn, liên tục 45 ngày"
+          },
+          {
+            "purpose": "Mất ngủ",
+            "recipe": "Hoa khô 10g hãm nước uống thay trà buổi chiều và tối"
+          },
+          {
+            "purpose": "Giảm cân",
+            "recipe": "Uống trà hoa dâm bụt thường xuyên sau bữa ăn"
+          },
+          {
+            "purpose": "Viêm dạ dày ruột, đại tiện ra máu",
+            "recipe": "Vỏ rễ khô 8-12g sắc uống 3 lần/ngày"
+          }
+        ]
+      },
+      "notes": [
+        "Thành phần lá: chất nhầy tự nhiên, caroten, beta-sitosterol",
+        "Thành phần hoa: flavonoid, alcaloid, vitamin C, B1, B2, beta carotene, sterol",
+        "Chiết xuất hoa có thể giảm 22% cholesterol toàn phần",
+        "Giảm 40-46% đường huyết sau 21 ngày sử dụng",
+        "Thu hái lá và rễ quanh năm",
+        "Hoa phơi trong râm (âm can) cho khô",
+        "Trà hoa dâm bụt tăng cường miễn dịch, chống lão hóa, kích thích mọc tóc",
+        "Polyphenol trong cây có tác dụng chống viêm và bảo vệ thần kinh"
+      ],
+      "createdAt": "2025-05-12T16:20:00.000Z",
+      "updatedAt": "2025-05-12T16:20:00.000Z"
+    },
+    {
+      "id": "indian_beech",
+      "vietnameseName": "DÂY LIM",
+      "englishName": "Indian Beech",
+      "scientificName": "Pongamia pinnata",
+      "otherNames": "Dây mấu, cây bánh dày, cây nim, khổ sâm hoa, Cytisus pinnatus, Pongamia glabra, pongam oil tree, lionge tree",
+      "description": "Cây gỗ lớn cao 15-20m, đường kính thân 70-80cm. Cành mọc tỏa rộng, vỏ trơn nhẵn màu lục xám, gỗ màu vàng nâu nhạt. Lá kép dài 20-25cm, lá chét 5-9, hình thuôn hoặc trái xoan, dài 7-15cm. Hoa mọc thành chùm dài 10-15cm, màu trắng, tím hoặc hồng. Quả nhẵn dài 3.5-5cm, chứa 1-2 hạt. Cây có bộ rễ ăn sâu, ưa sáng, thường mọc ven rừng kín thường xanh.",
+      "distribution": "Phân bố rộng khắp vùng nhiệt đới châu Á (Ấn Độ, Myanmar, Trung Quốc, Đông Nam Á) đến Australia. Ở Việt Nam phân bố từ Quảng Ninh đến các tỉnh phía Nam",
+      "natureProperties": "Tính đại hàn, có độc (theo TQ). Ở Ấn Độ: rễ và vỏ vị đắng cay, tính nóng; lá tính nóng; quả và hạt vị đắng cay, tính nóng",
+      "usedParts": [
+        "hạt",
+        "rễ",
+        "vỏ rễ",
+        "vỏ thân",
+        "lá",
+        "hoa",
+        "dầu hạt"
+      ],
+      "mainBenefits": [
+        "Chống đái tháo đường (giảm glucose huyết)",
+        "Chống loét dạ dày tá tràng",
+        "Hạ sốt, giảm đau, chống viêm",
+        "Kháng vi khuẩn, kháng virus (đặc biệt virus Herpes)",
+        "Chống oxy hóa mạnh",
+        "Bảo vệ thận khỏi tổn thương",
+        "Diệt chấy và trứng chấy",
+        "Chữa các bệnh ngoài da (ghẻ, eczema, vẩy nến)",
+        "Chữa thấp khớp",
+        "Sát trùng vết thương",
+        "Trừ giun sán",
+        "Lợi tiểu, giải độc"
+      ],
+      "warnings": {
+        "toxicity": "CÓ ĐỘC",
+        "sideEffects": [
+          "Ở Việt Nam thường chỉ dùng ngoài vì có độc",
+          "Dùng trong có thể gây ngộ độc"
+        ],
+        "contraindications": [
+          "Phụ nữ mang thai (có thể gây sẩy thai)",
+          "Không dùng trong với liều cao"
+        ],
+        "doctorAdvice": "Cần thận trọng khi dùng, tránh dùng trong, nên tham khảo ý kiến thầy thuốc"
+      },
+      "usage": {
+        "standardDose": "Chủ yếu dùng ngoài. Vỏ rễ khô (nếu dùng trong): 8-12g/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Chữa eczema",
+            "recipe": "Dầu hạt dây lim trộn với kẽm oxyd rồi bôi lên"
+          },
+          {
+            "purpose": "Đau cơ, đau khớp, vẩy nến",
+            "recipe": "Dầu hạt dây lim trộn với dịch chanh vắt, bôi xoa lên"
+          },
+          {
+            "purpose": "Bệnh lậu",
+            "recipe": "Dầu hạt dây lim + sữa dừa + nước vôi trong (đồng thể tích), lắc kỹ rồi bôi"
+          },
+          {
+            "purpose": "Bệnh ở da đầu, vẩy nến",
+            "recipe": "Dầu hạt dây lim + nước vôi trong + dịch chanh vắt (đồng thể tích), trộn đều bôi lên"
+          },
+          {
+            "purpose": "Ghẻ, ngứa, mụn nhọt",
+            "recipe": "Hạt giã nát đắp ngoài hoặc dùng dầu hạt bôi"
+          },
+          {
+            "purpose": "Vết thương, loét da",
+            "recipe": "Dịch rễ dùng rửa vết hoại tử. Lá tươi giã nát đắp vết loét"
+          },
+          {
+            "purpose": "Đái tháo đường",
+            "recipe": "Hoa sắc uống hoặc tán bột uống (ở Ấn Độ)"
+          },
+          {
+            "purpose": "Sâu răng",
+            "recipe": "Dịch rễ ngậm rồi nhổ đi (ở Sri Lanka)"
+          },
+          {
+            "purpose": "Rắn cắn",
+            "recipe": "Hạt và rễ tươi nghiền với nước hoặc nước tiểu người đắp lên"
+          },
+          {
+            "purpose": "Thấp khớp",
+            "recipe": "Dầu hạt xoa ngoài. Lá tươi giã nát đắp (ở Indonesia)"
+          }
+        ]
+      },
+      "notes": [
+        "Ở Việt Nam chủ yếu dùng ngoài do có độc",
+        "Cây có hiện tượng rụng lá vào mùa khô (miền Nam) và mùa đông (miền Bắc)",
+        "Gỗ có độ bền tốt, không bị mối mọt, có vân đẹp",
+        "Hạt dùng để duốc cá ở Philippines",
+        "Dầu hạt có tính sát trùng mạnh",
+        "Cây còn được trồng làm cảnh ở công viên và đường phố",
+        "Mùa hoa: tháng 5-7; mùa quả: tháng 8-10",
+        "Thu hái quanh năm tùy bộ phận cần dùng"
+      ],
+      "createdAt": "2025-05-12T16:30:00.000Z",
+      "updatedAt": "2025-05-12T16:30:00.000Z"
+    },
+    {
+      "id": "indian_mustard",
+      "vietnameseName": "CẢI ẤN ĐỘ",
+      "englishName": "Indian Mustard",
+      "scientificName": "Brassica juncea",
+      "otherNames": "",
+      "description": "Cây thuộc họ cải (Brassicaceae), được trồng phổ biến ở Ấn Độ, Trung Quốc và nhiều vùng khác để lấy hạt, lá và dầu. Cây có hạt chứa glucosinolates, allyl isothiocyanate có mùi hăng đặc trưng. Được sử dụng từ lâu trong y học Ayurveda, Unani và y học cổ truyền Trung Hoa.",
+      "distribution": "Phổ biến ở Ấn Độ, Trung Quốc và nhiều vùng khác trên thế giới",
+      "natureProperties": "Tính ấm, vị cay nồng (theo y học Ayurveda và TCM)",
+      "usedParts": [
+        "hạt",
+        "lá",
+        "dầu từ hạt",
+        "tinh dầu"
+      ],
+      "mainBenefits": [
+        "Làm ấm cơ thể, giảm đau nhức cơ khớp",
+        "Trị cảm lạnh, ho đờm",
+        "Kích thích tiêu hóa, tăng dịch tiêu hóa",
+        "Kháng khuẩn (E.coli, Salmonella), kháng viêm",
+        "Chống ung thư (ruột kết, vú, tiền liệt tuyến)",
+        "Bảo vệ tim mạch, giảm cholesterol xấu",
+        "Kích hoạt enzyme giải độc phase II",
+        "Lợi tiểu, hạ khí",
+        "Chống nấm da",
+        "Kích thích lưu thông máu",
+        "Giảm đau thấp khớp, viêm cơ"
+      ],
+      "warnings": {
+        "toxicity": "CÓ THỂ GÂY HẠI nếu dùng quá liều",
+        "sideEffects": [
+          "Kích ứng dạ dày, viêm niêm mạc nếu dùng quá liều",
+          "Dầu chứa erucic acid có thể ảnh hưởng tim ở động vật",
+          "Gây bỏng rát nếu tiếp xúc với mắt, niêm mạc"
+        ],
+        "contraindications": [
+          "Phụ nữ mang thai không nên dùng nếu không có chỉ định",
+          "Người mẫn cảm với cây họ cải"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến bác sĩ trước khi dùng với liều cao"
+      },
+      "usage": {
+        "standardDose": "Theo chỉ định của thầy thuốc hoặc nhà sản xuất",
+        "specificUsage": [
+          {
+            "purpose": "Giảm đau cơ khớp, thấp khớp",
+            "recipe": "Dầu mù tạt nguyên chất xoa bóp vào vùng đau 2-3 lần/ngày"
+          },
+          {
+            "purpose": "Trị cảm lạnh",
+            "recipe": "Dầu mù tạt + tỏi giã nhỏ, bôi vào ngực và cổ họng trước khi ngủ"
+          },
+          {
+            "purpose": "Cải thiện tiêu hóa",
+            "recipe": "1 thìa cafe hạt mù tạt ngâm nước ấm, uống trước bữa ăn"
+          },
+          {
+            "purpose": "Trị ho đờm",
+            "recipe": "Hạt mù tạt nghiền nhỏ + mật ong, uống 2 lần/ngày"
+          },
+          {
+            "purpose": "Kháng khuẩn da",
+            "recipe": "Dầu mù tạt pha loãng bôi lên vùng nhiễm trùng nhẹ"
+          },
+          {
+            "purpose": "Bổ sung dinh dưỡng",
+            "recipe": "Lá mù tạt nấu canh hoặc xào ăn hàng ngày"
+          },
+          {
+            "purpose": "Viêm khớp gối",
+            "recipe": "Xoa bóp dầu mù tạt hàng ngày trong 6 tuần theo hướng dẫn"
+          }
+        ]
+      },
+      "notes": [
+        "Thành phần chính: glucosinolates (sinigrin, sinalbin), allyl isothiocyanate",
+        "Giàu vitamin A, C, K, folate, canxi, sắt, magie",
+        "Dầu chứa acid béo omega-3 và omega-6",
+        "Nghiên cứu tại ĐH Illinois: AITC ức chế tế bào ung thư ruột kết",
+        "Nghiên cứu ĐH Kyoto: tinh dầu diệt hiệu quả E.coli, Salmonella",
+        "Được sử dụng rộng rãi trong y học Ayurveda và TCM",
+        "Tránh tiếp xúc trực tiếp với mắt và niêm mạc",
+        "Bảo quản dầu ở nơi khô ráo, tránh ánh sáng"
+      ],
+      "createdAt": "2025-05-12T16:40:00.000Z",
+      "updatedAt": "2025-05-12T16:40:00.000Z"
+    },
+    {
+      "id": "jackfruit",
+      "vietnameseName": "MÍT",
+      "englishName": "Jackfruit",
+      "scientificName": "Artocarpus heterophyllus",
+      "otherNames": "",
+      "description": "Cây thuộc họ Dâu tằm (Moraceae), có quả lớn nhất trong các loại cây ăn quả. Là cây gỗ lớn, cao 10-20m, có nhựa trắng. Lá đơn, mọc cách, phiến lá có răng cưa. Quả giả lớn, khi chín có múi vàng và hạt to. Tất cả các bộ phận của cây từ trái, hạt, lá, vỏ đến nhựa đều có giá trị dược lý.",
+      "distribution": "Phổ biến ở Đông Nam Á, Nam Á, được trồng rộng rãi ở Việt Nam",
+      "natureProperties": "Quả: ngọt, bổ. Lá: mát, chát nhẹ. Nhựa: nóng, dính",
+      "usedParts": [
+        "quả chín",
+        "hạt",
+        "lá",
+        "vỏ cây",
+        "nhựa"
+      ],
+      "mainBenefits": [
+        "Chống oxy hóa mạnh, bảo vệ tế bào",
+        "Hạ đường huyết (đặc biệt là lá)",
+        "Chống ung thư nhờ lignan và isoflavone",
+        "Tốt cho tiêu hóa, ngăn táo bón",
+        "Bảo vệ tim mạch, ổn định huyết áp",
+        "Kháng khuẩn, chống viêm",
+        "Tăng cường miễn dịch",
+        "Bổ thận, nhuận tràng (hạt)",
+        "Thanh nhiệt, giải độc (lá)",
+        "Trị tiêu chảy, ghẻ lở (nhựa)"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC (nói chung an toàn)",
+        "sideEffects": [
+          "Quả chín nhiều đường, người tiểu đường nên ăn ít",
+          "Hạt chứa tanin, có thể gây khó tiêu nếu không nấu kỹ",
+          "Lá mít liều cao có thể gây tụt đường huyết quá mức",
+          "Nhựa mít có thể gây kích ứng da nhạy cảm"
+        ],
+        "contraindications": [
+          "Phụ nữ mang thai nên cẩn thận khi dùng lá mít",
+          "Người tiểu đường đang dùng thuốc hạ đường huyết"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến bác sĩ khi dùng lâu dài hoặc kết hợp với thuốc tây"
+      },
+      "usage": {
+        "standardDose": "Lá: 10-15g sắc uống/ngày. Quả: vừa phải. Hạt: 5-10 quả/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Hạ đường huyết",
+            "recipe": "Lá mít non 10-15g sắc với 500ml nước, uống chia 2 lần/ngày"
+          },
+          {
+            "purpose": "Bồi bổ cơ thể",
+            "recipe": "Ăn trái mít chín vừa phải hoặc nấu canh gà với hạt mít"
+          },
+          {
+            "purpose": "Bổ thận, nhuận tràng",
+            "recipe": "Hạt mít 5-10 quả luộc hoặc nướng ăn hàng ngày"
+          },
+          {
+            "purpose": "Thanh nhiệt, mát gan",
+            "recipe": "Lá mít khô 10g hãm như trà uống hàng ngày"
+          },
+          {
+            "purpose": "Tiêu viêm, giảm sưng",
+            "recipe": "Lá mít tươi giã nát đắp vào vùng bị đau nhức, sưng tấy"
+          },
+          {
+            "purpose": "Trị mụn nhọt, viêm da",
+            "recipe": "Lá mít tươi giã nát đắp lên vùng da bị viêm"
+          },
+          {
+            "purpose": "Trị cảm cúm, ho",
+            "recipe": "Lá mít + gừng + lá sả nấu nước xông hoặc uống"
+          },
+          {
+            "purpose": "Trị tiêu chảy",
+            "recipe": "Vỏ cây hoặc nhựa mít nấu nước uống (ít dùng, cần thận trọng)"
+          },
+          {
+            "purpose": "Hỗ trợ tiêu hóa",
+            "recipe": "Ăn trái mít chín vừa phải sau bữa ăn"
+          }
+        ]
+      },
+      "notes": [
+        "Thành phần quả: vitamin C, A, B6, kali, flavonoid, carotenoid",
+        "Thành phần hạt: protein, tinh bột, saponin, lectin",
+        "Thành phần lá: flavonoid, tanin, saponin, phenol",
+        "Nghiên cứu ĐH Mahidol: Lá mít giảm đường huyết rõ rệt",
+        "Tạp chí Journal of Food Biochemistry: Quả có hoạt tính chống oxy hóa mạnh",
+        "Quả mít là nguồn chất xơ hòa tan tốt cho tiêu hóa",
+        "Ức chế enzyme alpha-glucosidase giúp kiểm soát tiểu đường",
+        "Lignan và isoflavone trong mít có tính chống ung thư",
+        "Kali trong mít giúp ổn định huyết áp",
+        "Nhựa và hạt có hoạt tính kháng khuẩn cao"
+      ],
+      "createdAt": "2025-05-12T16:50:00.000Z",
+      "updatedAt": "2025-05-12T16:50:00.000Z"
+    },
+    {
+      "id": "jamaica_cherry",
+      "vietnameseName": "CÂY TRỨNG CÁ",
+      "englishName": "Jamaica Cherry-Gasagase",
+      "scientificName": "Muntingia calabura",
+      "otherNames": "Cotton Candy Berry, Singapore Cherry, Strawberry Tree (tiếng Anh); Aratiles (Philippines); Kersen (Indonesia); Takhop Farang (Thái); Ceri Kampung (Malaysia); Capulin (Tây Ban Nha)",
+      "description": "Cây gỗ nhỏ có quả hình cầu màu đỏ khi chín, được sử dụng rộng rãi trong y học dân gian ở nhiều quốc gia. Tất cả các bộ phận của cây từ lá, vỏ, hoa, quả đến rễ đều có giá trị dược liệu với nhiều hoạt chất sinh học có lợi cho sức khỏe.",
+      "distribution": "Phân bố rộng rãi ở vùng nhiệt đới, phổ biến ở Đông Nam Á",
+      "natureProperties": "Tính mát, vị ngọt nhạt (quả), lá có vị chát nhẹ",
+      "usedParts": [
+        "lá tươi",
+        "lá khô",
+        "vỏ cây",
+        "hoa",
+        "quả chín",
+        "rễ"
+      ],
+      "mainBenefits": [
+        "Hạ sốt, giảm đau",
+        "Chống viêm, kháng khuẩn",
+        "Điều trị tiêu chảy, kiết lỵ",
+        "Giảm đau dạ dày, loét dạ dày",
+        "Hạ đường huyết cho người tiểu đường",
+        "Chữa vết thương, vết loét ngoài da",
+        "Giảm huyết áp",
+        "Bổ sung vitamin C",
+        "Chống oxy hóa mạnh",
+        "Cải thiện tiêu hóa",
+        "Giảm ho, đau họng",
+        "An thần, giúp ngủ ngon",
+        "Giảm căng thẳng, lo âu",
+        "Bảo vệ gan"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC (an toàn khi dùng đúng liều)",
+        "sideEffects": [
+          "Một số người có thể bị dị ứng với nhựa cây",
+          "Không nên dùng liều lượng quá cao"
+        ],
+        "contraindications": [
+          "Phụ nữ có thai nên tham khảo ý kiến bác sĩ"
+        ],
+        "doctorAdvice": "Cần kết hợp với điều trị y tế chính thống cho các bệnh mãn tính"
+      },
+      "usage": {
+        "standardDose": "Lá khô: 10-15g/ngày. Quả tươi: 20-30 quả/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Hạ sốt, giảm đau",
+            "recipe": "Lá tươi hoặc khô 10-15g sắc với 500ml nước, uống 2-3 lần/ngày"
+          },
+          {
+            "purpose": "Tiêu chảy, kiết lỵ",
+            "recipe": "Lá khô 10g sắc nước uống, chia 3 lần trong ngày"
+          },
+          {
+            "purpose": "Hạ đường huyết",
+            "recipe": "Lá tươi 15g sắc nước uống buổi sáng và chiều"
+          },
+          {
+            "purpose": "Vết thương ngoài da",
+            "recipe": "Lá tươi giã nát đắp trực tiếp lên vết thương"
+          },
+          {
+            "purpose": "Giảm huyết áp",
+            "recipe": "Lá khô 10g hãm như trà, uống hàng ngày"
+          },
+          {
+            "purpose": "Bổ sung vitamin C, cải thiện tiêu hóa",
+            "recipe": "Ăn 20-30 quả chín mỗi ngày"
+          },
+          {
+            "purpose": "An thần, ngủ ngon",
+            "recipe": "Hoa tươi 5-10g hãm nước uống trước khi ngủ"
+          },
+          {
+            "purpose": "Sát trùng vết thương",
+            "recipe": "Vỏ cây nấu nước rửa vết thương"
+          },
+          {
+            "purpose": "Giảm ho, đau họng",
+            "recipe": "Quả chín ăn tươi hoặc ngâm đường uống"
+          },
+          {
+            "purpose": "Ngâm rượu thuốc",
+            "recipe": "Lá và vỏ cây ngâm rượu 40 độ trong 1 tháng"
+          }
+        ]
+      },
+      "notes": [
+        "Hoạt chất: Flavonoid, Tannin, Saponin, Alkaloid, Phenolic compounds",
+        "Nghiên cứu khoa học đã chứng minh hoạt tính kháng khuẩn mạnh",
+        "Có tác dụng hạ đường huyết trên động vật thí nghiệm",
+        "Khả năng chống oxy hóa mạnh nhờ các hợp chất phenolic",
+        "Có hoạt tính bảo vệ gan",
+        "Nước sắc thường uống 2-3 lần/ngày",
+        "Việc sử dụng nên được tư vấn bởi người có chuyên môn",
+        "Không thay thế hoàn toàn điều trị y tế hiện đại",
+        "Tất cả các bộ phận của cây đều có giá trị dược liệu"
+      ],
+      "createdAt": "2025-05-12T17:00:00.000Z",
+      "updatedAt": "2025-05-12T17:00:00.000Z"
+    },
+    {
+      "id": "syzygium_cumini",
+      "vietnameseName": "TRÂM MỐC",
+      "englishName": "Jamun, Java Plum",
+      "scientificName": "Syzygium cumini",
+      "otherNames": "Trâm vối, vối rừng, trâm vỏ đen, mận Malabar, mận Java, mận đen, jamun, jambolan, Jambu, Indian blackberry, Black plum, durobbi (tiếng Úc bản địa)",
+      "description": "Cây thường xanh nhiệt đới thuộc chi Trâm, có thể cao 30m và sống hơn 100 năm. Tán lá dày đặc, vỏ gốc màu xám đen sần sùi, lên cao mịn và nhạt màu hơn. Lá thơm như nhựa thông, non màu hồng, già màu xanh đậm. Hoa nhỏ 5mm, thơm. Quả hình trứng thuôn dài, chuyển từ xanh → hồng → đỏ → đen khi chín. Có nguồn gốc từ Ấn Độ và Đông Nam Á.",
+      "distribution": "Có nguồn gốc từ Tiểu lục địa Ấn Độ, Myanmar, Sri Lanka và quần đảo Andaman. Hiện phổ biến ở các vùng nhiệt đới toàn thế giới",
+      "natureProperties": "Tính mát, vị ngọt hơi chua, chát, se lưỡi",
+      "usedParts": [
+        "lá tươi",
+        "lá khô",
+        "quả",
+        "hạt",
+        "vỏ cây",
+        "gỗ"
+      ],
+      "mainBenefits": [
+        "Hỗ trợ điều trị tiểu đường (giảm đường huyết)",
+        "Kháng khuẩn và chống viêm",
+        "Hỗ trợ tiêu hóa, trị tiêu chảy, kiết lỵ",
+        "Giảm loét dạ dày, bảo vệ niêm mạc dạ dày",
+        "Kháng oxy hóa và bảo vệ gan",
+        "Chữa mụn nhọt, loét da, vết thương",
+        "Giảm đau bụng, đầy hơi",
+        "Thanh lọc độc tố trong gan",
+        "Hỗ trợ điều trị gan nhiễm mỡ, viêm gan nhẹ",
+        "Ngăn chuyển hóa tinh bột thành đường"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC (an toàn khi dùng đúng liều)",
+        "sideEffects": [
+          "Có thể gây hạ đường huyết quá mức ở người đang điều trị tiểu đường",
+          "Không dùng lá bị mốc, thối rữa"
+        ],
+        "contraindications": [
+          "Phụ nữ mang thai nên tham khảo bác sĩ",
+          "Người dùng thuốc tiểu đường cần theo dõi đường huyết"
+        ],
+        "doctorAdvice": "Người bệnh tiểu đường nên tham khảo bác sĩ trước khi dùng"
+      },
+      "usage": {
+        "standardDose": "Lá khô: 5-10g/ngày. Quả: 100-200g/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Hỗ trợ điều trị tiểu đường",
+            "recipe": "Lá khô 5-10g nghiền thành bột, pha với nước ấm uống 2 lần/ngày"
+          },
+          {
+            "purpose": "Tiêu hóa, tiêu chảy, kiết lỵ",
+            "recipe": "Lá non giã nát lấy nước uống hoặc sắc 10g lá khô"
+          },
+          {
+            "purpose": "Mụn nhọt, loét da",
+            "recipe": "Lá tươi giã nát đắp ngoài da hoặc rửa bằng nước sắc lá"
+          },
+          {
+            "purpose": "Loét dạ dày",
+            "recipe": "Lá khô sắc nước uống trước bữa ăn 30 phút"
+          },
+          {
+            "purpose": "Bảo vệ gan",
+            "recipe": "Chiết xuất lá dùng theo hướng dẫn hoặc sắc 10g lá/ngày"
+          },
+          {
+            "purpose": "Ăn quả tươi",
+            "recipe": "Ăn 100-200g quả chín/ngày, có thể làm nước ép hoặc mứt"
+          },
+          {
+            "purpose": "Làm rượu thuốc",
+            "recipe": "Quả chín ngâm rượu làm rượu duhat/lomboy (Philippines)"
+          }
+        ]
+      },
+      "notes": [
+        "Thành phần: jamboline, alkaloid giúp ức chế chuyển hóa tinh bột",
+        "Lá chứa 9.1% protein thô, 4.3% chất béo, 17% xơ thô",
+        "Quả chứa vitamin C (14.3mg/100g), vitamin A, B complex",
+        "Gỗ chịu nước tốt, dùng làm tà vẹt đường sắt, giếng nước",
+        "Ra hoa tháng 3-4, kết quả tháng 5-6",
+        "Cây phát triển nhanh, được xem là loài xâm lấn ở một số nơi",
+        "Quả làm tím lưỡi khi ăn",
+        "Lá dùng làm thức ăn gia súc có giá trị dinh dưỡng tốt",
+        "Rất phổ biến trong y học Ayurveda và y học dân gian châu Á"
+      ],
+      "createdAt": "2025-05-12T17:10:00.000Z",
+      "updatedAt": "2025-05-12T17:10:00.000Z"
+    },
+    {
+      "id": "jasmine",
+      "vietnameseName": "NHÀI",
+      "englishName": "Arabian Jasmine",
+      "scientificName": "Jasminum sambac (L.) Aiton",
+      "otherNames": "Lài, Mạt lị, Mạt lợi, Nhài kép, Nhài đơn, Nyctanthes sambac, Mogra (Ấn Độ), Sampaguita (Philippines), Melati putih (Indonesia)",
+      "description": "Cây nhỡ, nửa bò, cao 0.5-3m với nhiều cành mọc xòe. Lá hình trái xoan-bầu dục, dài 30-70mm, rộng 20-35mm, bóng cả hai mặt. Hoa màu trắng, đường kính 2-3cm, mọc thành cụm 3-12 bông ở cuối cành, mùi thơm ngát. Quả hình cầu đường kính 6mm, màu đen khi chín.",
+      "distribution": "Có nguồn gốc từ Tây Nam và Nam Á (Philippines, Ấn Độ, Myanmar, Sri Lanka). Hiện trồng khắp vùng nhiệt đới. Tại Việt Nam trồng ở Hà Nội, Ninh Bình, Thanh Hóa, Quảng Trị, Thừa Thiên-Huế, Đồng Nai, TP.HCM",
+      "natureProperties": "Hoa và lá: vị cay ngọt, tính mát. Rễ: vị cay ngọt, tính mát, hơi có độc",
+      "usedParts": [
+        "hoa",
+        "lá",
+        "rễ"
+      ],
+      "mainBenefits": [
+        "Trấn thống, an thần",
+        "Thanh nhiệt giải biểu",
+        "Lợi thấp",
+        "Chữa ngoại cảm phát sốt",
+        "Trị đau bụng, tiêu chảy, lỵ",
+        "Chữa viêm màng khóe mắt, viêm kết mạc",
+        "Trị mụn nhọt độc",
+        "Trị mất ngủ (rễ)",
+        "Chữa bạch đới (lá)",
+        "Trị viêm mũi, viêm giác mạc",
+        "Điều kinh",
+        "Trị rôm sảy, sởi ở trẻ em",
+        "Trị loét ngoan cố (dùng ngoài)"
+      ],
+      "warnings": {
+        "toxicity": "RỄ HƠI CÓ ĐỘC",
+        "sideEffects": [
+          "Rễ nhài có tác dụng ma túy, ngâm rượu uống sẽ hôn mê bất tỉnh",
+          "Theo cổ thư: 3cm rễ ngâm rượu làm mê 1 ngày, 6cm mê 2 ngày"
+        ],
+        "contraindications": [
+          "Phụ nữ có thai không nên dùng",
+          "Người cơ thể suy nhược không nên dùng"
+        ],
+        "doctorAdvice": "Cần thận trọng với liều dùng rễ, tránh dùng quá liều"
+      },
+      "usage": {
+        "standardDose": "Hoa, lá: 3-5g/ngày. Rễ: 1-1.5g/ngày (nghiền trong nước)",
+        "specificUsage": [
+          {
+            "purpose": "Ngoại cảm phát sốt, ỉa chảy",
+            "recipe": "Hoa nhài 6g + chè xanh 10g + thảo quả 3g sắc nước uống"
+          },
+          {
+            "purpose": "Đau mắt, viêm kết mạc",
+            "recipe": "Hoa nhài 6g (có thể kết hợp kim ngân hoa 9g + hoa cúc trắng 9g) sắc nước xông và uống, hoặc giã vắt nước trộn lòng trắng trứng gà đắp"
+          },
+          {
+            "purpose": "Mất ngủ",
+            "recipe": "Rễ nhài 1-1.5g nghiền trong nước uống"
+          },
+          {
+            "purpose": "Rôm sảy",
+            "recipe": "Lá nhài vò vào nước tắm, có thể phối hợp với lá ngải cứu"
+          },
+          {
+            "purpose": "Loét ngoan cố",
+            "recipe": "Lá khô ngâm nước làm thành dạng đắp"
+          },
+          {
+            "purpose": "Pha trà uống",
+            "recipe": "Hoa tươi hoặc khô pha như trà uống hàng ngày"
+          },
+          {
+            "purpose": "Ướp trà",
+            "recipe": "Hoa nhài tươi dùng để ướp trà xanh làm tăng hương vị"
+          }
+        ]
+      },
+      "notes": [
+        "Mùa hoa: tháng 5-7, mùa quả: tháng 7-9",
+        "Thành phần hóa học: parafin, ester formic acetic-benzoic, indol, flavonoid (rutin, quercetin)",
+        "Rễ chứa axit dotriacontanoic, hesperidin, jasminoids A,B,C,D",
+        "Lá chứa flavonoid rhamnoglycosides, α-amyrin, β-sitosterol",
+        "Quốc hoa của Philippines và một trong ba quốc hoa của Indonesia",
+        "Cây ưa sáng, nhân giống chủ yếu bằng giâm cành",
+        "Hoa dùng làm nước hoa, pha trà, làm thơm thức ăn",
+        "Thu hoạch: rễ vào mùa thu đông, lá quanh năm, hoa vào hè thu khi mới nở"
+      ],
+      "createdAt": "2025-05-12T17:20:00.000Z",
+      "updatedAt": "2025-05-12T17:20:00.000Z"
+    },
+    {
+      "id": "karanda",
+      "vietnameseName": "KARANDA",
+      "englishName": "Karanda, Karonda",
+      "scientificName": "Carissa carandas",
+      "otherNames": "Christ's Thorn, Bengal Currant, Karonda Berry (tiếng Anh); Karaunda (Hindi); Nam phrom (Thái); Loại cây họ Trúc đào",
+      "description": "Cây bụi hoặc cây nhỏ cao 2-4m, có gai, thuộc họ Trúc đào (Apocynaceae). Lá mọc đối, hình trứng, dày và bóng. Hoa màu trắng, thơm, mọc thành chùm. Quả hình cầu hoặc bầu dục, khi sống màu xanh, chín chuyển sang đỏ đến tím đen, vị chua chát. Cây có nhựa trắng dính. Thân và cành có gai đôi ở nách lá.",
+      "distribution": "Có nguồn gốc từ Ấn Độ, hiện phân bố ở Nam và Đông Nam Á, bao gồm Bangladesh, Sri Lanka, Indonesia, Malaysia, Myanmar, Philippines và Thái Lan. Được trồng ở một số vùng ở Việt Nam",
+      "natureProperties": "Quả sống: chua, chát. Quả chín: chua ngọt. Lá và rễ: đắng, tính mát",
+      "usedParts": [
+        "quả chín",
+        "quả sống",
+        "lá",
+        "rễ",
+        "vỏ rễ",
+        "hạt",
+        "nhựa cây"
+      ],
+      "mainBenefits": [
+        "Tăng cường tiêu hóa, chữa khó tiêu",
+        "Điều trị scurvy (bổ sung vitamin C)",
+        "Giảm sốt, hạ nhiệt",
+        "Chống thiếu máu",
+        "Bảo vệ và tăng cường chức năng gan",
+        "Điều trị bệnh về da",
+        "Chữa tiêu chảy, kiết lỵ",
+        "Điều trị viêm khớp",
+        "Chữa vết loét miệng",
+        "Giảm đau tai",
+        "Hạ đường huyết (tiểu đường)",
+        "Cải thiện chức năng thận",
+        "Chữa vết thương",
+        "Nhuận tràng",
+        "Kích thích tim mạch",
+        "Điều trị sâu răng",
+        "Tăng cường miễn dịch"
+      ],
+      "warnings": {
+        "toxicity": "HẠT CÓ ĐỘC TÍNH NHẤT ĐỊNH",
+        "sideEffects": [
+          "Nhựa cây có thể gây kích ứng da",
+          "Dùng liều cao có thể gây rối loạn tiêu hóa",
+          "Có thể gây dị ứng ở một số người"
+        ],
+        "contraindications": [
+          "Phụ nữ có thai không nên dùng (có thể gây sẩy thai)",
+          "Người huyết áp thấp cẩn thận khi dùng",
+          "Người đang dùng thuốc tiểu đường"
+        ],
+        "doctorAdvice": "Cần tư vấn bác sĩ khi điều trị bệnh mãn tính như tiểu đường"
+      },
+      "usage": {
+        "standardDose": "Quả: 10-15 quả/ngày. Lá khô: 5-10g/ngày. Bột rễ: 1-3g/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Tiêu hóa kém, khó tiêu",
+            "recipe": "Ăn 10-15 quả chín/ngày hoặc làm mứt quả"
+          },
+          {
+            "purpose": "Tiêu chảy, kiết lỵ",
+            "recipe": "Lá khô 5-10g sắc nước uống 2-3 lần/ngày"
+          },
+          {
+            "purpose": "Tiểu đường",
+            "recipe": "Bột vỏ rễ 1-3g/ngày chia 2-3 lần, uống với nước ấm"
+          },
+          {
+            "purpose": "Vết loét miệng",
+            "recipe": "Nhai lá tươi hoặc súc miệng bằng nước sắc lá"
+          },
+          {
+            "purpose": "Đau tai",
+            "recipe": "Dịch lá tươi giã lọc lấy nước, nhỏ 2-3 giọt vào tai"
+          },
+          {
+            "purpose": "Ghẻ, ngứa, bệnh ngoài da",
+            "recipe": "Nước sắc rễ hoặc vỏ rễ rửa vùng da bị bệnh"
+          },
+          {
+            "purpose": "Thiếu máu",
+            "recipe": "Ăn quả chín thường xuyên hoặc làm mứt ăn hàng ngày"
+          },
+          {
+            "purpose": "Sâu răng",
+            "recipe": "Bột hạt khô trộn với ít dầu dừa, chấm vào răng sâu"
+          },
+          {
+            "purpose": "Vết thương ngoài da",
+            "recipe": "Lá tươi giã nát đắp hoặc rửa bằng nước sắc rễ"
+          },
+          {
+            "purpose": "Bổ sung vitamin C",
+            "recipe": "Ăn quả tươi hàng ngày hoặc làm nước ép"
+          }
+        ]
+      },
+      "notes": [
+        "Thành phần: alkaloid, flavonoid, tannin, saponin, vitamin C, pectin, acid hữu cơ",
+        "Quả giàu vitamin C, iron, calcium, phosphorus",
+        "Tác dụng dược lý: kháng khuẩn, kháng nấm, chống oxy hóa, hạ đường huyết",
+        "Karanda murabba là mứt quả truyền thống trong Ayurveda",
+        "Cây dễ trồng, chịu hạn tốt, thích hợp làm hàng rào",
+        "Quả có thể ướp muối, làm dưa chua, chutney",
+        "Nghiên cứu hiện đại tập trung vào tác dụng chống tiểu đường",
+        "Gỗ cứng, dùng làm đồ thủ công mỹ nghệ",
+        "Hoa thơm, thu hút ong bướm",
+        "Chiết xuất lá đang được nghiên cứu làm thuốc tiểu đường"
+      ],
+      "createdAt": "2025-05-12T17:30:00.000Z",
+      "updatedAt": "2025-05-12T17:30:00.000Z"
+    },
+    {
+      "id": "lemon",
+      "vietnameseName": "CHANH",
+      "englishName": "Lemon",
+      "scientificName": "Citrus × limon",
+      "otherNames": "Chanh tây, chanh vàng, thanh yên",
+      "description": "Cây thân gỗ nhỏ cao 3-6m, có nhiều cành và gai. Lá hình trứng, đầu nhọn, mép có răng cưa nhỏ, màu xanh đậm, bóng, chứa nhiều tuyến tinh dầu thơm đặc trưng. Hoa màu trắng hoặc hơi tím, thơm. Quả hình bầu dục hoặc tròn, vỏ dày, sần sùi, màu vàng khi chín, bên trong có nhiều múi mọng nước với vị chua đặc trưng. Cây chanh được trồng phổ biến và sử dụng rộng rãi trong ẩm thực cũng như y học cổ truyền và hiện đại.",
+      "distribution": "Có nguồn gốc từ vùng Đông Nam Á, hiện được trồng phổ biến ở hầu hết các vùng nhiệt đới và cận nhiệt đới trên thế giới, trong đó có Việt Nam",
+      "natureProperties": "Theo Đông y, chanh có vị chua, tính mát (quả); lá có tính ấm, vị cay thơm",
+      "usedParts": [
+        "lá tươi",
+        "lá khô",
+        "quả",
+        "vỏ quả",
+        "tinh dầu từ lá và vỏ",
+        "hoa"
+      ],
+      "mainBenefits": [
+        "Giải cảm, giảm ho, long đờm, làm dịu đau họng (lá, quả)",
+        "Kháng viêm, kháng khuẩn mạnh (lá, quả, tinh dầu)",
+        "Hỗ trợ hệ tiêu hóa, giảm táo bón, đầy hơi, khó tiêu (lá, quả)",
+        "Giảm viêm loét dạ dày, trào ngược axit (lá)",
+        "Giảm đau do viêm khớp, tăng cường lưu thông máu đến khớp (lá, tinh dầu)",
+        "Giúp giảm triệu chứng hen suyễn, giãn cơ trơn phế quản (lá)",
+        "Thư giãn tinh thần, giảm căng thẳng, lo âu, hỗ trợ giấc ngủ (lá, tinh dầu)",
+        "Cải thiện sức khỏe làn da, tăng collagen, giảm mụn (lá, quả)",
+        "Tăng cường hệ miễn dịch nhờ vitamin C dồi dào (lá, quả)",
+        "Phòng ngừa các bệnh mãn tính nhờ chất chống oxy hóa (lá, quả)",
+        "Hỗ trợ giảm cân, tăng cường trao đổi chất (quả, lá)",
+        "Giải độc gan, thận (quả)",
+        "Phòng ngừa sỏi thận (quả)",
+        "Điều hòa huyết áp (quả, lá)",
+        "Cân bằng pH trong cơ thể (quả)"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC (an toàn khi sử dụng đúng liều)",
+        "sideEffects": [
+          "Có thể gây kích ứng da khi tiếp xúc trực tiếp với tinh dầu đậm đặc",
+          "Nước chanh cô đặc có thể làm mòn men răng nếu tiếp xúc thường xuyên",
+          "Một số người có thể bị dị ứng với thành phần trong lá hoặc quả chanh",
+          "Có thể gây kích ứng dạ dày ở người nhạy cảm nếu dùng quá nhiều"
+        ],
+        "contraindications": [
+          "Người bị viêm loét dạ dày nặng nên hạn chế dùng nước cốt chanh đậm đặc",
+          "Người dị ứng với họ cam quýt nên thận trọng",
+          "Không nên bôi tinh dầu chanh lên da trước khi ra nắng (gây phản ứng quang độc)"
+        ],
+        "doctorAdvice": "An toàn khi sử dụng ở liều lượng thông thường, nên tham khảo ý kiến bác sĩ nếu sử dụng với mục đích điều trị bệnh"
+      },
+      "usage": {
+        "standardDose": "Lá tươi: 5-10 lá/ngày, Lá khô: 3-5g/ngày, Nước cốt quả: 30-60ml/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Giải cảm, giảm ho",
+            "recipe": "5-7 lá chanh tươi đun với 500ml nước, xông hơi hoặc uống. Có thể thêm mật ong, gừng để tăng hiệu quả. Hoặc nước chanh tươi 30ml + mật ong + nước ấm, uống 2-3 lần/ngày"
+          },
+          {
+            "purpose": "Hỗ trợ tiêu hóa",
+            "recipe": "3-5 lá chanh tươi hãm với nước sôi, uống sau bữa ăn. Hoặc nước chanh tươi 1 thìa súp + 1 cốc nước ấm, uống trước bữa ăn 30 phút"
+          },
+          {
+            "purpose": "Giảm đau khớp",
+            "recipe": "10-15 lá chanh tươi giã nát với ít muối, đắp lên vùng đau. Hoặc đun lá chanh lấy nước xông, chườm nóng. Tinh dầu chanh pha loãng với dầu olive xoa bóp nhẹ nhàng"
+          },
+          {
+            "purpose": "Chăm sóc da",
+            "recipe": "Lá chanh tươi giã nát với nước, thoa lên da mặt 15-20 phút, rửa sạch. Hoặc nước cốt chanh pha loãng với nước hoa hồng, thoa lên da để trị mụn và làm sáng da"
+          },
+          {
+            "purpose": "Giảm cân, thanh lọc cơ thể",
+            "recipe": "Nước ép 1/2 quả chanh + 250ml nước ấm + 1 thìa cà phê mật ong, uống vào buổi sáng lúc đói"
+          },
+          {
+            "purpose": "Thư giãn, giảm stress",
+            "recipe": "3-5 lá chanh tươi hãm với nước sôi, thêm mật ong, uống trước khi ngủ. Hoặc nhỏ 3-5 giọt tinh dầu chanh vào đèn xông, xông phòng 30 phút"
+          },
+          {
+            "purpose": "Cải thiện hệ miễn dịch",
+            "recipe": "Nước ép 1 quả chanh + 1 thìa mật ong + 1 nhúm bột quế + 240ml nước ấm, uống mỗi sáng"
+          },
+          {
+            "purpose": "Giải độc gan, thận",
+            "recipe": "1/2 quả chanh ép lấy nước + 250ml nước ấm, uống vào buổi sáng trước bữa ăn"
+          }
+        ]
+      },
+      "notes": [
+        "Tinh dầu lá và vỏ chanh giàu citral, limonene, linalool có tác dụng kháng khuẩn mạnh",
+        "Lá chanh có hàm lượng vitamin C cao hơn nhiều so với quả chanh",
+        "Hiệu quả nhất khi sử dụng lá tươi và quả tươi",
+        "Quả chanh chứa khoảng 5-6% acid citric, vitamin C, B1, B2, P và các muối khoáng",
+        "Có thể kết hợp với gừng, mật ong để tăng hiệu quả chữa ho, cảm",
+        "Vỏ chanh chứa flavonoid hesperidin và naringin có tác dụng chống oxy hóa",
+        "Dùng ngoài cần thử trước trên diện tích da nhỏ để tránh dị ứng",
+        "Khi hãm trà, không nên đun sôi lá chanh để giữ nguyên các tinh dầu có lợi",
+        "Nước chanh giúp tăng hấp thu sắt không hem từ thực vật, tốt cho người thiếu máu",
+        "Chất chống oxy hóa trong chanh giúp bảo vệ DNA khỏi tổn thương, có thể giảm nguy cơ ung thư",
+        "Thu hái lá quanh năm, ưu tiên lá non có màu xanh đậm, mùi thơm mạnh"
+      ],
+      "createdAt": "2025-05-17T10:30:00.000Z",
+      "updatedAt": "2025-05-17T10:30:00.000Z"
+    },
+    {
+      "id": "basale",
+      "vietnameseName": "MỒNG TƠI",
+      "englishName": "Malabar Spinach",
+      "scientificName": "Basella alba L., Basella rubra L.",
+      "otherNames": "Mùng tơi, rau nhà chùa, rau mèo, Ceylon spinach, Indian spinach, vine spinach",
+      "description": "Cây dạng dây leo, dài 1,5-2m, sống từ 1-2 năm. Thân có phân nhánh, màu xanh nhạt (B. alba) hoặc tím nhạt (B. rubra). Lá mọc so le, đơn, nguyên, mẫm, có cuống, phiến lá hình trứng, đầu nhọn, dài 3-12cm, rộng 2-6cm. Cụm hoa hình bông mọc ở kẽ lá, nhỏ, màu trắng hay tím đỏ nhạt. Quả mọng, nhỏ hình cầu hay hình trứng, dài 5-6mm, màu tím đen khi chín. Hiện có giống thân lùn, lá to hơn, nhiều nhánh mọc từ kẽ lá.",
+      "distribution": "Có nguồn gốc từ các nước nhiệt đới châu Á và châu Phi. Tại Việt Nam, cây mọc hoang và được trồng phổ biến khắp cả nước để lấy rau ăn.",
+      "natureProperties": "Theo Đông y, có tính hàn, vị chua, không độc",
+      "usedParts": [
+        "lá non",
+        "đọt non",
+        "thân non",
+        "quả"
+      ],
+      "mainBenefits": [
+        "Nhuận tràng, chống táo bón, đặc biệt cho phụ nữ có thai và trẻ em",
+        "Tán nhiệt, giải độc, làm mát cơ thể",
+        "Lợi tiểu, lợi đại tiểu trường",
+        "Trị rôm sảy, mụn nhọt",
+        "Giảm cholesterol xấu, phòng chống mỡ máu",
+        "Hỗ trợ giảm cân, chống béo phì",
+        "Làm lành vết thương, đặc biệt vết bỏng",
+        "Phòng ngừa khuyết tật ống thần kinh ở thai nhi (nhờ acid folic)",
+        "Tăng cường sức khỏe tim mạch",
+        "Bổ sung sắt, phòng thiếu máu",
+        "Chống oxy hóa, phòng chống ung thư (nhờ beta sitosterol)",
+        "Làm đẹp da"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC",
+        "sideEffects": [
+          "Ăn nhiều có thể tăng nguy cơ sỏi thận do có nhiều acid oxalic và purin",
+          "Có thể làm tăng nguy cơ gút nếu dùng quá nhiều"
+        ],
+        "contraindications": [
+          "Người bị tiêu chảy, đại tiện lỏng",
+          "Người bị sỏi thận hoặc có nguy cơ sỏi thận",
+          "Người bị gút hoặc acid uric cao",
+          "Người tỳ vị hư hàn"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến bác sĩ nếu bạn có vấn đề về thận hoặc gút trước khi dùng thường xuyên"
+      },
+      "usage": {
+        "standardDose": "Rau tươi: 100-200g/ngày (nấu chín)",
+        "specificUsage": [
+          {
+            "purpose": "Táo bón",
+            "recipe": "100-150g rau mồng tơi nấu canh với thịt bằm hoặc tôm. Ăn 1-2 lần/ngày"
+          },
+          {
+            "purpose": "Giảm cân, giảm mỡ máu",
+            "recipe": "100g rau mồng tơi + 50g rau đay + 50g rau muống nấu canh ăn thường xuyên"
+          },
+          {
+            "purpose": "Bổ sung dinh dưỡng cho bà bầu",
+            "recipe": "100g rau mồng tơi + 50g đậu đũa + 30g tôm nấu canh ăn 2-3 lần/tuần"
+          },
+          {
+            "purpose": "Trị rôm sảy, mụn nhọt",
+            "recipe": "Lá tươi giã nát đắp lên vùng bị rôm sảy, mụn nhọt, thay 2-3 lần/ngày"
+          },
+          {
+            "purpose": "Làm mát cơ thể mùa nóng",
+            "recipe": "100-150g rau mồng tơi nấu canh với khế chua, ăn trong những ngày nắng nóng"
+          },
+          {
+            "purpose": "Vết bỏng",
+            "recipe": "Giã nát lá tươi, vắt lấy nước cốt bôi lên vết bỏng nhẹ, 3-4 lần/ngày"
+          },
+          {
+            "purpose": "Bổ sung sắt cho người thiếu máu",
+            "recipe": "100g rau mồng tơi + 50g rau dền + thịt bò nấu canh ăn 2-3 lần/tuần"
+          },
+          {
+            "purpose": "Nhuộm tự nhiên",
+            "recipe": "Quả chín giã nát, thêm chút chanh để tạo màu đỏ đậm, dùng làm màu thực phẩm hoặc tô son môi tự nhiên"
+          }
+        ]
+      },
+      "notes": [
+        "Vitamin C trong lá mồng tơi cao gấp 3 lần rau cải, vitamin A cao gấp 1,5 lần rau xoăn",
+        "Chất nhầy pectin trong rau có khả năng hấp thụ cholesterol xấu",
+        "Mùa thu hoạch tốt nhất là mùa hè và mùa thu",
+        "Chứa saponin và các acid amin thiết yếu như arginin, isoleucine, leucine, lysin, tryptophan",
+        "Ở Indonesia, dùng cho trẻ bị táo bón và phụ nữ đẻ khó",
+        "Ở Ấn Độ, Bangladesh dùng điều trị thiếu máu, chống viêm, lợi tiểu",
+        "Nửa chén rau mồng tơi sau khi nấu chín cung cấp 190% lượng vitamin A và 20% lượng sắt mà cơ thể cần mỗi ngày",
+        "Quả mồng tơi có thể dùng làm thuốc nhuộm tự nhiên hoặc làm màu thực phẩm",
+        "Có thể tự trồng tại nhà để đảm bảo an toàn vệ sinh thực phẩm",
+        "Không nên ăn quá nhiều nếu thường xuyên bị đau khớp, gút"
+      ],
+      "createdAt": "2025-05-17T11:00:00.000Z",
+      "updatedAt": "2025-05-17T11:00:00.000Z"
+    },
+    {
+      "id": "mango",
+      "vietnameseName": "LÁ XOÀI",
+      "englishName": "Mango Leaf",
+      "scientificName": "Mangifera indica",
+      "otherNames": "Indian mango, Aam patta (tiếng Hindi)",
+      "description": "Lá xoài có hình thuôn dài, mọc đơn, đầu nhọn, màu xanh đậm khi trưởng thành và có màu đỏ đến hồng khi còn non. Lá dài khoảng 15-30cm, rộng 3-10cm, có cuống dài 1-6cm. Cây xoài là cây thân gỗ thường xanh hoặc rụng lá theo mùa, cao 10-40m, có tán rộng và bộ rễ sâu. Vỏ cây có màu nâu xám, nứt nẻ khi già. Hoa nhỏ, màu trắng ngà đến vàng nhạt, mọc thành chùm. Quả có nhiều hình dạng tùy giống, vỏ màu xanh khi non, chuyển sang vàng, đỏ hoặc cam khi chín.",
+      "distribution": "Có nguồn gốc từ Nam Á (Ấn Độ, Myanmar), nay được trồng rộng rãi ở các vùng nhiệt đới và cận nhiệt đới trên thế giới. Tại Việt Nam, xoài được trồng phổ biến khắp cả nước, đặc biệt là ở các tỉnh Nam Bộ và Tây Nguyên.",
+      "natureProperties": "Theo Đông y, lá xoài có vị chua ngọt, đặc tính mát",
+      "usedParts": [
+        "lá non",
+        "lá trưởng thành",
+        "vỏ cây",
+        "nhựa cây",
+        "hoa",
+        "quả"
+      ],
+      "mainBenefits": [
+        "Hạ nhiệt, giải nhiệt cơ thể",
+        "Lợi tiểu, hỗ trợ chức năng thận",
+        "Chống sa nội tạng",
+        "Chữa phù thũng",
+        "Điều trị ho, viêm phế quản cấp và mạn tính",
+        "Hỗ trợ điều trị tiểu đường type 2",
+        "Giảm cholesterol cao trong máu",
+        "Kiểm soát béo phì và chuyển hóa chất béo",
+        "Chống viêm và chống oxy hóa mạnh",
+        "Tăng cường thị lực và hệ miễn dịch",
+        "Tiềm năng chống vi khuẩn và điều trị khối u",
+        "Cải thiện tình trạng kháng insulin"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC (khi dùng đúng liều)",
+        "sideEffects": [
+          "Có thể gây hạ đường huyết quá mức nếu dùng nhiều",
+          "Một số người có thể bị dị ứng với thành phần trong lá xoài"
+        ],
+        "contraindications": [
+          "Người bị hạ đường huyết",
+          "Người chuẩn bị phẫu thuật (2 tuần trước)",
+          "Người có tiền sử dị ứng với họ Xoài-Đào-Điều"
+        ],
+        "doctorAdvice": "Cần tham khảo ý kiến bác sĩ trước khi sử dụng, đặc biệt cho người đang dùng thuốc điều trị tiểu đường"
+      },
+      "usage": {
+        "standardDose": "3-5 lá xoài non/ngày (dạng trà)",
+        "specificUsage": [
+          {
+            "purpose": "Hỗ trợ điều trị tiểu đường",
+            "recipe": "5 lá xoài non rửa sạch, cắt sợi, ngâm với 300ml nước sôi, đậy kín để qua đêm. Uống vào buổi sáng lúc đói, mỗi ngày 1 lần"
+          },
+          {
+            "purpose": "Giảm cholesterol",
+            "recipe": "3-4 lá xoài non rửa sạch, phơi khô, nghiền thành bột. Uống 1-2g bột với nước ấm mỗi ngày"
+          },
+          {
+            "purpose": "Ho, viêm phế quản",
+            "recipe": "5-7 lá xoài non rửa sạch, đun với 500ml nước còn 200ml, thêm 1-2 thìa mật ong. Uống 2-3 lần/ngày"
+          },
+          {
+            "purpose": "Phù thũng",
+            "recipe": "10g lá xoài khô + 5g vỏ rễ cây xoài, sắc với 500ml nước còn 200ml, uống 2 lần/ngày"
+          },
+          {
+            "purpose": "Giảm cân, kiểm soát béo phì",
+            "recipe": "3 lá xoài non + 1 quả chanh + 1 thìa mật ong, hãm với nước sôi 10 phút, uống 1 lần/ngày vào sáng sớm"
+          },
+          {
+            "purpose": "Tăng cường miễn dịch",
+            "recipe": "5 lá xoài non + 3 lá trà xanh, hãm với nước sôi 5-10 phút, uống thay trà thường ngày"
+          }
+        ]
+      },
+      "notes": [
+        "Trong xoài và lá xoài chứa hàm lượng cao mangiferin, một hợp chất có nhiều lợi ích sức khỏe",
+        "Lá xoài chứa các polyphenol và terpenoid - các chất chống oxy hóa bảo vệ tế bào khỏi gốc tự do",
+        "Nghiên cứu 12 tuần trên 97 người trưởng thành cho thấy mangiferin giúp giảm chất béo trong máu và cải thiện kháng insulin",
+        "Không nên uống nước lá xoài gần với các loại thuốc khác, nên uống cách nhau 2-3 tiếng",
+        "Adiponectin trong lá xoài có vai trò trong quá trình chuyển hóa chất béo và điều hòa đường huyết",
+        "Lá xoài non có tác dụng mạnh hơn lá già",
+        "Nhiều nghiên cứu đã chứng minh chiết xuất lá xoài ức chế sự tích tụ chất béo trong tế bào mô",
+        "Lá xoài không thay thế hoàn toàn thuốc điều trị tiểu đường nhưng có thể dùng hỗ trợ",
+        "Thu hái tốt nhất vào buổi sáng, chọn lá non, màu đỏ hoặc hồng nhạt",
+        "Lá xoài có thể dùng tươi hoặc phơi khô để bảo quản lâu"
+      ],
+      "createdAt": "2025-05-17T12:00:00.000Z",
+      "updatedAt": "2025-05-17T12:00:00.000Z"
+    },
+    {
+      "id": "mexican_mint",
+      "vietnameseName": "HÚNG CHANH",
+      "englishName": "Mexican Mint",
+      "scientificName": "Plectranthus amboinicus",
+      "otherNames": "Rau thơm lùn, tần dày lá, dương tử tô, rau thơm lông, Indian Borage, Country Borage, Cuban Oregano, Spanish Thyme",
+      "description": "Cây dạng cỏ gốc hóa gỗ cao 25-75cm. Thân mọc đứng, có lông. Lá có cuống, mọc đối, hình bầu dục, dày, trông như mọng nước, dài 7-10cm, rộng 4-6cm, mép khía tai bèo. Mặt trên lá có lông đơn đầu mang hạch, trong bóng; mặt dưới nhiều lông bài tiết hơn, gân nổi rõ. Toàn thân lá có mùi thơm đặc trưng giống mùi chanh. Hoa màu tía, nhỏ, mọc thành hoa tự tận cùng dài gồm các vòng hoa mọc sít nhau (20-30 hoa).",
+      "distribution": "Có nguồn gốc từ đảo Moluques (Indonesia), được trồng khắp nơi ở Việt Nam để lấy lá làm gia vị. Phổ biến ở các nước Đông Nam Á như Indonesia, Malaysia, Campuchia và cả Trung Quốc.",
+      "natureProperties": "Theo Đông y, có tính ấm, vị cay và không độc",
+      "usedParts": [
+        "lá tươi",
+        "lá khô",
+        "cành non"
+      ],
+      "mainBenefits": [
+        "Phát tán phong hàn, giải cảm",
+        "Trị cảm cúm, cảm sốt, nhức đầu, sốt không ra mồ hôi",
+        "Tiêu đờm, chữa ho và hen suyễn",
+        "Sát khuẩn mạnh (đặc biệt với Staphyllococcus, Salmonella typhi, Shigella)",
+        "Trị viêm họng, khản tiếng",
+        "Chữa chảy máu cam",
+        "Trị hôi miệng",
+        "Giảm triệu chứng dị ứng da",
+        "Giảm đau do bị rắn, bò cạp cắn hoặc ong đốt",
+        "Chống viêm",
+        "Giúp giải độc",
+        "Làm ra mồ hôi, hạ sốt"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC",
+        "sideEffects": [
+          "Lông trắng nhỏ trên thân và lá có thể gây kích ứng với người có da nhạy cảm",
+          "Có thể gây tương tác và làm giảm công dụng của một số loại thuốc"
+        ],
+        "contraindications": [
+          "Phụ nữ đang mang thai không nên sử dụng",
+          "Phụ nữ đang cho con bú không nên sử dụng"
+        ],
+        "doctorAdvice": "Khi đang sử dụng thuốc để chữa trị các bệnh khác, nên tham khảo ý kiến bác sĩ trước khi dùng"
+      },
+      "usage": {
+        "standardDose": "Lá tươi: 10-16g/ngày, Lá khô: 5-10g/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Trị ho thông thường",
+            "recipe": "5-7 lá húng chanh, rửa sạch, ngâm nước muối. Sau đó nhai và ngậm, nuốt nước dần"
+          },
+          {
+            "purpose": "Trị viêm họng, khản tiếng",
+            "recipe": "20g húng chanh tươi rửa sạch, thái nhỏ + 20g đường phèn, hấp cách thủy. Lọc lấy nước uống từ từ, bã ngậm trong miệng. Dùng 1-2 lần/ngày x 3-5 ngày"
+          },
+          {
+            "purpose": "Cảm sốt, không ra mồ hôi",
+            "recipe": "Húng chanh 20g, tía tô 15g, gừng tươi 5g (thái lát mỏng), cam thảo đất 15g. Sắc uống khi nước thuốc còn ấm"
+          },
+          {
+            "purpose": "Chữa cảm hàn, ho, đau đầu",
+            "recipe": "Lá húng chanh 15g, bạc hà 5g, tía tô 8g, gừng tươi 3 lát mỏng. Sắc uống ngày 1 thang"
+          },
+          {
+            "purpose": "Trị hen suyễn",
+            "recipe": "Lá húng chanh 12g, lá tía tô 10g. Hai thứ rửa sạch, sắc uống. Kiêng thức ăn chiên xào, thức uống lạnh, hải sản"
+          },
+          {
+            "purpose": "Xông trị cảm cúm",
+            "recipe": "Lá húng chanh tươi 50g, rửa sạch, thái nhỏ, ngâm trong rượu trắng xâm xấp. Đặt vào nồi nước sôi, đậy kín xông 5-10 phút. Không dùng cho trẻ em"
+          },
+          {
+            "purpose": "Trị chảy máu cam",
+            "recipe": "20g húng chanh sắc với 10g hoa hòe sao đen, 15g lá trắc bá sao đen và 15g cam thảo đất. Uống kết hợp với giã lá nhét mũi khi chảy máu"
+          },
+          {
+            "purpose": "Chữa hôi miệng",
+            "recipe": "Lá húng chanh phơi khô, sắc lấy nước ngậm 5-7 lần/ngày"
+          },
+          {
+            "purpose": "Trị ho kéo dài có đờm",
+            "recipe": "15-16 lá húng chanh tươi, rửa sạch + mật ong vừa đủ, hấp cách thuỷ. Uống nước 2 lần/ngày"
+          },
+          {
+            "purpose": "Vết rắn, bò cạp cắn, ong đốt",
+            "recipe": "20g lá húng chanh tươi, giã nát và đắp vào vết thương"
+          },
+          {
+            "purpose": "Dị ứng da",
+            "recipe": "Sắc 15g lá húng chanh khô với 2 bát nước còn 1 bát, chia 3 phần uống trong ngày. Đồng thời giã lá tươi trộn ít muối đắp vùng sưng tấy"
+          }
+        ]
+      },
+      "notes": [
+        "Trong húng chanh có chất màu đỏ gọi là colein và một ít tinh dầu thơm",
+        "Thành phần chủ yếu của tinh dầu là chất cacvacrola",
+        "Tinh dầu húng chanh có tác dụng kháng sinh mạnh với nhiều loại vi khuẩn",
+        "Húng chanh thường được chưng cất tinh dầu để sản xuất thuốc trị ho, cảm cúm",
+        "Trẻ em khó uống thuốc có thể dùng lá giã nhỏ với đường phèn hấp vào nồi cơm",
+        "Húng chanh vừa là gia vị vừa là thuốc chữa bệnh trong dân gian",
+        "Nước lá húng chanh giúp ra mồ hôi, giải nhiệt cơ thể hiệu quả",
+        "Thường chỉ dùng tươi, ít khi dùng khô",
+        "Húng chanh còn được dùng trong nhiều món ăn Việt Nam như canh chua, canh giò heo...",
+        "Nguyên liệu dễ tìm, có thể tự trồng tại nhà để sử dụng khi cần"
+      ],
+      "createdAt": "2025-05-17T13:00:00.000Z",
+      "updatedAt": "2025-05-17T13:00:00.000Z"
+    },
+    {
+      "id": "mint",
+      "vietnameseName": "BẠC HÀ",
+      "englishName": "Field Mint",
+      "scientificName": "Mentha arvensis L.",
+      "otherNames": "Thạch bạc hà, bạc hà nam, liên tiền thảo",
+      "description": "Bạc hà thuộc họ Hoa môi (Lamiaceae/Labiatae), là loại cây thảo với thân vuông, lá mọc đối, có răng cưa ở mép, mùi thơm đặc trưng do tinh dầu. Lá bạc hà có màu xanh, phiến lá hình trứng thuôn hoặc bầu dục, mặt dưới lá có lông tuyến. Hoa nhỏ, màu tím hoặc tím nhạt, mọc thành xim co ở kẽ lá. Cây có rễ bò ngang, phân nhánh mạnh, giúp cây dễ dàng sinh sôi nảy nở.",
+      "distribution": "Mọc hoang và được trồng tại nhiều vùng ở Việt Nam, cả ở miền đồng bằng và miền núi. Phân bố rộng rãi tại các vùng ôn đới và cận nhiệt đới trên thế giới.",
+      "natureProperties": "Theo Đông y, vị cay, tính mát, không độc, vào hai kinh phế và can",
+      "usedParts": [
+        "lá",
+        "toàn cây",
+        "tinh dầu bạc hà",
+        "menthol (bạc hà não)"
+      ],
+      "mainBenefits": [
+        "Tán phong nhiệt, giải biểu, ra mồ hôi, hạ sốt",
+        "Chữa cảm mạo, cảm cúm, nhức đầu, ngạt mũi",
+        "Thúc đẩy tiêu hóa, chữa kém ăn, đau bụng đầy hơi",
+        "Chữa loét dạ dày, giảm viêm dạ dày",
+        "Giảm đau, chống viêm, sát khuẩn",
+        "Làm thông mũi, giảm ho, tiêu đờm",
+        "Hỗ trợ điều trị dị ứng và hen suyễn",
+        "Chống oxy hóa, tăng cường hệ miễn dịch",
+        "Thư giãn tinh thần, giảm căng thẳng",
+        "Chăm sóc răng miệng, ngăn ngừa hôi miệng",
+        "Giúp thúc sởi, tống độc",
+        "Trị chảy máu cam, mắt mờ",
+        "Làm sạch mụn, cải thiện tình trạng da"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC Ở LIỀU THÔNG THƯỜNG",
+        "sideEffects": [
+          "Tinh dầu bạc hà và menthol bôi mũi hay bôi trong cổ họng có thể gây hiện tượng ức chế dẫn tới ngừng thở và tim",
+          "Liều lớn có tác dụng kích thích tủy sống, gây tê liệt phản xạ",
+          "Có thể gây kích ứng da ở một số người nhạy cảm"
+        ],
+        "contraindications": [
+          "Tuyệt đối không dùng tinh dầu bạc hà hay dầu cù là cho trẻ nhỏ ít tuổi, nhất là trẻ sơ sinh",
+          "Thận trọng khi dùng cho người có tiền sử co giật",
+          "Người bị trào ngược dạ dày-thực quản nặng nên tránh"
+        ],
+        "doctorAdvice": "Tuân thủ liều lượng khi sử dụng, đặc biệt với tinh dầu và menthol. Nên tham khảo ý kiến bác sĩ nếu có bệnh nền hoặc đang sử dụng thuốc khác"
+      },
+      "usage": {
+        "standardDose": "Lá và toàn cây: 4-8g/ngày. Tinh dầu: 0,02-0,2ml/lần, 0,06-0,6ml/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Cảm mạo, nhức đầu",
+            "recipe": "Lá bạc hà 6g, kinh giới 6g, phòng phòng 5g, bạch chỉ 4g, hành hoa 6g. Nước đun sôi đổ vào chờ 20 phút, uống lúc đang nóng"
+          },
+          {
+            "purpose": "Cải thiện tiêu hóa",
+            "recipe": "Lá bạc hà hay toàn cây bỏ rễ 5g, pha vào 200ml nước sôi, cách 3 giờ uống 1 lần. Hoặc dùng cồn bạc hà (5-10 giọt)"
+          },
+          {
+            "purpose": "Chữa ho",
+            "recipe": "Lá bạc hà tươi giã nhuyễn vắt lấy nước uống. Hoặc lá bạc hà tươi rửa sạch, thêm mật ong xay nhuyễn, hấp cách thủy, uống 2 lần/ngày"
+          },
+          {
+            "purpose": "Thân nhiệt cao, giải biểu",
+            "recipe": "Bạc hà 8g, thuyền thoái 12g, thạch cao 24g, cam thảo 6g. Sắc uống ngày 1 thang, chia 2-3 lần khi còn ấm"
+          },
+          {
+            "purpose": "Thúc sởi, tống độc",
+            "recipe": "Bạc hà 4g, ngưu bàng tử 12g, thuyền thoái 4g, cam thảo 4g. Sắc uống ngày 1 thang, chia 2-3 lần khi còn ấm"
+          },
+          {
+            "purpose": "Chữa mắt mờ",
+            "recipe": "Lá bạc hà ngâm nước gừng một đêm, sắc nước rửa mắt"
+          },
+          {
+            "purpose": "Chữa chảy máu cam",
+            "recipe": "Bạc hà tươi giã lấy nước nhỏ vào mũi hoặc dùng lá bạc hà sắc lấy nước thấm bông nhét vào mũi"
+          },
+          {
+            "purpose": "Chữa ong đốt",
+            "recipe": "Lá bạc hà tươi giã nát đắp vào nơi tổn thương"
+          },
+          {
+            "purpose": "Nhức đầu, mờ mắt",
+            "recipe": "Bạc hà 8g, gừng tươi 6g, đường phèn vừa đủ. Gừng thái lát cho vào ấm pha trà cùng bạc hà, đường, thêm nước sôi hãm uống. Dùng 5-10 ngày"
+          },
+          {
+            "purpose": "Nổi ban dị ứng",
+            "recipe": "Bạc hà 6g, cúc hoa 10g, cát cánh 10g, sơn tra 10g, mật ong vừa đủ. Pha hãm với nước sôi, uống thay trà 1-2 lần/ngày"
+          }
+        ]
+      },
+      "notes": [
+        "Tinh dầu bạc hà chiếm 0,5-1,5% trọng lượng cây",
+        "Thành phần chủ yếu trong tinh dầu gồm menthol (40-50%) và mentol (10-20%)",
+        "Ngoài tinh dầu, trong cây bạc hà còn có các flavonoid có tác dụng chống oxy hóa",
+        "Được dùng rộng rãi trong cả đông y và tây y",
+        "Tinh dầu bạc hà tạo cảm giác mát và tê tại chỗ, dùng trong một số trường hợp đau dây thần kinh",
+        "Có thể chế thành nhiều dạng như dầu cù là, kẹo ngậm ho bạc hà, rượu bạc hà, thuốc đánh răng bạc hà",
+        "Bạc hà giàu vitamin C, D, E, A, phốt pho, canxi và vitamin B",
+        "Chất axit rosmarinic trong bạc hà có tác dụng chống dị ứng và chống viêm mạnh",
+        "Chất menthol trong bạc hà làm dịu cơn ho và tiêu tan đờm hiệu quả",
+        "Bạc hà chứa hàm lượng axit salicylic cao, có tác dụng chống mụn trứng cá"
+      ],
+      "createdAt": "2025-05-17T14:00:00.000Z",
+      "updatedAt": "2025-05-17T14:00:00.000Z"
+    },
+    {
+      "id": "oleander",
+      "vietnameseName": "TRÚC ĐÀO",
+      "englishName": "Oleander",
+      "scientificName": "Nerium oleander L.",
+      "otherNames": "Đào lê, giáp trúc đào, laurier rose, thạch bạc hà, Nerium laurifolium Lamk.",
+      "description": "Cây nhỡ, có thể cao tới 4-5m, mọc riêng lẻ hay thành bụi. Cành mềm dẻo, màu lục, mọc thẳng, có cạnh, khi cắt có mủ trắng. Lá mọc đôi hay vòng 3, thuộc loại lá đơn, mép nguyên, cuống ngắn, phiến lá hình mác, dài 7-20cm, rộng 1-4cm, dai cứng, mặt trên màu xanh thẫm, mặt dưới màu nhạt hơn, gân đều song song ngang hai bên gân chính. Hoa màu hồng hay trắng, mọc thành xim ngù ở đầu cành. Quả gồm hai đại, dài 7-17cm, đường kính 1-1.3cm, bên trong chứa nhiều hạt có lông.",
+      "distribution": "Có nguồn gốc từ vùng ven biển Địa Trung Hải và Bắc Phi, được nhập trồng làm cảnh trong các vườn hoa hay dọc bên đường ở Việt Nam. Thường thấy ở các vườn hoa, công viên. Cây ưa sáng, ra hoa vào tháng 6-9.",
+      "natureProperties": "Vị chát, đắng",
+      "usedParts": [
+        "lá",
+        "toàn cây"
+      ],
+      "mainBenefits": [
+        "Trợ tim mạnh, làm chậm nhịp tim, kéo dài thời gian tâm trương",
+        "Lợi tiểu",
+        "Bổ tim, nâng cao huyết áp",
+        "Sát trùng, chống ngứa",
+        "Điều trị suy tâm thu",
+        "Điều trị viêm cơ tim não suy (loạn nhịp nhanh)",
+        "Dùng ngoài trị bệnh ngoài da lở ngứa, mụn loét, đụng giập",
+        "Tiềm năng ức chế sự phát triển của tế bào ung thư",
+        "Chiết xuất neriolin có tác dụng trợ tim nhanh, không tích lũy",
+        "Điều trị các bệnh về tim mạch, đặc biệt hẹp van hai lá"
+      ],
+      "warnings": {
+        "toxicity": "CÓ ĐỘC CAO - BẢO QUẢN THEO CHẾ ĐỘ THUỐC ĐỘC",
+        "sideEffects": [
+          "Ngộ độc nặng có thể gây tử vong",
+          "Liều cao có thể gây kích thích tủy sống, tê liệt phản xạ"
+        ],
+        "contraindications": [
+          "Cần tuân thủ nghiêm ngặt liều lượng",
+          "Không tự ý sử dụng khi không có chỉ định của bác sĩ",
+          "Không dùng làm thực phẩm hay đồ dùng tiếp xúc với thực phẩm"
+        ],
+        "doctorAdvice": "TUYỆT ĐỐI phải có chỉ định và theo dõi của bác sĩ khi sử dụng làm thuốc"
+      },
+      "usage": {
+        "standardDose": "Cao viên: 0.02-0.05g, không quá 0.2g/ngày. Neriolin: 0.4-1.2mg/ngày. PHẢI THEO CHỈ ĐỊNH BÁC SĨ",
+        "specificUsage": [
+          {
+            "purpose": "Điều trị suy tim",
+            "recipe": "Viên neriolin (chiết xuất từ lá trúc đào): 0.0001g/viên, ngày 3 lần, mỗi lần 1 viên. PHẢI THEO CHỈ ĐỊNH BÁC SĨ"
+          },
+          {
+            "purpose": "Dùng làm thuốc trợ tim",
+            "recipe": "Dung dịch rượu neriolin 1/5.000: Ngày uống 3-4 lần, mỗi lần 10 giọt. PHẢI THEO CHỈ ĐỊNH BÁC SĨ"
+          },
+          {
+            "purpose": "Điều trị bệnh ngoài da, ghẻ, mụn loét",
+            "recipe": "Lá trúc đào 20g ngâm trong 1 lít nước, dùng nước để rửa vùng bị bệnh"
+          },
+          {
+            "purpose": "Trị đụng giập, chống ngứa",
+            "recipe": "Lá trúc đào tươi giã nát đắp vào vùng bị thương"
+          },
+          {
+            "purpose": "Chống nấm tóc",
+            "recipe": "Lá trúc đào 20g ngâm trong 1 lít nước, dùng nước để gội đầu"
+          }
+        ]
+      },
+      "notes": [
+        "Trúc đào độc tính cao, có trường hợp lính vùng đảo Corse (Pháp) đã tử vong do ăn chả dùng cành trúc đào xiên thịt nướng",
+        "Người dân tỉnh Nice (Pháp) đã dùng bột vỏ thân và gỗ trúc đào để diệt chuột",
+        "Hoạt chất oleandrin (neriolin) phải bảo quản theo chế độ thuốc độc bảng A, dung dịch và viên neriolin theo chế độ bảng B",
+        "So với digitalin, neriolin hấp thu nhanh qua bộ máy tiêu hóa, tích lũy ít, làm đi tiểu nhiều",
+        "Trong lá có 4 glucozit: oleandrin, neriin, neriantin, adynerin",
+        "Lá tốt nhất nên thu hái vào mùa hè, mùa thu khi cây sắp ra hoa hoặc đang ra hoa",
+        "Việc trồng rất dễ dàng bằng cách cắt cành bánh tẻ dài 15-50cm, cắm xuống đất, sau 15 ngày đến 1 tháng là mọc",
+        "Phương pháp chiết xuất oleandrin từ lá trúc đào được mô tả chi tiết trong tài liệu của Đỗ Tất Lợi (1955)",
+        "Nghiên cứu gần đây phát hiện chiết xuất chloroform từ cây có tiềm năng ức chế sự phát triển của tế bào ung thư cổ tử cung",
+        "Lá thu hái cần phơi ngay cho khô, để lâu tỷ lệ hoạt chất bị giảm sút"
+      ],
+      "createdAt": "2025-05-17T15:00:00.000Z",
+      "updatedAt": "2025-05-17T15:00:00.000Z"
+    },
+    {
+      "id": "parijata",
+      "vietnameseName": "DẠ LÝ HƯƠNG",
+      "englishName": "Night-blooming Jasmine",
+      "scientificName": "Cestrum nocturnum Linn.",
+      "otherNames": "Lý xiêm la, dạ lài hương, dạ hương mộc, Queen of the Night",
+      "description": "Thuộc họ cà (Solanaceae), là loài thực vật thân gỗ nhỏ cao 3-4m, mọc thành bụi. Gốc cây hóa gỗ, cành nhánh mềm. Cành non màu xanh, thân thẳng hoặc gần uốn. Lá mọc lệch, bề mặt bóng, đầu nhọn và màu xanh. Hoa nhỏ xinh, hình ống với 5 cánh hoa trắng hoặc vàng nhạt. Đặc biệt, hoa tỏa hương thơm nồng nàn vào ban đêm, có thể ngửi được từ xa hàng trăm mét. Hương thơm vừa thực vừa ảo, lúc thoảng thoảng quấn quýt, lúc ào ạt mạnh mẽ.",
+      "distribution": "Có nguồn gốc từ Nam Mỹ. Được tìm thấy nhiều ở khu vực Đông Nam Á, biển Caribbean, Nam Á. Phổ biến ở Việt Nam như một loài cây cảnh.",
+      "natureProperties": "Theo Đông y, có vị ngọt, mùi thơm, tính ấm",
+      "usedParts": [
+        "hoa",
+        "lá",
+        "toàn cây"
+      ],
+      "mainBenefits": [
+        "Hoạt huyết, giảm sưng, giải độc",
+        "Điều trị viêm khớp, đau thần kinh tọa",
+        "Trị phong thấp, chứng bại liệt ở trẻ sơ sinh",
+        "Có tác dụng trong điều trị động kinh, nhức đầu",
+        "Dùng nấu nước tắm trị bệnh mồ hôi trộm",
+        "Đuổi côn trùng và muỗi hiệu quả",
+        "Chiết xuất có thành phần tiêu diệt loăng quăng muỗi sốt xuất huyết",
+        "Giảm cơ cứng"
+      ],
+      "warnings": {
+        "toxicity": "CÓ ĐỘC",
+        "sideEffects": [
+          "Gây nhức đầu, khó chịu, suy nhược cơ thể khi tiếp xúc lâu",
+          "Không tốt cho người bị cao huyết áp hoặc bệnh tim",
+          "Có thể gây chóng mặt và làm nặng thêm bệnh tình",
+          "Chứa kiềm độc có thể gây rụng tóc nhanh"
+        ],
+        "contraindications": [
+          "Người cao huyết áp",
+          "Người mắc bệnh tim",
+          "Không nên trồng trong phòng ngủ",
+          "Không nên tiếp xúc quá lâu với hương hoa"
+        ],
+        "doctorAdvice": "Cần thận trọng khi sử dụng làm thuốc, nên tham khảo ý kiến chuyên gia"
+      },
+      "usage": {
+        "standardDose": "Theo chỉ định của thầy thuốc",
+        "specificUsage": [
+          {
+            "purpose": "Trị viêm khớp, phong thấp",
+            "recipe": "Sử dụng dưới dạng thuốc đắp ngoài da tại vị trí đau nhức"
+          },
+          {
+            "purpose": "Trị mồ hôi trộm",
+            "recipe": "Nấu lá và hoa dạ lý hương lấy nước tắm"
+          },
+          {
+            "purpose": "Đuổi muỗi và côn trùng",
+            "recipe": "Trồng quanh nhà để tận dụng khả năng đuổi côn trùng tự nhiên"
+          },
+          {
+            "purpose": "Trị đau thần kinh tọa",
+            "recipe": "Sử dụng theo chỉ định của thầy thuốc Đông y"
+          }
+        ]
+      },
+      "notes": [
+        "Dạ lý hương là cây dễ trồng, chỉ cần giâm cành ở đất tốt và tưới nước thường xuyên",
+        "Cây ưa ánh sáng nhưng không nên trồng nơi có ánh nắng trực tiếp",
+        "Nhiệt độ phù hợp để trồng khoảng 15-25°C",
+        "Cây thích hợp với đất tơi xốp, nhiều dinh dưỡng",
+        "Nên bón phân định kỳ 3 tháng/lần, tăng cường bón phân khi chuẩn bị ra hoa",
+        "Cây không chịu được ngập úng, nên chọn chậu thoát nước tốt",
+        "Có thể thay chậu mỗi tháng 4 hàng năm để cây phát triển tốt hơn",
+        "Mặc dù có hương thơm quyến rũ nhưng không nên ngửi quá nhiều và quá lâu",
+        "Nên mua cây về trưng trong thời gian ngắn trước khi bắt đầu trồng",
+        "Hương thơm của hoa mạnh nhất vào ban đêm"
+      ],
+      "createdAt": "2025-05-17T16:00:00.000Z",
+      "updatedAt": "2025-05-17T16:00:00.000Z"
+    },
+    {
+      "id": "peepal",
+      "vietnameseName": "BỒ ĐỀ",
+      "englishName": "Benzoin Tree",
+      "scientificName": "Styrax benzoin",
+      "otherNames": "Cánh kiến trắng, an tức hương, an tức bắc, săng trắng, bồ đề trắng, hu món (Tày)",
+      "description": "Cây bồ đề là loài cây thân gỗ to, cao khoảng 30m. Lá có hình tim với chiều dài từ 10-17cm và rộng 8-12cm, cuống dài 6-10cm. Mặt trên của lá màu xanh nhẵn, mặt dưới có lông màu trắng nhẹ. Hoa mọc dạng ống, có lông tơ mịn và có mùi hương nhẹ. Quả có hình trứng nhỏ với đường kính từ 1-1.5cm. Khi bị tổn thương, thân cây tiết ra nhựa màu vàng nhạt hoặc trắng đục, có mùi thơm nhẹ như hương vani.",
+      "distribution": "Có nguồn gốc từ Ấn Độ và vùng Đông Dương, sau đó được du nhập vào Việt Nam. Ở Việt Nam, cây bồ đề phổ biến ở các tỉnh Cao Bằng, Tuyên Quang, Lai Châu, Yên Bái, Phú Thọ và thường được trồng ở các đình chùa, miếu.",
+      "natureProperties": "Tính bình, vị cay, đắng và không độc",
+      "usedParts": [
+        "nhựa cây",
+        "lá",
+        "chồi non"
+      ],
+      "mainBenefits": [
+        "Sát trùng, giảm đau",
+        "Trị ho và giảm ngứa họng",
+        "Chữa đau nhức răng",
+        "Tẩy trùng vết thương, ngăn ngừa viêm nhiễm",
+        "Điều trị chứng tim đập nhanh, hồi hộp",
+        "Giảm tức ngực, đau bụng do đầy hơi",
+        "Chữa chứng lãnh khí, hàn thấp",
+        "Điều trị viêm phế quản mạn tính",
+        "Chữa đau nhức xương khớp",
+        "Điều trị cấm khẩu, huyết vận hoặc huyết trướng ở phụ nữ sau sinh",
+        "Làm lành vết thương, chữa viêm chân quanh răng và nẻ vú",
+        "Điều trị đau bụng, trúng phong, thổ tả và hôn mê"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC",
+        "sideEffects": [
+          "Có thể gây tiêu chảy, phát ban khi sử dụng liều cao",
+          "Không nên uống cùng lúc lượng lớn chiết xuất hay bôi quá nhiều lên vết thương"
+        ],
+        "contraindications": [
+          "Người mắc bệnh âm hư hoảng vượng",
+          "Người có khí hư, chán ăn",
+          "Người bị dị ứng với hoạt chất trong nhựa cây bồ đề",
+          "Phụ nữ có thai hoặc đang cho con bú không nên tự ý sử dụng"
+        ],
+        "doctorAdvice": "Chỉ nên sử dụng khi có sự tư vấn và kê đơn từ bác sĩ chuyên khoa"
+      },
+      "usage": {
+        "standardDose": "Tùy theo tình trạng sức khỏe, giới tính và độ tuổi",
+        "specificUsage": [
+          {
+            "purpose": "Trị ho",
+            "recipe": "0,5g nhựa cây bồ đề mài với mật ong. Uống 2-4 lần/ngày"
+          },
+          {
+            "purpose": "Chữa lãnh khí, hàn thấp",
+            "recipe": "4g nhựa cây bồ đề + 8g nhân sâm + 8g phụ tử sắc uống. Mỗi ngày 1 thang"
+          },
+          {
+            "purpose": "Giảm đau nhức răng",
+            "recipe": "Lá bồ đề rửa sạch, giã nát vắt lấy nước cốt. Dùng nước súc miệng"
+          },
+          {
+            "purpose": "Tẩy trùng vết thương",
+            "recipe": "Chồi non giã nát, vắt lấy nước, thoa lên miệng vết thương"
+          },
+          {
+            "purpose": "Trị tức ngực, đầy hơi",
+            "recipe": "Trầm hương, đinh hương (mỗi vị 6g) + 9g mỗi vị: nhựa bồ đề, đại hồi, hoắc hương, hương phụ, sa nhân, mộc hương, cam thảo. Tán mịn, trộn mật ong. Mỗi lần uống 3-4g với nước lá tía tô"
+          },
+          {
+            "purpose": "Trị tim đập nhanh, hồi hộp",
+            "recipe": "Nhựa cây bồ đề nghiền thành bột. Uống 2g/ngày với nước sôi"
+          },
+          {
+            "purpose": "Chữa viêm phế quản mạn tính",
+            "recipe": "5g nhựa bồ đề tán mịn, hòa với rượu, thêm 100ml siro. Uống 10-20g, ngày 2 lần"
+          },
+          {
+            "purpose": "Đau nhức xương khớp",
+            "recipe": "80g nhựa bồ đề đun nóng, trộn với 160g thịt heo nạc thái mỏng, cho vào ống tre đặt lên bếp. Hướng miệng ống về phía khớp đau để hơi nóng xoa dịu"
+          },
+          {
+            "purpose": "Chữa cấm khẩu, huyết vận sau sinh",
+            "recipe": "4g nhựa bồ đề + 20g thủy phi tán bột mịn. Sắc với nước gừng, pha 4g bột rồi uống"
+          },
+          {
+            "purpose": "Làm lành vết thương, viêm chân răng",
+            "recipe": "20g nhựa bồ đề khô + 100g cồn 80 độ ngâm 10-15 ngày. Thoa 3 lần/ngày hoặc ngậm 5-7 phút/ngày"
+          }
+        ]
+      },
+      "notes": [
+        "Trong nhựa cây bồ đề có chứa Benzyl cinnamat, Acidbenzonic, Vanilin, Alcol coniferilic, Acid cinnamic, Benzyl benzoat, Acid siaresinolic",
+        "Nhựa cây được thu hoạch vào mùa hè và mùa thu hoặc khi thân cây bị tổn thương",
+        "Cách lấy nhựa: rạch một đường trên thân cây rồi dùng dụng cụ hứng nhựa chảy xuống",
+        "Nhựa chất lượng tốt có màu vàng nhạt hoặc trắng đục, mùi thơm nhẹ như hương vani",
+        "Nhựa chất lượng kém có màu nâu đỏ và hầu như không có mùi thơm",
+        "Cây bồ đề có thể điều chế thành nhiều dạng: tinh dầu, chiết xuất lỏng, viên nén hoặc sắc thuốc",
+        "Ngoài sử dụng làm thuốc, cây bồ đề còn được trồng như một loại cây cảnh",
+        "Liều lượng sử dụng cần điều chỉnh tùy theo mỗi tình trạng sức khỏe, giới tính và độ tuổi",
+        "Do mang tính hàn nên những người có khí hư, chán ăn không nên dùng bồ đề",
+        "Nhựa bồ đề còn được sử dụng trong ứng dụng dân gian khác như xông hương trong các nghi lễ tâm linh"
+      ],
+      "createdAt": "2025-05-17T17:00:00.000Z",
+      "updatedAt": "2025-05-17T17:00:00.000Z"
+    },
+    {
+      "id": "pomegranate",
+      "vietnameseName": "LÁ LỰU",
+      "englishName": "Pomegranate",
+      "scientificName": "Punica granatum L.",
+      "otherNames": "Thạch lựu, thừa lựu, tháp lựu, an thạch lựu, toan thạch lựu, thiên tương, thạch lựu bì (vỏ quả)",
+      "description": "Cây lựu là cây thân gỗ nhỏ, có thể cao từ 3-6m, thường phân nhiều cành. Lá mọc đối hoặc gần đối, hình bầu dục thuôn, phiến lá màu xanh bóng. Hoa to, màu đỏ tươi hoặc trắng, có 5-8 cánh. Quả hình cầu, đường kính 5-12cm, vỏ dày màu vàng đến đỏ tươi khi chín, bên trong chứa nhiều hạt, mỗi hạt được bao bọc bởi một lớp thịt quả mọng nước trong suốt, màu hồng đến đỏ tươi, vị chua ngọt. Vỏ quả, vỏ rễ, vỏ thân, hoa và hạt đều có giá trị dược liệu cao.",
+      "distribution": "Cây lựu có nguồn gốc từ vùng Trung Đông và châu Á, sau đó được trồng rộng rãi ở các vùng có khí hậu nhiệt đới và á nhiệt đới trên thế giới. Ở Việt Nam, cây lựu được trồng phổ biến ở nhiều tỉnh thành, cả ở miền Bắc và miền Nam, thường được trồng làm cây ăn quả và cây thuốc.",
+      "natureProperties": "Vị chua ngọt, tính ấm",
+      "usedParts": [
+        "quả",
+        "vỏ quả",
+        "hoa",
+        "lá",
+        "vỏ rễ",
+        "vỏ thân"
+      ],
+      "mainBenefits": [
+        "Trị nổi mày đay, mẩn ngứa do nhiệt",
+        "Chữa viêm tiền liệt tuyến",
+        "Trị ho do nhiễm lạnh",
+        "Tẩy giun kim, giun đũa, giun tóc",
+        "Chữa chảy máu cam",
+        "Chữa miệng hôi, viêm amiđan",
+        "Điều trị bỏng nhẹ",
+        "Chữa kiết lỵ lâu ngày, đại tiện ra máu",
+        "Hỗ trợ chức năng tiêu hóa, trị tiêu chảy",
+        "Chữa tiểu són, tiểu rắt, tiểu không tự chủ",
+        "Điều trị loét miệng, nhiệt miệng",
+        "Chữa thoát giang (sa trực tràng)",
+        "Hỗ trợ điều trị bệnh sỏi thận",
+        "Trị viêm nhiễm ngoài da lở loét chảy mủ",
+        "Chữa phế ung (áp-xe phổi)"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC (khi dùng đúng liều lượng)",
+        "sideEffects": [
+          "Ăn quá nhiều có thể gây khó tiêu, đau bụng",
+          "Vỏ quả và vỏ rễ chứa alkaloid có thể gây buồn nôn, nôn, đau bụng nếu dùng liều cao"
+        ],
+        "contraindications": [
+          "Người bị táo bón nặng không nên dùng vỏ quả và vỏ rễ",
+          "Người bị viêm dạ dày cấp tính nên thận trọng khi dùng"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến bác sĩ khi sử dụng vỏ rễ và vỏ thân để điều trị bệnh"
+      },
+      "usage": {
+        "standardDose": "Tùy thuộc vào bộ phận sử dụng và mục đích điều trị",
+        "specificUsage": [
+          {
+            "purpose": "Nổi mày đay, mẩn ngứa do nhiệt",
+            "recipe": "Vỏ quả lựu tươi, ké đầu ngựa, bèo cái, bồ công anh, thổ phục linh, hà thủ ô (mỗi loại 12g), xác ve sầu, mã đề, cam thảo đất (mỗi thứ 8g). Ngâm 15 phút với 750ml nước, sắc còn 200ml, chia 2 lần uống trước bữa ăn. Liệu trình 3-5 ngày"
+          },
+          {
+            "purpose": "Viêm tiền liệt tuyến",
+            "recipe": "Hoa lựu tươi 30g nấu canh với thịt lợn ăn hàng ngày"
+          },
+          {
+            "purpose": "Ho do nhiễm lạnh",
+            "recipe": "Hoa lựu trắng tươi 24 bông, đường phèn 15g. Ngâm 15 phút với 500ml nước, sắc còn 150ml, chia 2 lần uống trước khi đi ngủ. Liệu trình 7-10 ngày"
+          },
+          {
+            "purpose": "Tẩy giun kim, giun đũa, giun tóc",
+            "recipe": "Vỏ quả lựu 15g, binh lang (hạt cau già) 10g. Sắc 3 lần rồi cô lại còn 100ml, thêm đường 20g. Uống vào buổi tối trước khi đi ngủ (sau khi ăn 3 giờ), liên tục trong 3 ngày"
+          },
+          {
+            "purpose": "Chảy máu cam",
+            "recipe": "Hoa lựu 6g, rửa sạch cho 250ml nước, sắc còn 100ml, chia 2 lần uống trong ngày. Liệu trình 5-7 ngày"
+          },
+          {
+            "purpose": "Miệng hôi, viêm amiđan",
+            "recipe": "Quả lựu sắc lấy nước đặc, ngậm và nuốt từ từ, nhiều lần trong ngày"
+          },
+          {
+            "purpose": "Bỏng nhẹ",
+            "recipe": "Hoa lựu hoặc vỏ quả lựu, sấy khô tán bột, trộn với dầu vừng bôi vào nơi tổn thương"
+          },
+          {
+            "purpose": "Kiết lỵ lâu ngày, đại tiện ra máu",
+            "recipe": "Quả lựu tươi 1-2 quả, để cả vỏ, đập nhỏ, sắc nước uống nhiều lần trong ngày. Hoặc: Quả lựu nướng khô, nghiền bột mịn; ngày uống 3 lần, mỗi lần 12g, uống với nước cơm hoặc cháo loãng"
+          },
+          {
+            "purpose": "Hỗ trợ tiêu hóa, trị tiêu chảy",
+            "recipe": "Quả lựu tươi 2 trái, bóc bỏ vỏ sắc với 500ml nước, đun nhỏ lửa còn 150ml, thêm mật ong. Chia 2-3 lần uống trong ngày"
+          },
+          {
+            "purpose": "Tiểu són, tiểu rắt, tiểu không tự chủ",
+            "recipe": "Quả lựu sao tồn tính (bên ngoài cháy đen, bên trong vẫn giữ nguyên chất), tán bột; ngày uống 3 lần, mỗi lần 6g với nước ấm"
+          },
+          {
+            "purpose": "Loét miệng, nhiệt miệng",
+            "recipe": "Quả lựu sao tồn tính, tán thành bột mịn, bôi vào nơi tổn thương"
+          },
+          {
+            "purpose": "Thoát giang (sa trực tràng)",
+            "recipe": "Vỏ quả lựu, thiên căn, mỗi vị 10g, sắc uống trong ngày. Dùng ngoài: Hoa lựu hoặc vỏ quả lựu 30g, phèn chua một chút, sắc kỹ thêm bột ngũ bội tử sao, ngâm hậu môn hàng ngày"
+          },
+          {
+            "purpose": "Tiêu chảy",
+            "recipe": "Vỏ quả lựu 5g, sơn tra 10g. Nghiền bột mịn, chia 2 phần uống với nước ấm. Có thể thêm đường"
+          },
+          {
+            "purpose": "Hỗ trợ điều trị sỏi thận",
+            "recipe": "Rễ lựu 30g, kim tiền thảo 30g, sắc nước uống trong ngày"
+          },
+          {
+            "purpose": "Viêm nhiễm ngoài da lở loét chảy mủ",
+            "recipe": "Lá lựu, sấy khô, nghiền thành bột mịn, rắc vào nơi tổn thương"
+          },
+          {
+            "purpose": "Phế ung (áp-xe phổi)",
+            "recipe": "Hoa lựu 6g, ngưu tất 6g, nhẫn đông đằng 15g, bách bộ 9g, bạch cập 30g, đường phèn 30g, sắc nước uống"
+          }
+        ]
+      },
+      "notes": [
+        "Quả lựu giàu vitamin C, polyphenol, flavonoid và anthocyanin có tác dụng chống oxy hóa mạnh",
+        "Vỏ quả lựu chứa alkaloid, tanin và các hợp chất phenolic có tính sát trùng, cầm máu, se niêm mạc",
+        "Vỏ rễ có chứa alkaloid, đặc biệt là pelletierine có tác dụng tẩy giun sán mạnh",
+        "Hoa lựu có tác dụng cầm máu, kháng viêm và chống nhiễm trùng",
+        "Quả lựu không chỉ là dược liệu quý mà còn là thực phẩm dinh dưỡng cao",
+        "Nước ép quả lựu giúp tăng cường sức khỏe tim mạch, giảm cholesterol và huyết áp",
+        "Trong y học hiện đại, chiết xuất từ lựu đang được nghiên cứu về tác dụng kháng ung thư",
+        "Vỏ quả lựu còn được sử dụng làm thuốc nhuộm tự nhiên và thuộc da",
+        "Liều lượng sử dụng vỏ rễ cần thận trọng vì có thể gây tác dụng phụ nếu dùng quá liều",
+        "Cây lựu còn có ý nghĩa văn hóa và tâm linh trong nhiều nền văn hóa, tượng trưng cho sự phồn thực và sinh sôi"
+      ],
+      "createdAt": "2025-05-17T18:00:00.000Z",
+      "updatedAt": "2025-05-17T18:00:00.000Z"
+    },
+    {
+      "id": "cardamom",
+      "vietnameseName": "SA NHÂN",
+      "englishName": "Cardamom",
+      "scientificName": "Amomum xanthioides",
+      "otherNames": "Sa nhân xanh, sa nhân đỏ, sa nhân tím",
+      "description": "Cây sa nhân là loại cây thân thảo sống lâu năm, thuộc họ Gừng (Zingiberaceae), mọc thành từng khóm nhỏ. Cây cao khoảng 1,5-2m. Lá có màu xanh đậm, dài 25-35cm, rộng 10-15cm, mặt trên lá nhẵn đậm màu hơn mặt dưới. Thân ngầm dưới đất và rễ mọc tập trung ở tầng đất mặt dưới 15cm, rễ phát triển theo chiều nằm ngang. Mỗi bụi hàng năm sinh ra 3-5 tia thân ngầm nằm 1-2cm dưới mặt đất, sau đó phát triển thành cây mới. Tại Việt Nam có khoảng 16 loài sa nhân, trong đó 3 loại phổ biến là sa nhân xanh (quả hình trứng, màu xanh lục), sa nhân đỏ (quả hình cầu, màu xanh hoặc đỏ), và sa nhân tím (quả hình cầu, màu tím có đốm trắng).",
+      "distribution": "Cây sa nhân phân bố rộng rãi tại Việt Nam, từ vùng Bảy Núi (An Giang) ở đồng bằng Nam Bộ (vĩ độ 8 độ Bắc) đến các tỉnh miền núi phía Bắc như Cao Bằng (vĩ độ 23 độ Bắc). Cây mọc tự nhiên từ vùng đồi đến cao nguyên như Mộc Châu (Sơn La), Tây Nguyên, Đồng Văn (Hà Giang), và tại các vùng núi cao trên 1000m. Tuy nhiên, sa nhân tập trung chủ yếu ở độ cao dưới 800m, với lượng mưa trung bình 1500-3000mm/năm, ưa đất tốt, giàu mùn, đạm và kali.",
+      "natureProperties": "Vị ngọt, tính mát",
+      "usedParts": [
+        "quả",
+        "hạt",
+        "thân rễ"
+      ],
+      "mainBenefits": [
+        "Điều trị các bệnh về đường tiêu hóa như tiêu chảy, khó tiêu, đau dạ dày",
+        "Giảm triệu chứng nôn khi mang thai",
+        "Giảm đau nhức răng do sâu răng",
+        "Hỗ trợ điều trị viêm loét dạ dày",
+        "Điều trị phong thấp và giảm đau khớp",
+        "Ức chế vi khuẩn bất lợi trong đường ruột",
+        "Tăng cường năng lượng cho cơ thể",
+        "Kích thích tiêu hóa, ngăn ngừa đầy hơi, ợ chua",
+        "Hỗ trợ điều trị viêm đại tràng mãn tính"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC",
+        "sideEffects": [],
+        "contraindications": [
+          "Nên tham khảo ý kiến bác sĩ khi sử dụng dài ngày"
+        ],
+        "doctorAdvice": "Phụ nữ mang thai nên tham khảo ý kiến bác sĩ trước khi sử dụng"
+      },
+      "usage": {
+        "standardDose": "5-10g mỗi ngày tùy theo mục đích sử dụng",
+        "specificUsage": [
+          {
+            "purpose": "Ăn không tiêu, đầy bụng trướng hơi",
+            "recipe": "Sa nhân 7g, gạo tẻ 400g, sơn tra 14g, cháy cơm 160g, kê nội kim 5g, thần khúc 14g, hạt sen 15g. Tất cả sao thơm, tán thành bột mịn. Mỗi ngày uống 2-4 lần, mỗi lần 14g hòa với nước ấm"
+          },
+          {
+            "purpose": "Chữa buồn nôn khi mang thai (cách 1)",
+            "recipe": "35g gạo tẻ nấu cháo trộn với 5g sa nhân sao vàng tán mịn. Đun nhỏ lửa 10-20 phút. Ăn khi còn nóng vào buổi sáng hoặc tối"
+          },
+          {
+            "purpose": "Chữa buồn nôn khi mang thai (cách 2)",
+            "recipe": "5g sa nhân và 1 con cá diếc. Cá làm sạch, nhồi sa nhân vào bụng cá, ninh nhừ, thêm gia vị, hành hoa và gừng. Ăn khi còn nóng"
+          },
+          {
+            "purpose": "Chữa tiêu chảy",
+            "recipe": "Sa nhân 10g, trần bì 10g, can khương 10g, vỏ quế 10g, vỏ rụt 10g, phá cố 15g, đoạn 15g, củ mài sa và sâm bố chính mỗi vị 15g. Tán bột mịn trộn chung. Mỗi ngày dùng 25g hòa nước uống"
+          },
+          {
+            "purpose": "Chữa viêm loét dạ dày",
+            "recipe": "8g sa nhân, 1 dạ dày lợn làm sạch thái chỉ. Nấu canh ăn. Lặp lại 10 ngày một lần"
+          },
+          {
+            "purpose": "Hỗ trợ điều trị viêm đại tràng mãn tính",
+            "recipe": "Sa nhân 1g, mộc hương 1g, bột sắn dây 3g, đường cát vừa đủ. Hòa với nước ấm, nấu cháo ăn trong ngày"
+          },
+          {
+            "purpose": "Chữa phong tê thấp",
+            "recipe": "Thân rễ sa nhân 12g ngâm với 200ml rượu nếp 40 độ C trong 30 ngày. Dùng rượu xoa bóp hàng ngày"
+          },
+          {
+            "purpose": "Chữa đau răng",
+            "recipe": "Sa nhân tán thành bột chấm lên chỗ đau răng"
+          }
+        ]
+      },
+      "notes": [
+        "Sa nhân thu hoạch vào mùa thu (tháng 7-8 hàng năm)",
+        "Hạt thu được đem sấy khô hoặc phơi khô ở nhiệt độ 40-50 độ C",
+        "Tại Việt Nam có 3 loại sa nhân phổ biến: sa nhân xanh, sa nhân đỏ và sa nhân tím",
+        "Sa nhân xanh: Hoa màu trắng có đốm tím, quả hình trứng màu xanh lục có gai dầu, hạt có nhiều u lồi",
+        "Sa nhân đỏ: Hoa có hai vạch màu đỏ và vàng, quả hình cầu màu xanh lục hoặc đỏ, quả chín tháng 7-8, hạt có các u nhỏ",
+        "Sa nhân tím: Hoa màu trắng, mép hoa màu vàng có vạch đỏ tím, quả hình cầu màu tím nhiều đốm trắng, thu hoạch vào mùa đông và hè",
+        "Sa nhân có vitamin giúp thúc đẩy sự phát triển răng chắc khỏe và ngăn ngừa sâu răng",
+        "Sa nhân có thể cải thiện khả năng trung hòa axit dạ dày, giúp điều trị viêm loét dạ dày",
+        "Thành phần quả sa nhân chứa nhiều chất khoáng giúp tái tạo dịch khớp, bôi trơn khớp",
+        "Khi sử dụng với phụ nữ mang thai, nên ăn khi còn nóng để tăng hiệu quả"
+      ],
+      "createdAt": "2025-05-17T19:00:00.000Z",
+      "updatedAt": "2025-05-17T19:00:00.000Z"
+    },
+    {
+      "id": "rose_apple",
+      "vietnameseName": "ROI",
+      "englishName": "Rose Apple",
+      "scientificName": "Syzygium jambos (L.) Alston (Eugenia Jumbos L.)",
+      "otherNames": "Lý, Bồ đào, Gioi, Điều đỏ",
+      "description": "Cây gỗ có kích thước trung bình (10-12m). Lá hình ngọn giáo, hơi thon hẹp ở gốc, thon dài và mảnh ở phía đầu, cứng, có điểm tuyến trong suốt, dài 13-20cm, rộng 3-5cm, cuống lá ngắn. Hoa trắng hay xanh xanh, to, thành chùm ít hoa ở ngọn. Quả mọng gần hình cầu, đường kính 30cm, trong đài hoa tồn tại, nạc, xốp, ít nước, ngọt, thơm. Quả có dạng quả táo, màu trắng vàng, có nhuốm hồng nhiều hay ít, có nạc trắng, ít ngọt, mùi thơm của hoa hồng. Hạt 1-2, xám. Hoa tháng 2-5; quả tháng 6-8.",
+      "distribution": "Cây có nguồn gốc từ phân vùng Ấn Độ - Malaixia, cho tới Inđônêxia. Được trồng ở nhiều xứ nhiệt đới. Ở Việt Nam, thường mọc ở những nơi ẩm, ven suối, từ Hà Tây, Hà Bắc, Nam Hà, Ninh Bình, Sơn La, Nghệ An, Hà Tĩnh cho tới các tỉnh phía Nam.",
+      "natureProperties": "Vị ngọt, chát, tính bình",
+      "usedParts": [
+        "quả",
+        "lá",
+        "vỏ rễ",
+        "hạt",
+        "vỏ quả"
+      ],
+      "mainBenefits": [
+        "Điều trị tiêu chảy, ỉa chảy, kiết lỵ",
+        "Trị đau mắt và các bệnh về mắt",
+        "Chữa bệnh đường hô hấp",
+        "Kháng khuẩn (đặc biệt với liên cầu khuẩn, vi khuẩn bạch hầu và phế cầu)",
+        "Lương huyết, tiêu thũng",
+        "Sát trùng, thu liễm",
+        "Hạ sốt",
+        "Làm mát khi bị bệnh đậu mùa",
+        "Trị đau gan",
+        "Chữa dao chém xuất huyết",
+        "Điều trị bệnh đái đường (tiểu đường)",
+        "Trị chứng khô (can táo)",
+        "Chữa nấc nghẹn"
+      ],
+      "warnings": {
+        "toxicity": "CÓ ĐỘC (các bộ phận như hạt, lá, thân, rễ và vỏ)",
+        "sideEffects": [
+          "Các bộ phận khác của cây, như hạt, lá, thân, rễ và vỏ đều có độc, do có alcaloid jambosin và acid hydrocyanic"
+        ],
+        "contraindications": [
+          "Cần thận trọng khi sử dụng các bộ phận có độc như hạt, lá, thân, rễ và vỏ"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến chuyên gia trước khi sử dụng làm thuốc"
+      },
+      "usage": {
+        "standardDose": "Tùy theo mục đích sử dụng và thể trạng người dùng",
+        "specificUsage": [
+          {
+            "purpose": "Trị tiêu chảy, ỉa chảy",
+            "recipe": "Dùng quả hoặc lá, có thể sắc nước uống"
+          },
+          {
+            "purpose": "Trị đau mắt",
+            "recipe": "Lá nấu lên dùng chữa đau mắt"
+          },
+          {
+            "purpose": "Chữa bệnh đường hô hấp",
+            "recipe": "Dùng lá làm thuốc"
+          },
+          {
+            "purpose": "Hạ sốt",
+            "recipe": "Nước ngâm lá dùng uống làm thuốc trị sốt"
+          },
+          {
+            "purpose": "Làm mát khi bị bệnh đậu mùa",
+            "recipe": "Lá giã ra và xát vào người"
+          },
+          {
+            "purpose": "Trị lỵ, ỉa chảy, dao chém xuất huyết",
+            "recipe": "Dùng vỏ rễ sắc uống"
+          },
+          {
+            "purpose": "Trị bệnh đái đường",
+            "recipe": "Dùng hạt làm thuốc (cần thận trọng vì hạt có độc)"
+          },
+          {
+            "purpose": "Trị nấc nghẹn",
+            "recipe": "Sử dụng vỏ quả làm thuốc"
+          },
+          {
+            "purpose": "Quả dùng ăn",
+            "recipe": "Có thể nấu chín với đường dùng ăn tốt"
+          }
+        ]
+      },
+      "notes": [
+        "Trong 100g phần ăn được của quả có: nước 84,80g, protein 0,5-0,8g, chất béo 0,2-0,3g, carbohydrat 9,7-14,2g, xơ 1-2g, tro 0,3-0,4g, caroten 123-235IU, vitamin B complex 0,55-1,04mg và vitamin C 3-37mg",
+        "Nạc quả chứa hàm lượng pectin cao",
+        "Trong quả còn có các acid amin tự do",
+        "Tinh dầu chiết xuất từ lá chứa 27% dl a-pinen và 24% l-limonen, 2 monoterpen có vòng",
+        "Lá và vỏ còn chứa tanin, một oleorsin và một lượng nhỏ alcaloid",
+        "Chất chiết từ lá cây có tác dụng với nhiều loại vi khuẩn gây bệnh, đặc biệt là liên cầu khuẩn, vi khuẩn bạch hầu và phế cầu",
+        "Ở Campuchia, nước ngâm lá dùng uống làm thuốc trị sốt",
+        "Ở Ấn Độ, quả dùng chữa đau gan",
+        "Ở Vân Nam (Trung Quốc), vỏ rễ dùng trị lỵ, ỉa chảy, dao chém xuất huyết; hạt trị đái đường; vỏ quả trị nấc nghẹn",
+        "Cần thận trọng khi sử dụng vì nhiều bộ phận có chứa độc tố"
+      ],
+      "createdAt": "2025-05-17T20:00:00.000Z",
+      "updatedAt": "2025-05-17T20:00:00.000Z"
+    },
+    {
+      "id": "roxburgh_fig",
+      "vietnameseName": "SUNG",
+      "englishName": "Cluster Fig",
+      "scientificName": "Ficus racemosa L. (Ficus glomerata Roxb.)",
+      "otherNames": "Ưu đàm thụ, vô hoa quả, thiên sinh tử, ánh nhật quả, văn tiên quả",
+      "description": "Cây sung thuộc họ dâu tằm (Moraceae). Trên lá sung thường có những nốt phồng, giống như bong bóng nổ ở chiếc bánh đa nướng. Những nốt sần đó tạo thành do bị sâu Psyllidae ký sinh. Các nốt sần này là nơi chứa nhiều hoạt chất như flavonoid, triterpenoid, alkaloid và tanin. Lá sung bánh tẻ (không quá già hay non) thường được sử dụng nhiều trong các bài thuốc dân gian. Các bộ phận khác như quả, nhựa cây và vỏ cây đều có công dụng y học.",
+      "distribution": "Cây sung thường mọc ở nhiều nước trong khu vực Đông Nam Á, Trung Quốc, Nepal, Pakistan, Úc, New Guinea, Sri Lanka. Chúng thích nơi có độ ẩm cao như ven thác, sông, và hồ.",
+      "natureProperties": "Lá sung tính mát, vị ngọt hơi chát. Quả sung vị ngọt tính bình quy kinh phế đại tràng.",
+      "usedParts": [
+        "lá",
+        "quả",
+        "nhựa cây",
+        "vỏ cây"
+      ],
+      "mainBenefits": [
+        "Thông huyết, giảm đau, lợi tiểu",
+        "Tiêu viêm, tiêu đờm, tiêu thũng, sát trùng, bổ huyết",
+        "Chống ung thư tiềm năng (ruột kết, vú, cổ tử cung, gan)",
+        "Giúp giảm huyết áp nhờ hàm lượng kali cao",
+        "Bảo vệ gan khỏi các tác nhân gây hại",
+        "Hỗ trợ điều trị bệnh tiểu đường",
+        "Làm co búi trĩ hiệu quả",
+        "Điều trị phong thấp, sốt rét",
+        "Giúp lợi sữa cho phụ nữ sau sinh",
+        "Chữa đau dạ dày, viêm họng, táo bón",
+        "Điều trị mụn nhọt, bắp chuối, ghẻ lở",
+        "Hỗ trợ điều trị bệnh hen phế quản",
+        "Giảm đau do bong gân, sai khớp",
+        "Hỗ trợ trị tưa lưỡi và vết bỏng",
+        "Giảm cân nhờ hàm lượng chất xơ cao"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC",
+        "sideEffects": [
+          "Tiếp xúc da với quả sung hoặc nhựa lá sung có thể gây phát ban ở những người nhạy cảm",
+          "Ăn quá nhiều quả sung đặc biệt là quả sung khô có thể gây tiêu chảy do hàm lượng chất xơ cao"
+        ],
+        "contraindications": [
+          "Người bị xuất huyết trực tràng, âm đạo",
+          "Người có huyết áp thấp",
+          "Người có đường huyết thấp",
+          "Người có tiền sử bệnh thận",
+          "Không dùng cho người dị ứng với thành phần lá quả, nhựa sung"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến của bác sĩ hoặc chuyên gia trước khi sử dụng. Không nên tự ý dùng các dạng bào chế có thể ảnh hưởng đến sức khỏe."
+      },
+      "usage": {
+        "standardDose": "Lá sung: 30-50g/ngày. Quả sung: 3-10 quả/ngày tùy mục đích sử dụng.",
+        "specificUsage": [
+          {
+            "purpose": "Dùng bột sung chữa đau dạ dày",
+            "recipe": "Rửa sung sạch ngâm với nước muối pha loãng 20 phút, để ráo, bổ đôi, phơi khô, sao vàng và tán thành bột mịn. Mỗi lần dùng 2 thìa cà phê bột sung pha với 100ml nước ấm, uống 2-3 lần/ngày trước hoặc sau khi ăn 30 phút-1 giờ, dùng 7-10 ngày"
+          },
+          {
+            "purpose": "Sung khô ngâm nước trị đau dạ dày",
+            "recipe": "Buổi tối lấy 3 quả sung khô ngâm nước ấm qua đêm, sáng uống nước và ăn sung khi bụng đói. Thực hiện đều đặn mỗi ngày trong 2-3 tháng"
+          },
+          {
+            "purpose": "Chữa viêm họng",
+            "recipe": "Cách 1: Sung tươi sấy khô, tán bột đưa vào họng trong 5-7 ngày. Cách 2: Sung tươi gọt vỏ, thái phiến, sắc lấy nước, thêm đường phèn cô thành cao, ngậm hàng ngày"
+          },
+          {
+            "purpose": "Chữa táo bón",
+            "recipe": "Cách 1: Sung tươi 9g sắc uống hàng ngày trong 5-7 ngày. Cách 2: Sung chín ăn 3-5 quả/ngày trong 5-7 ngày. Cách 3: Sung tươi 10 quả và ruột già lợn hầm nhừ, ăn trong ngày trong 1 tuần"
+          },
+          {
+            "purpose": "Chữa phong thấp, sốt rét, sản phụ thiếu sữa",
+            "recipe": "Nấu nước 50g lá sung uống thay nước chè hàng ngày đến khi bệnh đỡ hẳn"
+          },
+          {
+            "purpose": "Chữa mụn lở chưa vỡ hoặc vú sưng đau",
+            "recipe": "Lá sung 50g giã nát, trộn với vài giọt nhựa sung đắp lên vùng đau, đắp 2 lần/ngày liên tục 7-10 ngày"
+          },
+          {
+            "purpose": "Hỗ trợ điều trị bệnh hen",
+            "recipe": "Hứng 5 giọt nhựa sung, hòa với 1 thìa mật ong uống kết hợp với thuốc tây y đến khi triệu chứng thuyên giảm"
+          },
+          {
+            "purpose": "Chữa trĩ ngoại",
+            "recipe": "Nửa cân lá sung thái nhỏ sắc kỹ, dùng xông hậu môn và đắp lá lên chỗ đau, mỗi ngày 2-3 lần trong 2-3 ngày. Hoặc lá sung, ngải cứu, lá lốt, cúc tần, nước bồ kết đặc và nghệ tươi đun sôi, xông hậu môn 15-20 phút/lần"
+          },
+          {
+            "purpose": "Trị ghẻ lở cho trẻ nhỏ",
+            "recipe": "Lá sung non rửa sạch giã nát xát lên vùng bị ghẻ nhiều lần"
+          },
+          {
+            "purpose": "Bảo vệ gan, trị vàng da",
+            "recipe": "30g lá sung khô hãm với 500ml nước sôi trong 5 phút, lọc lấy nước uống thay trà. Hoặc kết hợp lá sung 30g, nhân trần 30g, kê huyết đằng 20g, rau má 50g, sâm đại hành 20g, sắc uống hàng ngày"
+          },
+          {
+            "purpose": "Chữa sốt, cảm cúm",
+            "recipe": "Lá sung vú 16g, lá chanh 16g, nghệ 16g, tỏi 6g sắc lấy nước đặc uống. Nếu mồ hôi ra nhiều thì uống nguội, ngược lại uống nóng và đắp chăn cho ra mồ hôi"
+          },
+          {
+            "purpose": "Chữa bong gân, sai khớp",
+            "recipe": "Giã nhỏ lá sung vú, lá bàng, lá mua, lá cỏ xước và lá cứt lợn, thêm ít rượu đắp lên chỗ đau"
+          },
+          {
+            "purpose": "Chữa tưa lưỡi",
+            "recipe": "Phơi khô lá sung vú và lá mít cùng lượng, đốt cháy, tán mịn và hòa với mật ong. Bôi lên da 3 lần/ngày"
+          },
+          {
+            "purpose": "Trị bỏng",
+            "recipe": "Lá vú sung phơi khô và sao vàng, tán bột mịn trộn đều với mỡ lợn, bôi lên vết bỏng nhiều lần trong ngày"
+          }
+        ]
+      },
+      "notes": [
+        "Lá sung chứa beta-sitosterol có công dụng hỗ trợ điều trị bệnh tiểu đường và làm giảm nồng độ đường huyết",
+        "Các nốt sần trên lá sung chứa nhiều hoạt chất như flavonoid, triterpenoid, alkaloid và tanin",
+        "Trong 100g phần ăn được của quả sung có nhiều vitamin và khoáng chất",
+        "Lá sung có hàm lượng chất xơ cao, hỗ trợ dạ dày và tiêu hóa hiệu quả",
+        "Lá sung chứa hàm lượng kali cao giúp kiểm soát huyết áp cao",
+        "Nhựa sung và lá sung có khả năng kháng lại các tế bào ung thư",
+        "Quả sung tươi có hàm lượng calo thấp và giàu chất xơ",
+        "Quả sung khô chứa nhiều đường và calo hơn quả tươi",
+        "Lá sung có chứa hoạt chất tannin có đặc tính làm săn se da",
+        "Khi chọn lá sung làm thuốc, nên chọn lá có nốt sần vì chứa nhiều hoạt chất hơn",
+        "Các nốt sần trên lá sung có thể ăn được, dễ ăn, ít chát và ít xơ hơn lá thường"
+      ],
+      "createdAt": "2025-05-17T21:00:00.000Z",
+      "updatedAt": "2025-05-17T21:00:00.000Z"
+    },
+    {
+      "id": "sandalwood",
+      "vietnameseName": "ĐÀN HƯƠNG",
+      "englishName": "Sandalwood",
+      "scientificName": "Santalum album",
+      "otherNames": "Bạch đàn hương, gỗ thơm",
+      "description": "Đàn hương là loài cây thân gỗ thường xanh, có thể cao đến 20m. Thuộc họ Đàn hương (Santalaceae), cây có tán lá xòe rộng, thường bán ký sinh trên rễ cây khác trong giai đoạn đầu phát triển. Lá đàn hương có màu xanh đậm, thuôn dài, hai mặt nhẵn bóng. Hoa nhỏ màu nâu đỏ hoặc tím nhạt. Quả hình cầu, khi chín có màu đỏ tím đến đen. Đặc biệt, toàn bộ cây có mùi thơm đặc trưng, đặc biệt là gỗ và lá. Lá đàn hương có mùi hương ngọt ấm mạnh mẽ, được sử dụng nhiều trong sản xuất hương liệu và dược phẩm.",
+      "distribution": "Đàn hương có nguồn gốc từ Ấn Độ, Sri Lanka, Indonesia và một số quốc gia Đông Nam Á. Được trồng tại nhiều nơi có khí hậu nhiệt đới và cận nhiệt đới. Tại Việt Nam, cây đàn hương được trồng ở một số vùng để lấy gỗ và lá.",
+      "natureProperties": "Vị ngọt nhẹ, tính mát",
+      "usedParts": [
+        "lá",
+        "gỗ",
+        "tinh dầu"
+      ],
+      "mainBenefits": [
+        "Đào thải độc tố, bảo vệ gan",
+        "Ngăn ngừa đông máu, hỗ trợ điều trị tiểu đường",
+        "Chống oxy hóa và kháng viêm",
+        "Phòng chống ung thư và bệnh tim mạch",
+        "Tốt cho hệ thần kinh, giúp thư giãn và dễ ngủ",
+        "Tăng cường trí nhớ, giảm nguy cơ mắc Alzheimer",
+        "Kháng viêm, trị mụn và làm lành tổn thương da",
+        "Ổn định huyết áp",
+        "Giải rượu, đào thải độc tố trong máu",
+        "Duy trì hàm lượng lipit ổn định trong máu"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC",
+        "sideEffects": [
+          "Có thể gây dị ứng ở một số người nhạy cảm",
+          "Không nên thay thế hoàn toàn nước lọc bằng trà đàn hương"
+        ],
+        "contraindications": [
+          "Phụ nữ mang thai nên thận trọng khi sử dụng",
+          "Người bị huyết áp thấp nên dùng với liều lượng thấp"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến bác sĩ trước khi sử dụng để điều trị bệnh cụ thể"
+      },
+      "usage": {
+        "standardDose": "Trà đàn hương: 3-5g lá khô/lần, 2-3 lần/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Pha trà đàn hương",
+            "recipe": "Lấy lượng lá đàn hương khô vừa đủ, hãm với nước sôi lần đầu rồi đổ bỏ. Sau đó đổ thêm nước sôi vào hãm lần hai, chờ thời gian ngắn cho trà ngấm là thưởng thức. Có thể uống nóng theo cách truyền thống hoặc thêm đường và uống nóng hay lạnh tùy sở thích"
+          },
+          {
+            "purpose": "Trị mụn, kháng viêm da",
+            "recipe": "Đun 10g lá đàn hương khô với 200ml nước, để nguội rồi dùng bông thấm dung dịch thoa lên vùng da bị mụn hoặc viêm, ngày 2-3 lần"
+          },
+          {
+            "purpose": "Giải rượu, bảo vệ gan",
+            "recipe": "Uống 1 tách trà đàn hương sau khi uống rượu để giảm tác hại của cồn và bảo vệ gan"
+          },
+          {
+            "purpose": "Giúp thư giãn, dễ ngủ",
+            "recipe": "Uống 1 tách trà đàn hương ấm trước khi đi ngủ 30-60 phút"
+          },
+          {
+            "purpose": "Hỗ trợ ổn định huyết áp",
+            "recipe": "Uống trà đàn hương đều đặn 2 lần/ngày, sáng và chiều"
+          }
+        ]
+      },
+      "notes": [
+        "Lá đàn hương chứa các hoạt chất như catechin, vitexin, isovitexin, polyphenol có tác dụng tốt với sức khỏe",
+        "Lá đàn hương thường được sấy khô để làm trà hoặc chiết xuất tinh dầu",
+        "Không nên nhầm lẫn giữa lá đàn hương và lá trầm hương, hai loại khác nhau",
+        "Lá sau khi pha trà có thể sử dụng lại vì hương thơm và dưỡng chất vẫn còn",
+        "Để sấy lá tại nhà, cần sử dụng lửa nhỏ và sấy khô dần để giữ nguyên hương vị và dưỡng chất",
+        "Khi vò lá, nên làm lúc lá mềm để tránh bị giòn và nát",
+        "Đàn hương là hương liệu quan trọng trong sản xuất nước hoa và tinh dầu thơm",
+        "Trà đàn hương có vị ngọt nhẹ, thanh mát giúp người dùng thư thái",
+        "Polyphenol trong lá đàn hương có khả năng diệt khuẩn và chữa lành tổn thương ngoài da",
+        "Lá đàn hương chất lượng cao sẽ có màu sắc đẹp, hương thơm đặc trưng và giữ được nhiều dưỡng chất"
+      ],
+      "createdAt": "2025-05-17T22:00:00.000Z",
+      "updatedAt": "2025-05-17T22:00:00.000Z"
+    },
+    {
+      "id": "tulsi",
+      "vietnameseName": "HÚNG QUẾ",
+      "englishName": "Sweet Basil",
+      "scientificName": "Ocimum basilicum",
+      "otherNames": "É quế, Hương thái, Húng tây",
+      "description": "Cây húng quế là loại thảo mộc thân thảo, sống hàng năm hoặc lâu năm, cao khoảng 50-100cm. Thân thường nhẵn, đôi khi có lông, phân nhánh từ gốc. Lá mọc đối, có cuống, hình trứng đến hình elip, dài 3-6cm, rộng 1,3-3cm, mặt trên mọng nước, mặt dưới có vân, có nhiều tuyến dầu không cuống. Lá có màu xanh lục hoặc đôi khi tím đen rất nhạt. Hoa khá lớn, màu trắng hoặc tím nhạt, xếp thành các gai ở đầu cành. Quả tạo ra hạt nhỏ màu đen bóng. Cây có mùi thơm nồng, hăng, thường ngọt và có vị hơi giống hoa hồi.",
+      "distribution": "Húng quế có nguồn gốc từ Châu Á, Châu Phi và các đảo Thái Bình Dương. Ngày nay, cây húng quế có thể được tìm thấy mọc ở các vùng ôn đới trên khắp thế giới. Cây phát triển tốt nhất trong môi trường ấm áp có khoảng sáu giờ nắng mỗi ngày và thích đất mùn màu mỡ, thoát nước tốt, giàu chất hữu cơ.",
+      "natureProperties": "Vị cay, tính ấm, mùi thơm",
+      "usedParts": [
+        "lá",
+        "hoa",
+        "rễ",
+        "tinh dầu"
+      ],
+      "mainBenefits": [
+        "Chống viêm nhờ tinh dầu eugenol, citronellol và linalool",
+        "Ngăn ngừa ung thư nhờ chứa chất phytochemical",
+        "Khử trùng, giúp chữa vết loét, vết cắt và vết thương",
+        "Kháng khuẩn, chống lại vi khuẩn kháng thuốc E. coli",
+        "Giảm trầm cảm và lo âu, cải thiện tâm trạng",
+        "Cải thiện sức khỏe mắt, giảm viêm kết mạc",
+        "Bảo vệ tim mạch, ngăn ngừa cục máu đông",
+        "Hỗ trợ chức năng gan và giải độc cơ thể",
+        "Cải thiện sức khỏe răng miệng, điều trị viêm nướu",
+        "Giảm ho, hỗ trợ điều trị viêm phế quản và hen suyễn",
+        "Kiềm hóa cơ thể, cải thiện tiêu hóa",
+        "Ngăn ngừa mụn trứng cá, làm lành tổn thương da",
+        "Kích thích chức năng tình dục tự nhiên",
+        "Hỗ trợ điều trị bệnh tiểu đường và hội chứng chuyển hóa",
+        "Giúp bỏ hút thuốc, kiểm soát cảm giác thèm thuốc",
+        "Giảm đau đầu, đặc biệt là đau đầu do sốt và cảm",
+        "Hỗ trợ thận và giúp loại bỏ sỏi thận",
+        "Giảm đường huyết và hỗ trợ insulin",
+        "Giảm cholesterol và huyết áp",
+        "Cải thiện hệ miễn dịch, chống sốt và nhiễm trùng"
+      ],
+      "warnings": {
+        "toxicity": "KHÔNG ĐỘC",
+        "sideEffects": [
+          "Có thể gây kích ứng khi sử dụng quá nhiều",
+          "Một số người có thể bị dị ứng với húng quế"
+        ],
+        "contraindications": [
+          "Phụ nữ mang thai và cho con bú nên thận trọng khi sử dụng",
+          "Người có tiền sử dị ứng với các loại thảo mộc cùng họ"
+        ],
+        "doctorAdvice": "Nên tham khảo ý kiến bác sĩ trước khi sử dụng để điều trị bệnh cụ thể, đặc biệt là khi đang dùng thuốc khác"
+      },
+      "usage": {
+        "standardDose": "Lá tươi: 5-12 lá/ngày tùy mục đích sử dụng; Lá khô: 1-2 thìa/ngày",
+        "specificUsage": [
+          {
+            "purpose": "Làm dịu dạ dày, giảm khó tiêu",
+            "recipe": "1/2 thìa lá húng quế khô hoặc tươi ngâm trong nước ấm, uống thường xuyên"
+          },
+          {
+            "purpose": "Giảm đau đầu",
+            "recipe": "Thêm 1 thìa lá húng quế khô vào 2 cốc nước sôi, xông hơi mặt trong 5-10 phút, trùm khăn kín đầu"
+          },
+          {
+            "purpose": "Trị vết côn trùng cắn",
+            "recipe": "Nhai lá húng quế tươi rồi đắp lên vết cắn để giảm đau và loại bỏ nọc độc"
+          },
+          {
+            "purpose": "Giảm đường huyết",
+            "recipe": "Ăn lá húng quế thường xuyên hoặc uống như nước ép/trà"
+          },
+          {
+            "purpose": "Giảm căng thẳng",
+            "recipe": "Cho 2 tách trà lá húng quế vào bồn tắm nước ấm hoặc ngậm 12 lá húng quế hai lần mỗi ngày"
+          },
+          {
+            "purpose": "Giảm sốt",
+            "recipe": "Đun sôi lá húng quế với thảo quả trong 2 lít nước, kết hợp với đường và sữa, uống sau mỗi 2-3 giờ"
+          },
+          {
+            "purpose": "Trị ho",
+            "recipe": "Đun sôi 8 lá húng quế và 5 lá cây đinh hương trong 1 cốc nước trong 10 phút, thêm muối, để nguội rồi uống"
+          },
+          {
+            "purpose": "Trị viêm họng",
+            "recipe": "Súc họng bằng nước đun sôi với lá húng quế"
+          },
+          {
+            "purpose": "Điều trị hen suyễn và viêm phế quản",
+            "recipe": "Đun sôi lá húng quế với mật ong và gừng, uống nước này đều đặn"
+          },
+          {
+            "purpose": "Loại bỏ sỏi thận",
+            "recipe": "Trộn nước ép lá húng quế với mật ong, uống mỗi ngày trong 6 tháng"
+          },
+          {
+            "purpose": "Điều trị nhiễm trùng miệng và loét miệng",
+            "recipe": "Ngậm vài lá húng quế hai lần một ngày"
+          },
+          {
+            "purpose": "Điều trị bệnh da như hắc lào",
+            "recipe": "Thoa nước lá húng quế trực tiếp lên vùng da bị ảnh hưởng"
+          },
+          {
+            "purpose": "Cải thiện sức khỏe răng miệng",
+            "recipe": "Phơi khô lá húng quế, xay thành bột làm kem đánh răng hoặc trộn với dầu mù tạt"
+          },
+          {
+            "purpose": "Tăng cường thèm ăn, chống chán ăn",
+            "recipe": "Ngâm 1 thìa lá húng quế khô trong 300ml nước sôi trong 30 phút, lọc, uống 80ml trước khi ăn 15 phút, 3 lần/ngày"
+          },
+          {
+            "purpose": "Điều trị viêm dạ dày và đại tràng mãn tính",
+            "recipe": "Đổ 1 lít nước sôi lên lá húng quế khô đã cắt nhỏ, để nguội uống nửa cốc mỗi lần, 3 lần/ngày sau bữa ăn"
+          }
+        ]
+      },
+      "notes": [
+        "Húng quế chứa tinh dầu mạnh như eugenol, citronellol và linalool có tác dụng chống viêm",
+        "Nghiên cứu cho thấy húng quế có thể ngăn ngừa ung thư da, gan, miệng và phổi",
+        "Tinh dầu húng quế có thể bảo vệ da khỏi sự phát triển của vi khuẩn có hại",
+        "Húng quế được chứng minh có hiệu quả chống lại các chủng vi khuẩn kháng thuốc",
+        "Húng quế có thể tác động đến chức năng não, hỗ trợ điều chỉnh hormone tạo ra hạnh phúc",
+        "Húng quế giúp bảo vệ mắt khỏi viêm kết mạc, nhọt và các vấn đề do nhiễm khuẩn",
+        "Chiết xuất húng quế giúp cải thiện chức năng gan và khả năng chống oxy hóa",
+        "Ở Ấn Độ, húng quế được coi là 'thần dược của cuộc sống'",
+        "Tinh dầu đạt nồng độ cao nhất khi cây đã ra hoa",
+        "Húng quế là một trong những loại thảo mộc rất dễ trồng và chăm sóc"
+      ],
+      "createdAt": "2025-05-17T23:00:00.000Z",
+      "updatedAt": "2025-05-17T23:00:00.000Z"
+    }
+  ]

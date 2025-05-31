@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
-// Widget scanner frame nâng cao
+// Widget scanner frame nâng cao - phiên bản cải thiện
 class ScannerFrame extends StatelessWidget {
   final Widget child;
   final Animation<double> scanAnimation;
+  final bool showOverlay; // Tùy chọn hiển thị overlay
   
   const ScannerFrame({
     Key? key,
     required this.child,
     required this.scanAnimation,
+    this.showOverlay = true,
   }) : super(key: key);
 
   Widget _buildCorner({
@@ -53,28 +55,32 @@ class ScannerFrame extends StatelessWidget {
       height: size,
       child: Stack(
         children: [
-          // Nội dung chính (hình ảnh)
-          ClipRRect(
-            borderRadius: BorderRadius.circular(4),
-            child: child,
-          ),
-          
-          // Overlay gradient nhẹ
-          Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Colors.black.withOpacity(0.1),
-                  Colors.transparent,
-                  Colors.transparent,
-                  Colors.black.withOpacity(0.1),
-                ],
-                stops: const [0.0, 0.3, 0.7, 1.0],
-              ),
+          // Nội dung chính (hình ảnh) - đảm bảo fill toàn bộ container
+          Positioned.fill(
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(4),
+              child: child,
             ),
           ),
+          
+          // Overlay gradient nhẹ - chỉ hiển thị khi cần
+          if (showOverlay)
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(4),
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.black.withOpacity(0.05),
+                    Colors.transparent,
+                    Colors.transparent,
+                    Colors.black.withOpacity(0.05),
+                  ],
+                  stops: const [0.0, 0.3, 0.7, 1.0],
+                ),
+              ),
+            ),
           
           // 4 góc scanner với hiệu ứng phát sáng
           ...[

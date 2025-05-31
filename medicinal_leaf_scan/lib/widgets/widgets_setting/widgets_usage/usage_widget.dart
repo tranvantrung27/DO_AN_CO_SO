@@ -1,39 +1,43 @@
 import 'package:flutter/material.dart';
-import 'UI/terms_conditions_screen.dart';
+import 'UI/usage_screen.dart';
 
-class TermsConditionsWidget extends StatelessWidget {
-  const TermsConditionsWidget({super.key});
+class UsingWidget extends StatelessWidget {
+  const UsingWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity, // THAY ĐỔI: từ 380 thành double.infinity
-      height: 60,
+      height: 60,  
       child: Column(
         children: [
-          const SizedBox(height: 10),
+          // Nội dung phần Row
+          SizedBox(height: 15),
           GestureDetector(
             onTap: () {
+              // Điều hướng đến màn hình UsingScreen
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const TermsConditionsScreen()),
+                MaterialPageRoute(builder: (context) => UsingScreen()),
               );
             },
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,  // Canh trái
               children: [
+                // Logo ở bên trái
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Image.asset(
-                    'assets/icon/terms-and-conditions.png',
-                    width: 38,
-                    height: 38,
+                    'assets/icon/book.png', 
+                    width: 38, 
+                    height: 38, 
                   ),
                 ),
-                const SizedBox(width: 10),
-                Expanded( // THÊM: Expanded để text responsive
+                SizedBox(width: 10), 
+                // Text "Cách sử dụng"
+                Expanded(  
                   child: Text(
-                    'Điều khoản & Điều kiện',
+                    'Cách sử dụng', 
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -42,12 +46,13 @@ class TermsConditionsWidget extends StatelessWidget {
                     overflow: TextOverflow.ellipsis, // THÊM: tránh text overflow
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 15),
+                // Mũi tên ở bên phải
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Icon(
-                    Icons.arrow_forward_ios,
-                    size: 25,
-                    color: Colors.black,
+                    Icons.arrow_forward_ios, 
+                    size: 25, 
+                    color: Colors.black, 
                   ),
                 ),
               ],

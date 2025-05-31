@@ -1,1 +1,41 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"medicinal-leaf-scan","appId":"1:427061760676:android:7a258dfe902bf8c0540c31","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"medicinal-leaf-scan","configurations":{"android":"1:427061760676:android:7a258dfe902bf8c0540c31","ios":"1:427061760676:ios:7bcc611cba32de16540c31","macos":"1:427061760676:ios:7bcc611cba32de16540c31","web":"1:427061760676:web:293b6b2aaec2a91c540c31","windows":"1:427061760676:web:d57b9eef1fb43f20540c31"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "medicinal-leaf-scan",
+          "appId": "1:427061760676:android:7a258dfe902bf8c0540c31",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "medicinal-leaf-scan",
+          "configurations": {
+            "android": "1:427061760676:android:7a258dfe902bf8c0540c31",
+            "ios": "1:427061760676:ios:7bcc611cba32de16540c31",
+            "macos": "1:427061760676:ios:7bcc611cba32de16540c31",
+            "web": "1:427061760676:web:293b6b2aaec2a91c540c31",
+            "windows": "1:427061760676:web:d57b9eef1fb43f20540c31"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}

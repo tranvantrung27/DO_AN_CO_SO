@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:medicinal_leaf_scan/utils/app_colors.dart'; // Import AppColors
-import 'package:medicinal_leaf_scan/widgets/widgets_setting/widgets_account/account_settings_widget.dart'; // Import AccountSettingsWidget
-import 'package:medicinal_leaf_scan/widgets/widgets_setting/widget_overview/overview_widget.dart'; // Import OverviewWidget
-import 'package:medicinal_leaf_scan/navigation/button/logout_button_widget.dart'; // Import LogoutButtonWidget
+import 'package:medicinal_leaf_scan/utils/app_colors.dart';
+import 'package:medicinal_leaf_scan/widgets/widgets_setting/widgets_account/account_settings_widget.dart';
+import 'package:medicinal_leaf_scan/widgets/widgets_setting/widget_overview/overview_widget.dart';
+import 'package:medicinal_leaf_scan/navigation/button/logout_button_widget.dart';
 
 class SettingScreen extends StatelessWidget {
   @override
@@ -18,32 +18,38 @@ class SettingScreen extends StatelessWidget {
       ),
       body: Container(
         color: AppColors.bodyColor,
-        child: Stack(
+        width: double.infinity,
+        child: Column( // Thay SingleChildScrollView bằng Column
           children: [
-            // AccountSettingsWidget
-            Positioned(
-              top: 20,
-              left: (MediaQuery.of(context).size.width - 380) / 2,
-              child: AccountSettingsWidget(),
-            ),
-
-            // OverviewWidget
-            Positioned(
-              top: 100,
-              left: (MediaQuery.of(context).size.width - 380) / 2,
-              child: OverviewWidget(),
-            ),
-
-            // Logout Button at the bottom
-            Align(
-              alignment:
-                  Alignment
-                      .bottomCenter,
-              child: Padding(
-                padding: const EdgeInsets.only(
-                  bottom: 200,
-                ), 
-                child: LogoutButtonWidget(), // Nút đăng xuất
+            Expanded( // Wrap nội dung trong Expanded
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12), // Giảm padding vertical
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    // Account Settings Widget
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxWidth: 380),
+                      child: AccountSettingsWidget(),
+                    ),
+                    
+                    const SizedBox(height: 12), // Giảm xuống 12
+                    
+                    // Overview Widget
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxWidth: 380),
+                      child: OverviewWidget(),
+                    ),
+                    
+                    const SizedBox(height: 16), // Giảm xuống 16
+                    
+                    // Logout Button
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxWidth: 380),
+                      child: LogoutButtonWidget(),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

@@ -28,7 +28,7 @@ class ActionButtons extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              // Nút lưu vào lịch sử
+              // Nút lưu vào lịch sử - giữ nguyên
               ElevatedButton.icon(
                 onPressed: isSaving || isSavedToHistory ? null : onSaveToHistory,
                 icon: Icon(isSavedToHistory ? Icons.check : Icons.history),
@@ -44,18 +44,23 @@ class ActionButtons extends StatelessWidget {
                   ),
                 ),
               ),
-              // Nút lưu vào bộ sưu tập
+              
+              // Nút lưu hoặc xóa BST (thay đổi ở đây)
               ElevatedButton.icon(
-                onPressed: isSaving || isSavedToCollection 
+                onPressed: isSaving 
                     ? null 
-                    : onSaveToCollection,
-                icon: Icon(isSavedToCollection ? Icons.check : Icons.bookmark),
+                    : (isSavedToCollection 
+                        ? onRemoveFromCollection 
+                        : onSaveToCollection),
+                icon: Icon(isSavedToCollection 
+                    ? Icons.delete_outline 
+                    : Icons.bookmark),
                 label: Text(isSavedToCollection 
-                    ? 'Đã lưu vào BST' 
+                    ? 'Xóa khỏi BST' 
                     : 'Lưu vào BST'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: isSavedToCollection 
-                      ? Colors.grey 
+                      ? Colors.red 
                       : AppColors.greenColor,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -66,22 +71,7 @@ class ActionButtons extends StatelessWidget {
               ),
             ],
           ),
-          // Hiển thị nút xóa nếu đã lưu vào bộ sưu tập
-          if (isSavedToCollection && onRemoveFromCollection != null)
-            Padding(
-              padding: const EdgeInsets.only(top: 12),
-              child: TextButton.icon(
-                onPressed: isSaving ? null : onRemoveFromCollection,
-                icon: const Icon(Icons.delete_outline, color: Colors.red),
-                label: const Text(
-                  'Xóa khỏi bộ sưu tập',
-                  style: TextStyle(color: Colors.red),
-                ),
-                style: TextButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                ),
-              ),
-            ),
+          // Xóa phần nút xóa ở dưới vì đã gộp chức năng vào nút chính
         ],
       ),
     );
