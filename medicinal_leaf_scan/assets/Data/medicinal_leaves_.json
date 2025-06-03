@@ -1,6 +1,7 @@
-  [
+[
+
     {
-      "id": "laneem",
+      "id": "20",
       "vietnameseName": "LÁ SẦU ĐÂU",
       "englishName": "NEEM",
       "scientificName": "Azadirachta indica",
@@ -70,7 +71,7 @@
       "updatedAt": "2025-05-12T14:56:04.617Z"
     },
     {
-      "id": "amaranth",
+      "id": "0",
       "vietnameseName": "DỀN CƠM ",
       "englishName": "Amaranth",
       "scientificName": "Amaranthus viridis L.",
@@ -143,7 +144,7 @@
       "updatedAt": "2025-05-12T15:09:30.159Z"
     },
     {
-      "id": "betel",
+      "id": "2",
       "vietnameseName": "TRẦU KHÔNG",
       "englishName": "Betel Pepper",
       "scientificName": "Piper betle L.",
@@ -238,7 +239,7 @@
       "updatedAt": "2025-05-12T15:20:00.000Z"
     },
     {
-      "id": "crape_jasmine",
+      "id": "3",
       "vietnameseName": "LÀI TRÂU",
       "englishName": "Crape Jasmine",
       "scientificName": "Tabernaemontana divaricata",
@@ -323,7 +324,7 @@
       "updatedAt": "2025-05-12T15:30:00.000Z"
     },
     {
-      "id": "curry",
+      "id": "4",
       "vietnameseName": "LÁ CÀ RI",
       "englishName": "Curry Leaves",
       "scientificName": "Murraya koenigii",
@@ -398,7 +399,7 @@
       "updatedAt": "2025-05-12T15:40:00.000Z"
     },
     {
-      "id": "drumstick",
+      "id": "5",
       "vietnameseName": "CHÙM NGÂY",
       "englishName": "Moringa",
       "scientificName": "Moringa oleifera Lam.",
@@ -483,7 +484,7 @@
       "updatedAt": "2025-05-12T15:50:00.000Z"
     },
     {
-      "id": "fenugreek_seed",
+      "id": "6",
       "vietnameseName": "CỎ CÀ RI",
       "englishName": "Fenugreek Seed",
       "scientificName": "Trigonella foenum-graecum",
@@ -576,7 +577,7 @@
       "updatedAt": "2025-05-12T16:00:00.000Z"
     },
     {
-      "id": "guava",
+      "id": "7",
       "vietnameseName": "ỔI",
       "englishName": "Guava",
       "scientificName": "Psidium guajava",
@@ -679,7 +680,7 @@
       "updatedAt": "2025-05-12T16:10:00.000Z"
     },
     {
-      "id": "hibiscus",
+      "id": "8",
       "vietnameseName": "DÂM BỤT",
       "englishName": "Chinese Hibiscus",
       "scientificName": "Hibiscus rosa-sinensis L.",
@@ -779,7 +780,7 @@
       "updatedAt": "2025-05-12T16:20:00.000Z"
     },
     {
-      "id": "indian_beech",
+      "id": "9",
       "vietnameseName": "DÂY LIM",
       "englishName": "Indian Beech",
       "scientificName": "Pongamia pinnata",
@@ -881,7 +882,7 @@
       "updatedAt": "2025-05-12T16:30:00.000Z"
     },
     {
-      "id": "indian_mustard",
+      "id": "10",
       "vietnameseName": "CẢI ẤN ĐỘ",
       "englishName": "Indian Mustard",
       "scientificName": "Brassica juncea",
@@ -968,7 +969,7 @@
       "updatedAt": "2025-05-12T16:40:00.000Z"
     },
     {
-      "id": "jackfruit",
+      "id": "11",
       "vietnameseName": "MÍT",
       "englishName": "Jackfruit",
       "scientificName": "Artocarpus heterophyllus",
@@ -1066,7 +1067,7 @@
       "updatedAt": "2025-05-12T16:50:00.000Z"
     },
     {
-      "id": "jamaica_cherry",
+      "id": "12",
       "vietnameseName": "CÂY TRỨNG CÁ",
       "englishName": "Jamaica Cherry-Gasagase",
       "scientificName": "Muntingia calabura",
@@ -1169,7 +1170,7 @@
       "updatedAt": "2025-05-12T17:00:00.000Z"
     },
     {
-      "id": "syzygium_cumini",
+      "id": "13",
       "vietnameseName": "TRÂM MỐC",
       "englishName": "Jamun, Java Plum",
       "scientificName": "Syzygium cumini",
@@ -1257,7 +1258,7 @@
       "updatedAt": "2025-05-12T17:10:00.000Z"
     },
     {
-      "id": "jasmine",
+      "id": "14",
       "vietnameseName": "NHÀI",
       "englishName": "Arabian Jasmine",
       "scientificName": "Jasminum sambac (L.) Aiton",
@@ -1344,7 +1345,7 @@
       "updatedAt": "2025-05-12T17:20:00.000Z"
     },
     {
-      "id": "karanda",
+      "id": "15",
       "vietnameseName": "KARANDA",
       "englishName": "Karanda, Karonda",
       "scientificName": "Carissa carandas",
@@ -1455,7 +1456,7 @@
       "updatedAt": "2025-05-12T17:30:00.000Z"
     },
     {
-      "id": "lemon",
+      "id": "16",
       "vietnameseName": "CHANH",
       "englishName": "Lemon",
       "scientificName": "Citrus × limon",
@@ -1557,7 +1558,7 @@
       "updatedAt": "2025-05-17T10:30:00.000Z"
     },
     {
-      "id": "basale",
+      "id": "1",
       "vietnameseName": "MỒNG TƠI",
       "englishName": "Malabar Spinach",
       "scientificName": "Basella alba L., Basella rubra L.",
@@ -1652,7 +1653,7 @@
       "updatedAt": "2025-05-17T11:00:00.000Z"
     },
     {
-      "id": "mango",
+      "id": "17",
       "vietnameseName": "LÁ XOÀI",
       "englishName": "Mango Leaf",
       "scientificName": "Mangifera indica",
@@ -1740,7 +1741,7 @@
       "updatedAt": "2025-05-17T12:00:00.000Z"
     },
     {
-      "id": "mexican_mint",
+      "id": "18",
       "vietnameseName": "HÚNG CHANH",
       "englishName": "Mexican Mint",
       "scientificName": "Plectranthus amboinicus",
@@ -1844,7 +1845,7 @@
       "updatedAt": "2025-05-17T13:00:00.000Z"
     },
     {
-      "id": "mint",
+      "id": "19",
       "vietnameseName": "BẠC HÀ",
       "englishName": "Field Mint",
       "scientificName": "Mentha arvensis L.",
@@ -1948,7 +1949,7 @@
       "updatedAt": "2025-05-17T14:00:00.000Z"
     },
     {
-      "id": "oleander",
+      "id": "21",
       "vietnameseName": "TRÚC ĐÀO",
       "englishName": "Oleander",
       "scientificName": "Nerium oleander L.",
@@ -2011,7 +2012,7 @@
         ]
       },
       "notes": [
-        "Trúc đào độc tính cao, có trường hợp lính vùng đảo Corse (Pháp) đã tử vong do ăn chả dùng cành trúc đào xiên thịt nướng",
+        "Ở Việt Nam độc tính cao, có trường hợp lính vùng đảo Corse (Pháp) đã tử vong do ăn chả dùng cành trúc đào xiên thịt nướng",
         "Người dân tỉnh Nice (Pháp) đã dùng bột vỏ thân và gỗ trúc đào để diệt chuột",
         "Hoạt chất oleandrin (neriolin) phải bảo quản theo chế độ thuốc độc bảng A, dung dịch và viên neriolin theo chế độ bảng B",
         "So với digitalin, neriolin hấp thu nhanh qua bộ máy tiêu hóa, tích lũy ít, làm đi tiểu nhiều",
@@ -2026,7 +2027,7 @@
       "updatedAt": "2025-05-17T15:00:00.000Z"
     },
     {
-      "id": "parijata",
+      "id": "22",
       "vietnameseName": "DẠ LÝ HƯƠNG",
       "englishName": "Night-blooming Jasmine",
       "scientificName": "Cestrum nocturnum Linn.",
@@ -2102,7 +2103,7 @@
       "updatedAt": "2025-05-17T16:00:00.000Z"
     },
     {
-      "id": "peepal",
+      "id": "23",
       "vietnameseName": "BỒ ĐỀ",
       "englishName": "Benzoin Tree",
       "scientificName": "Styrax benzoin",
@@ -2204,7 +2205,7 @@
       "updatedAt": "2025-05-17T17:00:00.000Z"
     },
     {
-      "id": "pomegranate",
+      "id": "24",
       "vietnameseName": "LÁ LỰU",
       "englishName": "Pomegranate",
       "scientificName": "Punica granatum L.",
@@ -2334,7 +2335,7 @@
       "updatedAt": "2025-05-17T18:00:00.000Z"
     },
     {
-      "id": "cardamom",
+      "id": "25",
       "vietnameseName": "SA NHÂN",
       "englishName": "Cardamom",
       "scientificName": "Amomum xanthioides",
@@ -2419,7 +2420,7 @@
       "updatedAt": "2025-05-17T19:00:00.000Z"
     },
     {
-      "id": "rose_apple",
+      "id": "26",
       "vietnameseName": "ROI",
       "englishName": "Rose Apple",
       "scientificName": "Syzygium jambos (L.) Alston (Eugenia Jumbos L.)",
@@ -2516,7 +2517,7 @@
       "updatedAt": "2025-05-17T20:00:00.000Z"
     },
     {
-      "id": "roxburgh_fig",
+      "id": "27",
       "vietnameseName": "SUNG",
       "englishName": "Cluster Fig",
       "scientificName": "Ficus racemosa L. (Ficus glomerata Roxb.)",
@@ -2640,7 +2641,7 @@
       "updatedAt": "2025-05-17T21:00:00.000Z"
     },
     {
-      "id": "sandalwood",
+      "id": "28",
       "vietnameseName": "ĐÀN HƯƠNG",
       "englishName": "Sandalwood",
       "scientificName": "Santalum album",
@@ -2718,7 +2719,7 @@
       "updatedAt": "2025-05-17T22:00:00.000Z"
     },
     {
-      "id": "tulsi",
+      "id": "29",
       "vietnameseName": "HÚNG QUẾ",
       "englishName": "Sweet Basil",
       "scientificName": "Ocimum basilicum",
@@ -2795,7 +2796,7 @@
           },
           {
             "purpose": "Trị ho",
-            "recipe": "Đun sôi 8 lá húng quế và 5 lá cây đinh hương trong 1 cốc nước trong 10 phút, thêm muối, để nguội rồi uống"
+            "recipe": "Đun sôi 8 lá húng chanh và 5 lá cây đinh hương trong 1 cốc nước trong 10 phút, thêm muối, để nguội rồi uống"
           },
           {
             "purpose": "Trị viêm họng",

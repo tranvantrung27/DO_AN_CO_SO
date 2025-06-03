@@ -68,104 +68,122 @@ class _DetectionScreenState extends State<DetectionScreen> with TickerProviderSt
   }
 
   Future<void> _startDetectionProcess() async {
-    try {
-      // Tải mô hình trước nhưng không hiển thị gì
-      await _recognitionService.loadModel();
+  try {
+    await _recognitionService.loadModel();
 
-      // Hiển thị và bắt đầu bước 1
-      setState(() {
-        _showStep1 = true;
-        _step1Loading = true;
-      });
+    setState(() {
+      _showStep1 = true;
+      _step1Loading = true;
+    });
 
-      // Giả lập thời gian xử lý cho bước 1 để có hiệu ứng xoay
-      await Future.delayed(const Duration(milliseconds: 2000));
+    await Future.delayed(const Duration(milliseconds: 3300));
 
-      // Hoàn thành bước 1
+    setState(() {
+      _step1Loading = false;
+      _step1Complete = true;
+    });
+
+    await Future.delayed(const Duration(milliseconds: 500));
+
+    setState(() {
+      _showStep2 = true;
+      _step2Loading = true;
+    });
+
+    _result = await _recognitionService.recognizeLeaf(widget.imageFile);
+
+    if (_result != null && _result!.containsKey('error')) {
+      throw Exception(_result!['error']);
+    }
+
+    // Kiểm tra nếu class_index = 30 với confidence = 1.0 (hoặc giá trị tương tự)
+    final int classIndex = _result!['class_index'] ?? -1;
+    final double confidence = _result!['confidence'] ?? 0.0;
+
+    if (classIndex == 30 && confidence == 1.0) {
+  // Dừng loading, ẩn step 2, show dialog lỗi và quay lại trang trước
+  setState(() {
+    _step2Loading = false;
+    _step2Complete = false;
+    _showStep2 = false; // Ẩn step 2 luôn
+  });
+
+  if (!mounted) return;
+
+  await showDialog(
+    context: context,
+    builder: (context) => AlertDialog(
+      title: const Text('Lỗi nhận dạng'),
+      content: const Text('Hình ảnh không phải là lá thuốc. Vui lòng thử lại với ảnh khác.'),
+      actions: [
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pop(); // Đóng dialog
+            Navigator.of(context).pop(); // Quay lại màn hình trước
+          },
+          child: const Text('OK'),
+        ),
+      ],
+    ),
+  );
+
+  return; // Dừng tiếp tục các bước sau
+}
+
+
+    await Future.delayed(const Duration(milliseconds: 1500));
+
+    setState(() {
+      _step2Loading = false;
+      _step2Complete = true;
+    });
+
+    await Future.delayed(const Duration(milliseconds: 500));
+
+    setState(() {
+      _showStep3 = true;
+      _step3Loading = true;
+    });
+
+    await Future.delayed(const Duration(milliseconds: 5000));
+
+    setState(() {
+      _step3Loading = false;
+      _step3Complete = true;
+    });
+
+    await Future.delayed(const Duration(milliseconds: 800));
+
+    if (mounted && _result != null) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (context) => ResultScreen(
+            imageFile: widget.imageFile,
+            recognitionResult: _result!,
+          ),
+        ),
+      );
+    }
+  } catch (e) {
+    print('Lỗi trong quá trình nhận diện: $e');
+    if (mounted) {
       setState(() {
         _step1Loading = false;
-        _step1Complete = true;
-      });
-
-      // Đợi một chút trước khi hiển thị bước 2
-      await Future.delayed(const Duration(milliseconds: 500));
-
-      // Hiển thị và bắt đầu bước 2
-      setState(() {
-        _showStep2 = true;
-        _step2Loading = true;
-      });
-
-      // Thực hiện nhận diện (đã tải mô hình trước)
-      _result = await _recognitionService.recognizeLeaf(widget.imageFile);
-
-      // Kiểm tra lỗi
-      if (_result != null && _result!.containsKey('error')) {
-        throw Exception(_result!['error']);
-      }
-
-      // Giả lập thêm thời gian để hiệu ứng xoay rõ ràng hơn
-      await Future.delayed(const Duration(milliseconds: 1500));
-
-      // Hoàn thành bước 2
-      setState(() {
         _step2Loading = false;
-        _step2Complete = true;
-      });
-
-      // Đợi một chút trước khi hiển thị bước 3
-      await Future.delayed(const Duration(milliseconds: 500));
-
-      // Hiển thị và bắt đầu bước 3
-      setState(() {
-        _showStep3 = true;
-        _step3Loading = true;
-      });
-
-      // Giả lập xử lý dữ liệu cho bước 3
-      await Future.delayed(const Duration(milliseconds: 5000));
-
-      // Hoàn thành bước 3
-      setState(() {
         _step3Loading = false;
-        _step3Complete = true;
       });
 
-      // Đợi thêm một chút trước khi chuyển màn hình
-      await Future.delayed(const Duration(milliseconds: 800));
-
-      // Chuyển đến màn hình kết quả
-      if (mounted && _result != null) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (context) => ResultScreen(
-                  imageFile: widget.imageFile,
-                  recognitionResult: _result!,
-                ),
-          ),
-        );
-      }
-    } catch (e) {
-      print('Lỗi trong quá trình nhận diện: $e');
-      if (mounted) {
-        // Dừng tất cả loading
-        setState(() {
-          _step1Loading = false;
-          _step2Loading = false;
-          _step3Loading = false;
-        });
-
-        // Hiển thị thông báo lỗi
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Lỗi: $e'),
-            backgroundColor: Colors.red,
-            duration: const Duration(seconds: 5),
-          ),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Lỗi: $e'),
+          backgroundColor: Colors.red,
+          duration: const Duration(seconds: 5),
+        ),
+      );
     }
   }
+}
+
 
   // Hàm helper để hiển thị icon phù hợp theo trạng thái
   Widget _getStepIcon(bool isLoading, bool isComplete) {
@@ -280,7 +298,7 @@ ScannerFrame(
                         _getStepIcon(_step1Loading, _step1Complete),
                         const SizedBox(width: 10),
                         const Text(
-                          'Lá thuốc đã được nhận dạng!!',
+                          'Đang lấy thông tin...',
                           style: TextStyle(
                             color: Color(0xFF4CAF50),
                             fontSize: 16,
@@ -288,8 +306,8 @@ ScannerFrame(
                         ),
                       ],
                     ),
-
-                  if (_showStep1) const SizedBox(height: 10),
+ if (_showStep1) const SizedBox(height: 10),
+                
 
                   // Bước 2: Chỉ hiển thị khi _showStep2 = true
                   if (_showStep2)
@@ -298,7 +316,7 @@ ScannerFrame(
                         _getStepIcon(_step2Loading, _step2Complete),
                         const SizedBox(width: 10),
                         const Text(
-                          'Đang lấy thông tin...',
+                          'Lá thuốc đã được nhận dạng!!',
                           style: TextStyle(
                             color: Color(0xFF4CAF50),
                             fontSize: 16,

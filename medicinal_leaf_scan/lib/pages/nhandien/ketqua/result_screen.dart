@@ -1,3 +1,4 @@
+// result_screen.dart
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:medicinal_leaf_scan/services/imgbb_service.dart';
@@ -5,11 +6,9 @@ import 'package:medicinal_leaf_scan/utils/app_colors.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-// Import các components
 import 'services/action_buttons.dart';
 import 'services/image_preview.dart';
 import 'services/leaf_info_widget.dart';
-import 'utils/labels_reader.dart';
 import 'services/leaf_data_service.dart';
 
 class ResultScreen extends StatefulWidget {
@@ -42,178 +41,156 @@ class _ResultScreenState extends State<ResultScreen> {
 
   Future<void> _initializeData() async {
   try {
-    await LabelsReader.loadLabelsMapping();
-    final leafData = await LeafDataService.loadLeafData(
-      widget.recognitionResult['class'] as String,
-    );
+    final int classIndex = widget.recognitionResult['class_index'] ?? -1;
 
-    // Kiểm tra mounted trước khi cập nhật state
+    // Nếu không xác định được (classIndex == -1) hoặc có message lỗi
+    if (classIndex == -1 || widget.recognitionResult.containsKey('message')) {
+      setState(() {
+        _isLoadingLeafData = false;
+        _leafData = null;
+      });
+      return;
+    }
+
+    final String leafId = classIndex.toString();
+
+    final leafData = await LeafDataService.loadLeafData(leafId);
+
     if (!mounted) return;
     setState(() {
       _leafData = leafData;
       _isLoadingLeafData = false;
     });
 
-    // Tự động lưu lịch sử nhưng với kiểm tra mounted
     final user = FirebaseAuth.instance.currentUser;
     if (user != null && mounted) {
-      // Sử dụng Future.microtask để tránh việc chặn UI
       Future.microtask(() => _saveToHistory());
     }
 
-    // Kiểm tra bộ sưu tập nếu vẫn mounted
     if (mounted) {
       await _checkIfInCollection();
     }
   } catch (e) {
     debugPrint('Lỗi trong _initializeData: $e');
-    // Xử lý lỗi tốt hơn ở đây nếu cần
   }
 }
 
+
+
+
   Future<void> _saveToHistory() async {
-    // Nếu đã lưu rồi thì không lưu lại
-    if (_isSavedToHistory) return;
+  if (_isSavedToHistory) return;
 
-    final user = FirebaseAuth.instance.currentUser;
-    if (user == null) return; // Không hiển thị prompt nếu đang tự động lưu
+  final user = FirebaseAuth.instance.currentUser;
+  if (user == null) return;
 
-    // Lưu trạng thái trước khi async
+  if (!mounted) return;
+
+  setState(() => _isSaving = true);
+
+  try {
+    final imageUrl = await ImgbbService.uploadImage(widget.imageFile);
+    if (imageUrl.isEmpty) throw Exception('Không thể upload ảnh');
+
+    final int classIndex = widget.recognitionResult['class_index'] ?? -1;
+    final String leafId = classIndex.toString();
+
+    await FirebaseFirestore.instance.collection('history').add({
+      'userId': user.uid,
+      'leafName': _leafData != null ? _leafData!['vietnameseName'] : leafId,
+      'leafId': leafId,
+      'confidence': widget.recognitionResult['confidence'],
+      'timestamp': FieldValue.serverTimestamp(),
+      'imageUrl': imageUrl,
+    });
+
+    if (!mounted) return;
+
+    setState(() => _isSavedToHistory = true);
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Đã lưu vào lịch sử'), backgroundColor: Colors.green),
+    );
+  } catch (e) {
+    debugPrint('Error saving to history: $e');
     if (mounted) {
-      setState(() => _isSaving = true);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Lỗi khi lưu: ${e.toString()}'), backgroundColor: Colors.red, duration: const Duration(seconds: 3)),
+      );
     }
-
-    try {
-      // Upload ảnh lên ImgBB
-      final imageUrl = await ImgbbService.uploadImage(widget.imageFile);
-
-      // Lưu thông tin vào Firestore cùng với URL ảnh
-      await FirebaseFirestore.instance.collection('history').add({
-        'userId': user.uid,
-        'leafName':
-            _leafData != null
-                ? _leafData!['vietnameseName']
-                : widget.recognitionResult['class'],
-        'leafId': widget.recognitionResult['class'],
-        'confidence': widget.recognitionResult['confidence'],
-        'timestamp': FieldValue.serverTimestamp(),
-        'imageUrl': imageUrl,
-      });
-
-      // Kiểm tra mounted trước khi cập nhật UI
-      if (mounted) {
-        setState(() => _isSavedToHistory = true);
-
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Đã lưu vào lịch sử'),
-            backgroundColor: Colors.green,
-          ),
-        );
-      }
-    } catch (e) {
-      debugPrint('Error saving to history: $e');
-      // Chỉ hiển thị lỗi nếu widget vẫn mounted
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Lỗi khi lưu: ${e.toString()}'),
-            backgroundColor: Colors.red,
-            duration: const Duration(seconds: 3),
-          ),
-        );
-      }
-    } finally {
-      // Kiểm tra mounted trước khi reset isSaving
-      if (mounted) {
-        setState(() => _isSaving = false);
-      }
-    }
+  } finally {
+    if (mounted) setState(() => _isSaving = false);
   }
+}
 
   Future<void> _checkIfInCollection() async {
-    final user = FirebaseAuth.instance.currentUser;
-    if (user == null) return;
+  final user = FirebaseAuth.instance.currentUser;
+  if (user == null) return;
 
-    try {
-      final querySnapshot =
-          await FirebaseFirestore.instance
-              .collection('collections')
-              .where('userId', isEqualTo: user.uid)
-              .where('leafId', isEqualTo: widget.recognitionResult['class'])
-              .limit(1)
-              .get();
+  try {
+    final int classIndex = widget.recognitionResult['class_index'] ?? -1;
+    if (classIndex == -1) return;
+    final String leafId = classIndex.toString();
 
-      if (querySnapshot.docs.isNotEmpty) {
-        setState(() {
-          _isSavedToCollection = true;
-          _collectionDocId = querySnapshot.docs.first.id;
-        });
-      }
-    } catch (e) {
-      debugPrint('Lỗi khi kiểm tra bộ sưu tập: $e');
-    }
-  }
+    final querySnapshot = await FirebaseFirestore.instance
+        .collection('collections')
+        .where('userId', isEqualTo: user.uid)
+        .where('leafId', isEqualTo: leafId)
+        .limit(1)
+        .get();
 
-  Future<void> _saveToCollection() async {
-    final user = FirebaseAuth.instance.currentUser;
-    if (user == null) {
-      _showLoginPrompt();
-      return;
-    }
-
-    setState(() => _isSaving = true);
-
-    try {
-      // Hiển thị thông báo đang upload
-      // Upload ảnh lên ImgBB
-      final imageUrl = await ImgbbService.uploadImage(widget.imageFile);
-
-      if (imageUrl.isEmpty) {
-        throw Exception('Không thể upload ảnh');
-      }
-
-      // Lưu dữ liệu vào Firestore với URL từ ImgBB
-      final docRef = await FirebaseFirestore.instance
-          .collection('collections')
-          .add({
-            'userId': user.uid,
-            'leafName':
-                _leafData != null
-                    ? _leafData!['vietnameseName']
-                    : widget.recognitionResult['class'],
-            'leafId': widget.recognitionResult['class'],
-            'confidence': widget.recognitionResult['confidence'],
-            'timestamp': FieldValue.serverTimestamp(),
-            'imageUrl': imageUrl, // URL từ ImgBB
-          });
-
+    if (querySnapshot.docs.isNotEmpty) {
       setState(() {
         _isSavedToCollection = true;
-        _collectionDocId = docRef.id;
+        _collectionDocId = querySnapshot.docs.first.id;
       });
-
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Đã lưu vào bộ sưu tập'),
-          backgroundColor: Colors.green,
-        ),
-      );
-    } catch (e) {
-      debugPrint('Error saving to collection: $e');
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Lỗi khi lưu: ${e.toString()}'),
-          backgroundColor: Colors.red,
-          duration: const Duration(seconds: 3),
-        ),
-      );
-    } finally {
-      if (mounted) {
-        setState(() => _isSaving = false);
-      }
     }
+  } catch (e) {
+    debugPrint('Lỗi khi kiểm tra bộ sưu tập: $e');
   }
+}
+
+
+  Future<void> _saveToCollection() async {
+  final user = FirebaseAuth.instance.currentUser;
+  if (user == null) {
+    _showLoginPrompt();
+    return;
+  }
+
+  setState(() => _isSaving = true);
+
+  try {
+    final imageUrl = await ImgbbService.uploadImage(widget.imageFile);
+    if (imageUrl.isEmpty) throw Exception('Không thể upload ảnh');
+
+    final String leafId = widget.recognitionResult['class_index'].toString();
+
+    final docRef = await FirebaseFirestore.instance.collection('collections').add({
+      'userId': user.uid,
+      'leafId': leafId,  // Lưu id đúng với model trả về và Firestore
+      'leafName': _leafData != null ? _leafData!['vietnameseName'] : leafId,
+      'confidence': widget.recognitionResult['confidence'],
+      'timestamp': FieldValue.serverTimestamp(),
+      'imageUrl': imageUrl,
+    });
+
+    setState(() {
+      _isSavedToCollection = true;
+      _collectionDocId = docRef.id;
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Đã lưu vào bộ sưu tập'), backgroundColor: Colors.green),
+    );
+  } catch (e) {
+    debugPrint('Error saving to collection: $e');
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Lỗi khi lưu: ${e.toString()}'), backgroundColor: Colors.red, duration: const Duration(seconds: 3)),
+    );
+  } finally {
+    if (mounted) setState(() => _isSaving = false);
+  }
+}
 
   Future<void> _removeFromCollection() async {
     if (_collectionDocId == null) return;
@@ -221,11 +198,7 @@ class _ResultScreenState extends State<ResultScreen> {
     setState(() => _isSaving = true);
 
     try {
-      // Xóa document từ Firestore
-      await FirebaseFirestore.instance
-          .collection('collections')
-          .doc(_collectionDocId)
-          .delete();
+      await FirebaseFirestore.instance.collection('collections').doc(_collectionDocId).delete();
 
       setState(() {
         _isSavedToCollection = false;
@@ -233,37 +206,53 @@ class _ResultScreenState extends State<ResultScreen> {
       });
 
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Đã xóa khỏi bộ sưu tập'),
-          backgroundColor: Colors.orange,
-        ),
+        const SnackBar(content: Text('Đã xóa khỏi bộ sưu tập'), backgroundColor: Colors.orange),
       );
     } catch (e) {
       debugPrint('Error removing from collection: $e');
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Lỗi khi xóa: ${e.toString()}'),
-          backgroundColor: Colors.red,
-        ),
+        SnackBar(content: Text('Lỗi khi xóa: ${e.toString()}'), backgroundColor: Colors.red),
       );
     } finally {
-      if (mounted) {
-        setState(() => _isSaving = false);
-      }
+      if (mounted) setState(() => _isSaving = false);
     }
+  }
+
+  void _showLoginPrompt() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Yêu cầu đăng nhập'),
+        content: const Text('Bạn cần đăng nhập để lưu kết quả'),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Hủy')),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, '/login');
+            },
+            child: const Text('Đăng nhập'),
+            style: ElevatedButton.styleFrom(backgroundColor: AppColors.greenColor),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    if (widget.recognitionResult['class'] == null) {
-      return _buildErrorScreen();
-    }
+    final dynamic classDynamic = widget.recognitionResult['class_index'];
 
-    final leafName = widget.recognitionResult['class'] as String;
-    final confidence =
-        widget.recognitionResult['confidence'] != null
-            ? (widget.recognitionResult['confidence'] * 100).toStringAsFixed(2)
-            : '0.00';
+    if (classDynamic == null) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('Kết quả nhận dạng'), backgroundColor: AppColors.appBarColor),
+        body: const Center(child: Text('Không có kết quả nhận dạng')),
+      );
+    }
+    final String leafName = classDynamic.toString();
+
+    final confidenceRaw = widget.recognitionResult['confidence'];
+    final String confidence = (confidenceRaw is double) ? (confidenceRaw * 100).toStringAsFixed(2) : '0.00';
 
     return Scaffold(
       appBar: AppBar(
@@ -273,20 +262,12 @@ class _ResultScreenState extends State<ResultScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // Hiển thị ImagePreview với tên
             ImagePreview(
               imageFile: widget.imageFile,
-              vietnameseName:
-                  _leafData != null
-                      ? _leafData!['vietnameseName']
-                      : (_isLoadingLeafData ? 'Đang tải...' : leafName),
+              vietnameseName: _leafData != null ? _leafData!['vietnameseName'] : (_isLoadingLeafData ? 'Đang tải...' : leafName),
               englishName: _leafData != null ? _leafData!['englishName'] : null,
             ),
-
-            // Container thông tin
             _buildResultContainer(leafName, confidence),
-
-            // Các nút hành động
             ActionButtons(
               isSaving: _isSaving,
               isSavedToCollection: _isSavedToCollection,
@@ -301,16 +282,6 @@ class _ResultScreenState extends State<ResultScreen> {
     );
   }
 
-  Widget _buildErrorScreen() {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Kết quả nhận dạng'),
-        backgroundColor: AppColors.appBarColor,
-      ),
-      body: const Center(child: Text('Không có kết quả nhận dạng')),
-    );
-  }
-
   Widget _buildResultContainer(String leafName, String confidence) {
     return Container(
       margin: const EdgeInsets.all(16),
@@ -318,65 +289,21 @@ class _ResultScreenState extends State<ResultScreen> {
       decoration: BoxDecoration(
         color: AppColors.cardBackgroundColor,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 5,
-            offset: const Offset(0, 3),
-          ),
-        ],
+        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 5, offset: const Offset(0, 3))],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Tiêu đề
-          const Center(
-            child: Text(
-              'Thông tin về lá thuốc',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-          ),
+          const Center(child: Text('Thông tin về lá thuốc', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold))),
           const SizedBox(height: 8),
-
-          // Nội dung
           if (_isLoadingLeafData)
             const Center(child: CircularProgressIndicator())
           else if (_leafData == null)
-            const Text(
-              'Không tìm thấy thông tin chi tiết về loại lá này.',
-              style: TextStyle(fontSize: 16, color: Colors.grey),
-            )
+            const Text('Không tìm thấy thông tin chi tiết về loại lá này.', style: TextStyle(fontSize: 16, color: Colors.grey))
           else
             LeafInfoWidget(leafData: _leafData!),
         ],
       ),
-    );
-  }
-
-  void _showLoginPrompt() {
-    showDialog(
-      context: context,
-      builder:
-          (context) => AlertDialog(
-            title: const Text('Yêu cầu đăng nhập'),
-            content: const Text('Bạn cần đăng nhập để lưu kết quả'),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.pop(context),
-                child: const Text('Hủy'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                  Navigator.pushNamed(context, '/login');
-                },
-                child: const Text('Đăng nhập'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.greenColor,
-                ),
-              ),
-            ],
-          ),
     );
   }
 }

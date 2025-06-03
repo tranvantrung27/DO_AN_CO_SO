@@ -59,7 +59,7 @@ flutter:
     - assets/icon/terms-and-conditions.png
     #models
     - assets/models/models.tflite
-    - assets/models/labels.txt
+   
 
 
 flutter_icons:
