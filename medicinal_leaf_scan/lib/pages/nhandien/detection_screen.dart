@@ -96,41 +96,40 @@ class _DetectionScreenState extends State<DetectionScreen> with TickerProviderSt
       throw Exception(_result!['error']);
     }
 
-    // Kiểm tra nếu class_index = 30 với confidence = 1.0 (hoặc giá trị tương tự)
+    // Kiểm tra nếu class_index là -1 (không nhận dạng được)
     final int classIndex = _result!['class_index'] ?? -1;
-    final double confidence = _result!['confidence'] ?? 0.0;
 
-    if (classIndex == 30 && confidence == 1.0) {
-  // Dừng loading, ẩn step 2, show dialog lỗi và quay lại trang trước
-  setState(() {
-    _step2Loading = false;
-    _step2Complete = false;
-    _showStep2 = false; // Ẩn step 2 luôn
-  });
+    if (classIndex == -1) {
+      // Dừng loading, ẩn step 2, show dialog lỗi và quay lại trang trước
+      setState(() {
+        _step2Loading = false;
+        _step2Complete = false;
+        _showStep2 = false; // Ẩn step 2 luôn
+      });
 
-  if (!mounted) return;
+      if (!mounted) return;
 
-  await showDialog(
-    context: context,
-    builder: (context) => AlertDialog(
-      title: const Text('Lỗi nhận dạng'),
-      content: const Text('Hình ảnh không phải là lá thuốc. Vui lòng thử lại với ảnh khác.'),
-      actions: [
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pop(); // Đóng dialog
-            Navigator.of(context).pop(); // Quay lại màn hình trước
-          },
-          child: const Text('OK'),
+      await showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: const Text('Lỗi nhận dạng'),
+          content: const Text('Không thể xác định loại lá thuốc. Vui lòng thử lại với ảnh khác.'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop(); // Đóng dialog
+                Navigator.of(context).pop(); // Quay lại màn hình trước
+              },
+              child: const Text('OK'),
+            ),
+          ],
         ),
-      ],
-    ),
-  );
+      );
 
-  return; // Dừng tiếp tục các bước sau
-}
+      return; // Dừng tiếp tục các bước sau
+    }
 
-
+    // Nếu không phải nhãn -1, tiếp tục các bước sau
     await Future.delayed(const Duration(milliseconds: 1500));
 
     setState(() {
@@ -183,6 +182,8 @@ class _DetectionScreenState extends State<DetectionScreen> with TickerProviderSt
     }
   }
 }
+
+
 
 
   // Hàm helper để hiển thị icon phù hợp theo trạng thái
